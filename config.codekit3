@@ -17,6 +17,22 @@
       "oAP" : "\/.gitattributes",
       "oF" : 0
     },
+    "\/deploy\/cart.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/cart.html",
+      "oF" : 0
+    },
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -28,6 +44,201 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/img\/ .png" : {
+      "ft" : 32768,
+      "iS" : 2481539,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ .png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/GLOWFORGE_AIRFILTER_FINAL.png" : {
+      "ft" : 32768,
+      "iS" : 674911,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/GLOWFORGE_AIRFILTER_FINAL.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Glowforge_Free_Materials_FINAL.png" : {
+      "ft" : 32768,
+      "iS" : 988567,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Glowforge_Free_Materials_FINAL.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/GlowForge_Warranty_FINAL.png" : {
+      "ft" : 32768,
+      "iS" : 759501,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/GlowForge_Warranty_FINAL.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/GlowForgeAccessoryFINAL.png" : {
+      "ft" : 32768,
+      "iS" : 1046295,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/GlowForgeAccessoryFINAL.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/GlowForgeLineUp.jpg" : {
+      "ft" : 16384,
+      "iS" : 162530,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/GlowForgeLineUp.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/GlowForgeLowResEDIT.png" : {
+      "ft" : 32768,
+      "iS" : 526213,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/GlowForgeLowResEDIT.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/GlowforgeTiledInvert.png" : {
+      "ft" : 32768,
+      "iS" : 5748951,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/GlowforgeTiledInvert.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/header\/index.png" : {
+      "ft" : 32768,
+      "iS" : 3914,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/index.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/header\/tracetype.png" : {
+      "ft" : 32768,
+      "iS" : 29512,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/tracetype.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.07 PM.png" : {
+      "ft" : 32768,
+      "iS" : 640440,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.07 PM.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.34 PM.png" : {
+      "ft" : 32768,
+      "iS" : 845735,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.34 PM.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Screenshot 2023-02-09 at 6.50.23 PM.png" : {
+      "ft" : 32768,
+      "iS" : 1354596,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Screenshot 2023-02-09 at 6.50.23 PM.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.35 PM.png" : {
+      "ft" : 32768,
+      "iS" : 4342065,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.35 PM.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.42 PM.png" : {
+      "ft" : 32768,
+      "iS" : 2487311,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.42 PM.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -48,11 +259,43 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/global\/footer.kit" : {
+    "\/deploy\/thanks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thanks.html",
+      "oF" : 0
+    },
+    "\/dev\/cart.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
+      "oAP" : "\/deploy\/cart.html",
+      "oF" : 2
+    },
+    "\/dev\/checkout.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/Index\/price.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Index\/price.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -68,7 +311,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
@@ -263,6 +506,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thanks.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thanks.html",
+      "oF" : 2
     },
     "\/README.md" : {
       "cB" : 0,
