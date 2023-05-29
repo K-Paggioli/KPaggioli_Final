@@ -123,19 +123,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/GlowForgeLowResEDIT.png" : {
-      "ft" : 32768,
-      "iS" : 526213,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/GlowForgeLowResEDIT.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
     "\/deploy\/img\/GlowforgeTiledInvert.png" : {
       "ft" : 32768,
       "iS" : 5748951,
@@ -175,11 +162,24 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.07 PM.png" : {
+    "\/deploy\/img\/producthero\/hero1.png" : {
+      "ft" : 32768,
+      "iS" : 526213,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/producthero\/hero1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/producthero\/hero2.png" : {
       "ft" : 32768,
       "iS" : 640440,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.07 PM.png",
+      "oAP" : "\/deploy\/img\/producthero\/hero2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -188,11 +188,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.34 PM.png" : {
+    "\/deploy\/img\/producthero\/hero3.png" : {
       "ft" : 32768,
       "iS" : 845735,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/Screenshot 2023-02-09 at 6.49.34 PM.png",
+      "oAP" : "\/deploy\/img\/producthero\/hero3.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -201,11 +201,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/Screenshot 2023-02-09 at 6.50.23 PM.png" : {
+    "\/deploy\/img\/producthero\/hero4.png" : {
       "ft" : 32768,
       "iS" : 1354596,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/Screenshot 2023-02-09 at 6.50.23 PM.png",
+      "oAP" : "\/deploy\/img\/producthero\/hero4.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -289,6 +289,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/Index\/price.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Index\/producthero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Index\/producthero.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
