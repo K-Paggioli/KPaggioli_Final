@@ -45,19 +45,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/ .png" : {
-      "ft" : 32768,
-      "iS" : 2481539,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/ .png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
     "\/deploy\/img\/addons\/accessory.png" : {
       "ft" : 32768,
       "iS" : 1046295,
@@ -214,11 +201,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.35 PM.png" : {
+    "\/deploy\/img\/reviews\/review1.png" : {
       "ft" : 32768,
-      "iS" : 4342065,
+      "iS" : 2481539,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.35 PM.png",
+      "oAP" : "\/deploy\/img\/reviews\/review1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -227,11 +214,24 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.42 PM.png" : {
+    "\/deploy\/img\/reviews\/review2.png" : {
       "ft" : 32768,
       "iS" : 2487311,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.42 PM.png",
+      "oAP" : "\/deploy\/img\/reviews\/review2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.35 PM.png" : {
+      "ft" : 32768,
+      "iS" : 4342065,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Screenshot 2023-02-14 at 6.11.35 PM.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -291,6 +291,14 @@
       "oAP" : "\/dev\/content\/Index\/addons.html",
       "oF" : 0
     },
+    "\/dev\/content\/Index\/familyhero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Index\/familyhero.html",
+      "oF" : 0
+    },
     "\/dev\/content\/Index\/price.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -305,6 +313,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/Index\/producthero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Index\/reviews.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Index\/reviews.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
