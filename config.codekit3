@@ -283,6 +283,22 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
     },
+    "\/dev\/content\/Cart\/card.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Cart\/card.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Checkout\/contact.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Checkout\/contact.html",
+      "oF" : 0
+    },
     "\/dev\/content\/Index\/addons.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -329,6 +345,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/Index\/reviews.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/ThankYou\/thx.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/ThankYou\/thx.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
