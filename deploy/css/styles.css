@@ -327,6 +327,29 @@ template {
 /* =============
     Base
 ============= */
+.content-space-top {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .content-space-top {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-space-top {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  text-decoration: none;
+}
+
 /* =============
     Typography
 ============= */
