@@ -520,12 +520,12 @@ li a:link:active, li a:visited:active {
 #main-header > div {
   grid-area: main;
   display: grid;
-  grid-template-columns: 5, 1fr;
-  grid-template-areas: "logo burger" "nava shopping";
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nava nava";
 }
 @media (min-width: 1024px) {
   #main-header > div {
-    grid-template-areas: "logo nava nava shopping";
+    grid-template-areas: "logo nava ";
   }
 }
 #main-header > div #glowlogo {
@@ -994,6 +994,7 @@ img {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+  background-color: var(--gfblue);
 }
 #needidig > div {
   grid-area: main;
@@ -1006,12 +1007,13 @@ img {
   padding-right: 24px;
   justify-content: center;
   color: var(--gfgold);
+  margin-top: 100px;
 }
 #needidig > div #titlethanks #actualfont {
   font-size: 1.25rem;
   padding-left: 32px;
   padding-right: 32px;
-  color: var(--gfbluedark);
+  color: var(--white);
 }
 @media (min-width: 768px) {
   #needidig > div #titlethanks #actualfont {
@@ -1023,7 +1025,29 @@ img {
     font-size: 3rem;
   }
 }
-#needidig > div #titlethanks #centertext {
-  display: flex;
-  justify-content: center;
+#needidig > div #centertext {
+  text-align: center;
+  margin-bottom: 100px;
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  #needidig > div #centertext {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  #needidig > div #centertext {
+    margin-bottom: 150px;
+  }
+}
+#needidig > div #centertext a:link, #needidig > div #centertext a:visited {
+  color: var(--white);
+}
+#needidig > div #centertext a:link:hover, #needidig > div #centertext a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+#needidig > div #centertext a:link:active, #needidig > div #centertext a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
 }
