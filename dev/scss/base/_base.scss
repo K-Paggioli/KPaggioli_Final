@@ -44,7 +44,7 @@ a{
 
 .show-extra-large{
     display:none;
-    @include xxl{
+    @include xl{
         display: block;
     }
 }

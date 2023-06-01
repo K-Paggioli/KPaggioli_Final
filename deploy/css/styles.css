@@ -350,9 +350,62 @@ address {
   text-decoration: none;
 }
 
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
+.show-med {
+  display: none;
+}
+@media (min-width: 576px) {
+  .show-med {
+    display: block;
+  }
+}
+
+.show-small {
+  display: block;
+}
+@media (min-width: 576px) {
+  .show-small {
+    display: none;
+  }
+}
+
+.show-extra-large {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .show-extra-large {
+    display: block;
+  }
+}
+
+.button-spacing {
+  padding: 4px 16px;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 h2 h3 {
+  font-family: "Arno", serif;
+}
+
 /* =============
     Buttons
 ============= */
