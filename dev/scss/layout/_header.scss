@@ -2,98 +2,145 @@
     Header  (SPECIFY BRANCH TO GRADE VIA FINAL)
 ============= */
 
-#main-header{
+header {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
     box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
 
-    >div{
+    >div {
         grid-area: main;
         display: grid;
-        grid-template-columns: (3, 1fr);
+        grid-template-columns: (2, 1fr);
         grid-template-areas:
-        "h1 . h2"
-        "h1 . h3";
+            "logo burger "
+            "nav nav";
+            padding: 24px 0;
 
-        @include lg{
-        grid-template-areas:
-        "h1 h3 h3"
+        @include lg {
+            grid-template-columns:20% auto;
+            grid-template-areas:
+            "logo nav";
         }
-        #glowlogo{
-            grid-area:h1;
+
+        #glowlogo {
+            grid-area: logo;
             padding-top: 10px;
 
-            #pin{
-                @include md{
+            #pin {
+                padding-top: 9px;
+
+                @include lg {
                     display: none;
                 }
 
             }
-            #type{
-                display: none;
-                @include md{
-                    display: block;
-                }
 
-                @include lg{
-                    padding-top: 14px;
+            #type {
+                display: none;
+
+                @include lg {
+                    display: block;
+                    // padding-top: 14px;
+                    // width: 100%;
                 }
 
             }
 
         }
-        #burger-container{
-            grid-area: h2;
+
+        #burger-container {
+            grid-area: burger;
             display: flex;
             align-items: center;
             justify-content: right;
             padding-left: 16px;
             padding: 16px 0px 16px 0px;
-            #burger-btm{
-               
+
+            #burger-btn {
+                border: none;
+                background-color: var(--white);
+                font-size: rem-calc(40);
+                color: var(--gfbluedark);
+                cursor: pointer;
+                transition: .25s;
+
+                &:hover {
+                    color: var(--gfblue);
+                }
+
+                &:active {
+                    color: var(--gfgold);
+                }
+
+                @include lg {
+                    display: none;
+                }
+
             }
 
 
-            @include lg{
+            @include lg {
                 display: none;
             }
         }
-        #main-menu{
-            grid-area: h3;
-            font-size: rem-calc(16);
-            font-weight: 600;
-            padding: 8px;
 
-            ul{
-                display: flex;
-                justify-content: flex-start;
-                margin-top: 26px;
+        #main-menu {
+            grid-area: nav;
+            ul {
                 li{
-                    list-style: none;
-                    padding: 0px 16px 0px 16px;
-                }
-
-                #font-cart{
 
                 }
-
-                #log{
-
-                }
-
-                #sign{
-                    margin-top: -12px;
-
-                }
-
             }
+            // font-size: rem-calc(16);
+            // font-weight: 600;
+            // padding: 8px;
+            // // margin-right: auto;
+
+            // ul {
+            //     display: flex;
+            //     // justify-content: flex-start;
+            //     margin-top: 26px;
+            //     width: 100%;
+
+            //     li {
+            //         list-style: none;
+            //         padding-right: 32px;
+            //     }
+
+            // }
 
         }
-        #main-menu-2{
 
-            display: none;
-        }
+        // #main-menu-2 {
+        //     grid-area: h4;
+        //     font-size: rem-calc(16);
+        //     font-weight: 600;
+        //     padding: 8px;
+        //     // margin-left: auto;
+
+        //     ul {
+        //         display: flex;
+        //         // justify-content: flex-start;
+        //         margin-top: 26px;
+
+        //         li {
+        //             list-style: none;
+        //             padding: 0px 16px 0px 16px;
+        //         }
+
+        //         #font-cart {}
+
+        //         #log {}
+
+        //         #sign {
+        //             margin-top: -12px;
+
+        //         }
+
+        //     }
+
+        // }
     }
 }
 
@@ -219,7 +266,6 @@ keeps breaking, want to restart to see what i did wrong
 
 
 
-img{
+img {
     height: 40px;
 }
-

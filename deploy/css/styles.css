@@ -342,6 +342,14 @@ body {
   color: var(--black);
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .content-space-top {
   margin-top: 40px;
 }
@@ -427,23 +435,18 @@ h1 h2 h3 {
 .blue-button {
   background-color: var(--gfblue);
   color: white !important;
-  padding: 12px 18px;
+  padding: 12px 18px !important;
   display: inline-block;
   border-radius: 14px;
-  font-weight: 600 !important;
-  font-size: 0.875rem !important;
-  line-height: 16px;
-}
-.blue-button a:link, .blue-button a:visited {
-  background-color: var(--gfblue) !important;
-}
-.blue-button a:link:hover, .blue-button a:visited:hover {
-  background-color: var(--gfbluelight) !important;
+  font-weight: 600;
+  font-size: 0.875rem;
   transition: 0.25s;
 }
-.blue-button a:link:active, .blue-button a:visited:active {
-  background-color: var(--gfgold) !important;
-  transition: 0.25s;
+.blue-button:active {
+  color: var(--gfgold) !important;
+}
+.blue-button:hover {
+  background-color: var(--gfbluelight);
 }
 
 /* =============
@@ -483,105 +486,124 @@ html {
     display: block;
   }
 }
-
-#main-menu-2 {
-  display: none;
-}
 @media (min-width: 1024px) {
-  #main-menu-2 {
-    display: block;
+  #main-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
   }
 }
-
-li a:link, li a:visited {
+#main-menu ul li {
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #main-menu ul li {
+    margin-left: 24px;
+  }
+}
+#main-menu ul li a:link,
+#main-menu ul li a:visited {
   display: inline-block;
   transition: 0.25s;
   color: var(--gfbluedark);
+  padding-bottom: 24px;
 }
-li a:link:hover, li a:visited:hover {
+#main-menu ul li a:link:hover,
+#main-menu ul li a:visited:hover {
   color: var(--gfblue);
 }
-li a:link:active, li a:visited:active {
+#main-menu ul li a:link:active,
+#main-menu ul li a:visited:active {
   color: var(--gfgold);
+}
+@media (min-width: 1024px) {
+  #main-menu ul li a:link,
+  #main-menu ul li a:visited {
+    padding-bottom: 0;
+  }
+}
+#main-menu ul #gallery-button {
+  margin-right: auto;
 }
 
 /* =============
     Header  (SPECIFY BRANCH TO GRADE VIA FINAL)
 ============= */
-#main-header {
+header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
   box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
 }
-#main-header > div {
+header > div {
   grid-area: main;
   display: grid;
-  grid-template-columns: 3, 1fr;
-  grid-template-areas: "h1 . h2" "h1 . h3";
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: "logo burger " "nav nav";
+  padding: 24px 0;
 }
 @media (min-width: 1024px) {
-  #main-header > div {
-    grid-template-areas: "h1 h3 h3";
+  header > div {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "logo nav";
   }
 }
-#main-header > div #glowlogo {
-  grid-area: h1;
+header > div #glowlogo {
+  grid-area: logo;
   padding-top: 10px;
 }
-@media (min-width: 768px) {
-  #main-header > div #glowlogo #pin {
+header > div #glowlogo #pin {
+  padding-top: 9px;
+}
+@media (min-width: 1024px) {
+  header > div #glowlogo #pin {
     display: none;
   }
 }
-#main-header > div #glowlogo #type {
+header > div #glowlogo #type {
   display: none;
 }
-@media (min-width: 768px) {
-  #main-header > div #glowlogo #type {
+@media (min-width: 1024px) {
+  header > div #glowlogo #type {
     display: block;
   }
 }
-@media (min-width: 1024px) {
-  #main-header > div #glowlogo #type {
-    padding-top: 14px;
-  }
-}
-#main-header > div #burger-container {
-  grid-area: h2;
+header > div #burger-container {
+  grid-area: burger;
   display: flex;
   align-items: center;
   justify-content: right;
   padding-left: 16px;
   padding: 16px 0px 16px 0px;
 }
+header > div #burger-container #burger-btn {
+  border: none;
+  background-color: var(--white);
+  font-size: 2.5rem;
+  color: var(--gfbluedark);
+  cursor: pointer;
+  transition: 0.25s;
+}
+header > div #burger-container #burger-btn:hover {
+  color: var(--gfblue);
+}
+header > div #burger-container #burger-btn:active {
+  color: var(--gfgold);
+}
 @media (min-width: 1024px) {
-  #main-header > div #burger-container {
+  header > div #burger-container #burger-btn {
     display: none;
   }
 }
-#main-header > div #main-menu {
-  grid-area: h3;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 8px;
+@media (min-width: 1024px) {
+  header > div #burger-container {
+    display: none;
+  }
 }
-#main-header > div #main-menu ul {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 26px;
+header > div #main-menu {
+  grid-area: nav;
 }
-#main-header > div #main-menu ul li {
-  list-style: none;
-  padding: 0px 16px 0px 16px;
-}
-#main-header > div #main-menu ul #sign {
-  margin-top: -12px;
-}
-#main-header > div #main-menu-2 {
-  display: none;
-}
-
 /*=====
 keeps breaking, want to restart to see what i did wrong
 #main-header{
@@ -749,13 +771,19 @@ footer > div #column1 #hidephone4 {
 @media (min-width: 1024px) {
   footer > div #column1 #hidephone4 {
     display: block;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     line-height: 18px;
     font-weight: 400;
   }
 }
 footer > div #column1 #mail {
   margin-top: -6px;
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  footer > div #column1 #mail {
+    font-size: 1rem;
+  }
 }
 footer > div #column1 #mail a:link, footer > div #column1 #mail a:visited {
   color: var(--gfbluedark);
@@ -770,6 +798,12 @@ footer > div #column1 #mail a:link:active, footer > div #column1 #mail a:visited
 }
 footer > div #column1 #call {
   margin-top: 12px;
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  footer > div #column1 #call {
+    font-size: 1rem;
+  }
 }
 footer > div #column1 #call a:link, footer > div #column1 #call a:visited {
   color: var(--gfbluedark);
@@ -784,6 +818,12 @@ footer > div #column1 #call a:link:active, footer > div #column1 #call a:visited
 }
 footer > div #column1 #contact #mail {
   margin-top: -12px;
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  footer > div #column1 #contact #mail {
+    font-size: 1rem;
+  }
 }
 footer > div #column1 #contact #mail a:link, footer > div #column1 #contact #mail a:visited {
   color: var(--gfbluedark);
@@ -798,6 +838,12 @@ footer > div #column1 #contact #mail a:link:active, footer > div #column1 #conta
 }
 footer > div #column1 #contact #address {
   margin-top: 12px;
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  footer > div #column1 #contact #address {
+    font-size: 1rem;
+  }
 }
 footer > div #column1 #contact #address .italicbegone {
   font-style: none;
@@ -833,6 +879,17 @@ footer > div #product #hidephone {
     list-style: none;
     padding-top: 12px;
   }
+  footer > div #product #hidephone li a:link, footer > div #product #hidephone li a:visited {
+    color: var(--gfbluedark);
+  }
+  footer > div #product #hidephone li a:link:hover, footer > div #product #hidephone li a:visited:hover {
+    color: var(--gfblue);
+    transition: 0.25s;
+  }
+  footer > div #product #hidephone li a:link:active, footer > div #product #hidephone li a:visited:active {
+    color: var(--gfgold);
+    transition: 0.25s;
+  }
 }
 footer > div #company {
   grid-area: company;
@@ -865,6 +922,17 @@ footer > div #company #hidephone2 {
     list-style: none;
     padding-top: 12px;
   }
+  footer > div #company #hidephone2 li a:link, footer > div #company #hidephone2 li a:visited {
+    color: var(--gfbluedark);
+  }
+  footer > div #company #hidephone2 li a:link:hover, footer > div #company #hidephone2 li a:visited:hover {
+    color: var(--gfblue);
+    transition: 0.25s;
+  }
+  footer > div #company #hidephone2 li a:link:active, footer > div #company #hidephone2 li a:visited:active {
+    color: var(--gfgold);
+    transition: 0.25s;
+  }
 }
 footer > div #community {
   grid-area: social;
@@ -890,22 +958,49 @@ footer > div #community #hidetitle {
 footer > div #community ul {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 6, 1fr;
-  grid-template-areas: "s1 s2 s3" "s4 s5 s6";
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 60px;
+  /* display: grid;
+  grid-template-columns: (6,1fr);
+  grid-template-areas:
+  "s1 s2 s3"
+  "s4 s5 s6";
   width: 100%;
   align-content: center;
+  @include md{
+      grid-template-areas:
+  "s1 s2 s3 s4 s5 s6";
+  }*/
+}
+@media (min-width: 576px) {
+  footer > div #community ul {
+    gap: 80px;
+  }
 }
 @media (min-width: 768px) {
   footer > div #community ul {
-    grid-template-areas: "s1 s2 s3 s4 s5 s6";
+    gap: 16px;
   }
 }
 footer > div #community ul #s1 {
-  grid-area: s1;
+  /*grid-area: s1;*/
   list-style: none;
   font-size: 2.5rem;
-  padding-right: 24px;
+  margin-top: -10px;
+}
+@media (min-width: 576px) {
+  footer > div #community ul #s1 {
+    margin-top: -6px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #community ul #s1 {
+    margin-top: 0;
+  }
 }
 footer > div #community ul #s1 a:link, footer > div #community ul #s1 a:visited {
   color: var(--gfbluedark);
@@ -919,10 +1014,20 @@ footer > div #community ul #s1 a:link:active, footer > div #community ul #s1 a:v
   transition: 0.25s;
 }
 footer > div #community ul #s2 {
-  grid-area: s2;
+  /*grid-area: s2;*/
   list-style: none;
   font-size: 2.5rem;
-  padding-right: 24px;
+  margin-top: -10px;
+}
+@media (min-width: 576px) {
+  footer > div #community ul #s2 {
+    margin-top: -6px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #community ul #s2 {
+    margin-top: 0;
+  }
 }
 footer > div #community ul #s2 a:link, footer > div #community ul #s2 a:visited {
   color: var(--gfbluedark);
@@ -936,10 +1041,20 @@ footer > div #community ul #s2 a:link:active, footer > div #community ul #s2 a:v
   transition: 0.25s;
 }
 footer > div #community ul #s3 {
-  grid-area: s3;
+  /*grid-area: s3;*/
   list-style: none;
   font-size: 2.5rem;
-  padding-right: 24px;
+  margin-top: -10px;
+}
+@media (min-width: 576px) {
+  footer > div #community ul #s3 {
+    margin-top: -6px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #community ul #s3 {
+    margin-top: 0;
+  }
 }
 footer > div #community ul #s3 a:link, footer > div #community ul #s3 a:visited {
   color: var(--gfbluedark);
@@ -953,10 +1068,20 @@ footer > div #community ul #s3 a:link:active, footer > div #community ul #s3 a:v
   transition: 0.25s;
 }
 footer > div #community ul #s4 {
-  grid-area: s4;
+  /*grid-area: s4;*/
   list-style: none;
   font-size: 2.5rem;
-  padding-right: 24px;
+  margin-top: -48px;
+}
+@media (min-width: 576px) {
+  footer > div #community ul #s4 {
+    margin-top: -80px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #community ul #s4 {
+    margin-top: 0;
+  }
 }
 footer > div #community ul #s4 a:link, footer > div #community ul #s4 a:visited {
   color: var(--gfbluedark);
@@ -970,10 +1095,20 @@ footer > div #community ul #s4 a:link:active, footer > div #community ul #s4 a:v
   transition: 0.25s;
 }
 footer > div #community ul #s5 {
-  grid-area: s5;
+  /*grid-area: s5;*/
   list-style: none;
   font-size: 2.5rem;
-  padding-right: 24px;
+  margin-top: -48px;
+}
+@media (min-width: 576px) {
+  footer > div #community ul #s5 {
+    margin-top: -80px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #community ul #s5 {
+    margin-top: 0;
+  }
 }
 footer > div #community ul #s5 a:link, footer > div #community ul #s5 a:visited {
   color: var(--gfbluedark);
@@ -987,9 +1122,20 @@ footer > div #community ul #s5 a:link:active, footer > div #community ul #s5 a:v
   transition: 0.25s;
 }
 footer > div #community ul #s6 {
-  grid-area: s6;
+  /*grid-area: s6;*/
   list-style: none;
   font-size: 2.5rem;
+  margin-top: -48px;
+}
+@media (min-width: 576px) {
+  footer > div #community ul #s6 {
+    margin-top: -80px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #community ul #s6 {
+    margin-top: 0;
+  }
 }
 footer > div #community ul #s6 a:link, footer > div #community ul #s6 a:visited {
   color: var(--gfbluedark);
