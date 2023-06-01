@@ -906,6 +906,11 @@ footer > div #community ul #s6 a:link:active, footer > div #community ul #s6 a:v
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+  background-color: var(--gfbluedark);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
 }
 @media (min-width: 1200px) {
   #copyright {
@@ -925,10 +930,21 @@ footer > div #community ul #s6 a:link:active, footer > div #community ul #s6 a:v
 }
 #copyright #moregrid img {
   grid-area: img;
+  padding-top: 16px;
+  height: 24px;
+}
+@media (min-width: 1024px) {
+  #copyright #moregrid img {
+    height: 36px;
+    padding-top: 36px;
+  }
 }
 #copyright #moregrid #hidephone3 {
   grid-area: phone;
   display: none;
+  font-size: 1.25rem;
+  line-height: 24px;
+  font-weight: 400;
 }
 @media (min-width: 1024px) {
   #copyright #moregrid #hidephone3 {
@@ -939,6 +955,17 @@ footer > div #community ul #s6 a:link:active, footer > div #community ul #s6 a:v
 #copyright #moregrid p {
   grid-area: p;
   text-align: left;
+  padding-bottom: 24px;
+  width: 100%;
+  padding-right: 40px;
+}
+@media (min-width: 1024px) {
+  #copyright #moregrid p {
+    font-size: 0.75rem;
+    line-height: 14.4px;
+    padding-bottom: 48px;
+    margin-top: -24px;
+  }
 }
 
 img {
