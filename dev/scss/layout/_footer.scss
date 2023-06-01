@@ -22,7 +22,7 @@ footer{
         "sales social";
 
         @include lg{
-            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-columns: 25% 20% 20% 35%;
             grid-template-areas: 
             "sales product company social";
         }
@@ -31,11 +31,67 @@ footer{
 
         #column1{
             grid-area: sales;
+            padding-right: 32px;
+            h4{
+                padding-bottom: 8px;
+                border-bottom: 3px solid var(--gfblue); 
+                font-size: rem-calc(20);
+                font-weight: 600;
+                
+            }
+            #hidephone4{
+                margin-top: -12px;
+                display: none;
+                @include lg{
+                    display: block;
+                    font-size: rem-calc(15);
+                    line-height: 18px;
+                    font-weight:400;
+
+                }
+            }
+            #mail{
+                margin-top: -6px;
+                a:link, a:visited{
+                    color: var(--gfbluedark);
+                    
+                        &:hover{
+                            color: var(--gfblue);
+                            transition: 0.25s;
+                        }
+                        &:active{
+                            color: var(--gfgold);
+                            transition: 0.25s;
+                        }
+                    }
+            }
+            #call{
+                margin-top: 12px;
+                a:link, a:visited{
+                    color: var(--gfbluedark);
+                    
+                        &:hover{
+                            color: var(--gfblue);
+                            transition: 0.25s;
+                        }
+                        &:active{
+                            color: var(--gfgold);
+                            transition: 0.25s;
+                        }
+                    }
+            }
 
         }
 
         #product{
             grid-area: product;
+            padding-right: 32px;
+            h4{
+                padding-bottom: 8px;
+                border-bottom: 3px solid var(--gfblue); 
+                font-size: rem-calc(20);
+                
+            }
 
             #hidephone{
                 display: none;
@@ -47,6 +103,13 @@ footer{
         }
         #company{
             grid-area: company;
+            padding-right: 32px;
+            h4{
+                padding-bottom: 8px;
+                border-bottom: 3px solid var(--gfblue); 
+                font-size: rem-calc(20);
+                
+            }
             #hidephone2{
                 display: none;
                 @include lg{
@@ -57,6 +120,12 @@ footer{
         }
         #community{
             grid-area: social;
+            h4{
+                padding-bottom: 8px;
+                border-bottom: 3px solid var(--gfblue); 
+                font-size: rem-calc(20);
+                
+            }
         }
     }
 }
@@ -66,13 +135,23 @@ footer{
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
 
+    @include xl{
+        grid-template-columns: auto 1168px auto;
+    }
+
     #moregrid{
     grid-area: main;
     display: grid; 
     grid-template-columns: 50% auto;
     grid-template-areas:
-    "img phone"
-    "p ."
+    "img ."
+    "p .";
+
+    @include lg{
+        grid-template-areas:
+        "img phone"
+        "p .";
+
     }
     img{
         grid-area: img;
@@ -82,6 +161,7 @@ footer{
         display: none;
         @include lg{
             display: block;
+            text-align: right;
         }
         
     }
@@ -90,6 +170,9 @@ footer{
         grid-area: p;
         text-align: left;
     }
+
+    }
+    
 
 }
 

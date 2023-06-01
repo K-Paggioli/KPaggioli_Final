@@ -628,15 +628,68 @@ footer > div {
 }
 @media (min-width: 1024px) {
   footer > div {
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 20% 20% 35%;
     grid-template-areas: "sales product company social";
   }
 }
 footer > div #column1 {
   grid-area: sales;
+  padding-right: 32px;
+}
+footer > div #column1 h4 {
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--gfblue);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+footer > div #column1 #hidephone4 {
+  margin-top: -12px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer > div #column1 #hidephone4 {
+    display: block;
+    font-size: 0.9375rem;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+footer > div #column1 #mail {
+  margin-top: -6px;
+}
+footer > div #column1 #mail a:link, footer > div #column1 #mail a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #column1 #mail a:link:hover, footer > div #column1 #mail a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #column1 #mail a:link:active, footer > div #column1 #mail a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
+}
+footer > div #column1 #call {
+  margin-top: 12px;
+}
+footer > div #column1 #call a:link, footer > div #column1 #call a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #column1 #call a:link:hover, footer > div #column1 #call a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #column1 #call a:link:active, footer > div #column1 #call a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
 }
 footer > div #product {
   grid-area: product;
+  padding-right: 32px;
+}
+footer > div #product h4 {
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--gfblue);
+  font-size: 1.25rem;
 }
 footer > div #product #hidephone {
   display: none;
@@ -648,6 +701,12 @@ footer > div #product #hidephone {
 }
 footer > div #company {
   grid-area: company;
+  padding-right: 32px;
+}
+footer > div #company h4 {
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--gfblue);
+  font-size: 1.25rem;
 }
 footer > div #company #hidephone2 {
   display: none;
@@ -660,31 +719,47 @@ footer > div #company #hidephone2 {
 footer > div #community {
   grid-area: social;
 }
+footer > div #community h4 {
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--gfblue);
+  font-size: 1.25rem;
+}
 
 #copyright {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
 }
+@media (min-width: 1200px) {
+  #copyright {
+    grid-template-columns: auto 1168px auto;
+  }
+}
 #copyright #moregrid {
   grid-area: main;
   display: grid;
   grid-template-columns: 50% auto;
-  grid-template-areas: "img phone" "p .";
+  grid-template-areas: "img ." "p .";
 }
-#copyright img {
+@media (min-width: 1024px) {
+  #copyright #moregrid {
+    grid-template-areas: "img phone" "p .";
+  }
+}
+#copyright #moregrid img {
   grid-area: img;
 }
-#copyright #hidephone3 {
+#copyright #moregrid #hidephone3 {
   grid-area: phone;
   display: none;
 }
 @media (min-width: 1024px) {
-  #copyright #hidephone3 {
+  #copyright #moregrid #hidephone3 {
     display: block;
+    text-align: right;
   }
 }
-#copyright p {
+#copyright #moregrid p {
   grid-area: p;
   text-align: left;
 }
