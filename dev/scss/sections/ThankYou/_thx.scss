@@ -14,11 +14,13 @@
             padding-left: 24px;
             padding-right: 24px;
             justify-content:center;
+            color: var(--gfgold);
 
             #actualfont{
-                font-size: rem-calc(22px);
+                font-size: rem-calc(20px);
                 padding-left: 32px;
                 padding-right: 32px;
+                color: var(--gfbluedark);
 
                 @include md{
                     font-size: rem-calc(32px);
