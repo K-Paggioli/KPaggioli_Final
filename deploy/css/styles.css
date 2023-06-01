@@ -443,7 +443,7 @@ h1 h2 h3 {
   transition: 0.25s;
 }
 .blue-button:active {
-  color: var(--gfgold) !important;
+  background-color: var(--gfgold) !important;
 }
 .blue-button:hover {
   background-color: var(--gfbluelight);
