@@ -613,7 +613,80 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
   box-sizing: border-box;
-  box-shadow: 0px -12px 10px rgba(0, 35, 50, 0.25);
+  box-shadow: 0px -12px 10px rgba(0, 35, 50, 0.12);
+}
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: auto 1168px auto;
+  }
+}
+footer > div {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "sales product" "sales company" "sales social";
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "sales product company social";
+  }
+}
+footer > div #column1 {
+  grid-area: sales;
+}
+footer > div #product {
+  grid-area: product;
+}
+footer > div #product #hidephone {
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer > div #product #hidephone {
+    display: block;
+  }
+}
+footer > div #company {
+  grid-area: company;
+}
+footer > div #company #hidephone2 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer > div #company #hidephone2 {
+    display: block;
+  }
+}
+footer > div #community {
+  grid-area: social;
+}
+
+#copyright {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#copyright #moregrid {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "img phone" "p .";
+}
+#copyright img {
+  grid-area: img;
+}
+#copyright #hidephone3 {
+  grid-area: phone;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #copyright #hidephone3 {
+    display: block;
+  }
+}
+#copyright p {
+  grid-area: p;
+  text-align: left;
 }
 
 img {
