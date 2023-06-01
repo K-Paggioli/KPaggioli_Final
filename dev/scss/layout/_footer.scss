@@ -352,7 +352,7 @@ footer{
         height: 24px;
 
         @include lg{
-            height: 36px;
+            height: 40px;
             padding-top: 36px;
         }
     }
@@ -376,13 +376,12 @@ footer{
         text-align: left;
         padding-bottom: 24px;
         width: 100%;
-        padding-right: 40px;
 
         @include lg{
             font-size: rem-calc(12);
             line-height: 14.4px;
             padding-bottom: 48px;
-            margin-top: -24px
+            margin-top: -20px
         }
     }
 

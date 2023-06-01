@@ -935,7 +935,7 @@ footer > div #community ul #s6 a:link:active, footer > div #community ul #s6 a:v
 }
 @media (min-width: 1024px) {
   #copyright #moregrid img {
-    height: 36px;
+    height: 40px;
     padding-top: 36px;
   }
 }
@@ -957,14 +957,13 @@ footer > div #community ul #s6 a:link:active, footer > div #community ul #s6 a:v
   text-align: left;
   padding-bottom: 24px;
   width: 100%;
-  padding-right: 40px;
 }
 @media (min-width: 1024px) {
   #copyright #moregrid p {
     font-size: 0.75rem;
     line-height: 14.4px;
     padding-bottom: 48px;
-    margin-top: -24px;
+    margin-top: -20px;
   }
 }
 
