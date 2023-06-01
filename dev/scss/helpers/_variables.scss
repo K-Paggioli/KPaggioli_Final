@@ -15,10 +15,22 @@ $screen-lg-min: 1024px;
 // Large desktops
 $screen-xl-min: 1200px;
 
+// Extra Large desktops
+$screen-xxl-min: 1440px;
 
 // Colors vars
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  --black: #12151A;
+  --white: #f5f5f5;
+  --gfblue: #4791A2;
+  --gfbluedark: #152F35;
+  --gfbluelight: #5AB5CB;
+  --gfgrey: #E0E0E0;
+  --gfgold: #DDB141;
+  --gfred: #DB401E;
+  --gfgreydark: #A7A7A7;
+  --hoverwhite: #D8F1F6;
+  --gfbluemed: #1D7180;
+  --overlaygrey: #D9D9D9;
 }
 
