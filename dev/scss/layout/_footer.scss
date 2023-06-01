@@ -1,7 +1,16 @@
 /* =============
     Footer
 ============= */
+footer{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
+    box-sizing: border-box;
+    box-shadow: 0px -12px 10px rgba(0, 35, 50, 0.25);
+    
+}
 
 img{
     height: 40px;
 }
+

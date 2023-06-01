@@ -1,6 +1,13 @@
 /* =============
     Base
 ============= */
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
 .content-space-top{
     margin-top: 16px;
 

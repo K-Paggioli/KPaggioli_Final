@@ -337,6 +337,11 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .content-space-top {
   margin-top: 16px;
 }
@@ -419,6 +424,17 @@ h1 h2 h3 {
 /* =============
     Buttons
 ============= */
+.blue-button {
+  background-color: var(--gfblue);
+  color: white;
+  padding: 12px 18px;
+  display: inline-block;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 16px;
+}
+
 /* =============
     Forms
 ============= */
@@ -440,6 +456,44 @@ textarea {
 /* =============
     Navigation
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+
+#main-menu {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #main-menu {
+    display: block;
+  }
+}
+
+#main-menu-2 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #main-menu-2 {
+    display: block;
+  }
+}
+
+li a:link, li a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--gfbluedark);
+}
+li a:link:hover, li a:visited:hover {
+  color: var(--gfblue);
+}
+li a:link:active, li a:visited:active {
+  color: var(--gfgold);
+}
+
 /* =============
     Header
 ============= */
@@ -450,25 +504,101 @@ textarea {
   z-index: 10000000000;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
 }
 #main-header > div {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 5, 1fr;
+  grid-template-areas: "logo burger" "nava shopping";
+}
+@media (min-width: 1024px) {
+  #main-header > div {
+    grid-template-areas: "logo nava nava shopping";
+  }
+}
+#main-header > div #glowlogo {
+  grid-area: logo;
+  padding: 20px 0px 0px;
+}
+#main-header > div #glowlogo #pin {
+  padding-right: 20px;
+}
+#main-header > div #glowlogo #type {
+  display: none;
+}
+#main-header > div #burger-container {
+  grid-area: burger;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: right;
+  padding-left: 16px;
+  padding: 16px 0px 16px 0px;
+}
+#main-header > div #burger-container #burger-btn {
+  border: none;
+  background-color: var(--white);
+  font-size: 2.5rem;
+  color: var(--gfbluedark);
+  cursor: pointer;
+  transition: 0.25s;
+}
+#main-header > div #burger-container #burger-btn:hover {
+  color: var(--gfblue);
+}
+#main-header > div #burger-container #burger-btn:active {
+  color: var(--gfgold);
+}
+@media (min-width: 1024px) {
+  #main-header > div #burger-container {
+    display: none;
+  }
+}
+#main-header > div #main-menu {
+  grid-area: nava;
 }
 #main-header > div #main-menu ul {
+  font-size: 1rem;
+  font-weight: 600;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 1024px) {
+  #main-header > div #main-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 26px;
+    cursor: pointer;
+  }
 }
 #main-header > div #main-menu ul li {
   list-style: none;
+  padding: 8px;
+}
+#main-header > div #main-menu-2 {
+  grid-area: shopping;
 }
 #main-header > div #main-menu-2 ul {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gfblue);
   margin: 0;
   padding: 0;
 }
+@media (min-width: 1024px) {
+  #main-header > div #main-menu-2 ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 26px;
+  }
+}
 #main-header > div #main-menu-2 ul li {
+  padding: 8px;
   list-style: none;
+}
+#main-header > div #main-menu-2 ul li #sign {
+  color: white;
+  margin-top: -18px;
 }
 
 img {
@@ -478,6 +608,14 @@ img {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+  box-sizing: border-box;
+  box-shadow: 0px -12px 10px rgba(0, 35, 50, 0.25);
+}
+
 img {
   height: 40px;
 }

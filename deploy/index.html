@@ -19,7 +19,7 @@
         <section ID="main-header">
             <div>
                 <section id="glowlogo">
-                    <a href="index.html"><img src="img/header/index.png" alt="glowforge's logo; a teal pin with the center slightly open, featuring a stylized g"><img src="img/header/tracetype.png" alt="teal lowercase type that reads: glowforge"></a>
+                    <a href="index.html"><img id="pin" src="img/header/index.png" alt="glowforge's logo; a teal pin with the center slightly open, featuring a stylized g"><img id="type" src="img/header/tracetype.png" alt="teal lowercase type that reads: glowforge"></a>
                 </section>
                 <section id="burger-container">
                     <button id="burger-btn"><i class="fa-solid fa-bars"></i></button>
@@ -49,19 +49,19 @@
                         </li>
                     </ul>
                 </nav>
-                <section id="main-menu-2">
+                <nav id="main-menu-2">
                     <ul>
-                        <li>
+                        <li id="fontcart">
                             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                         </li>
                         <li>
                             <a href="#">Login</a>
                         </li>
-                        <li>
-                            <a href="#">Sign Up</a>
+                        <li id="sign">
+                            <a href="#" class="blue-button">Sign Up</a>
                         </li>
                     </ul>
-                </section>
+                </nav>
             </div>
         </section>
     </header>
@@ -224,8 +224,7 @@
                         <button>?</button>
                     
                         <button>write a review</button>
-                    
-                </ul>   
+                       
             </section>
             <section>
                 <aside>
@@ -315,19 +314,21 @@
 
     <footer>
         <div>
-            <section>
-                <h4>Sales</h4>
-                <p>
-                    Speak with a Glowforge expert, you’ll be able to get fast answers to your questions and figure out which machine is right for you. 
-                </p>
-                <a href="mailto:sales@glowforge.com"></a>
-                <a href="#">+1-888-8GLOWFORGE</a>
-            </section>
-            <section>
-                <h4>Contact Us</h4>
-                <a href="mailto:hello@glowforge.com"></a>
-                <address>1938 Occidental Ave, S Suite C <br> Seattle, WA 98134</address>
-            </section>
+            <section id="column1">
+                <section>
+                    <h4>Sales</h4>
+                    <p>
+                        Speak with a Glowforge expert, you’ll be able to get fast answers to your questions and figure out which machine is right for you. 
+                    </p>
+                    <a href="mailto:sales@glowforge.com"></a>
+                    <a href="#">+1-888-8GLOWFORGE</a>
+                </section>
+                <section>
+                    <h4>Contact Us</h4>
+                    <a href="mailto:hello@glowforge.com"></a>
+                    <address>1938 Occidental Ave, S Suite C <br> Seattle, WA 98134</address>
+                </section>
+            </section> 
             <section>
                 <h4>Product</h4>
                 <ul>
@@ -410,14 +411,14 @@
                 </ul>
             </section>
         </div>
-        <div>
-            <section>
-                <img src="img/header/tracetype.png" alt="glowforge type logo in teal">
-                <h6>created with <i class="fa-solid fa-heart"></i> in Seattle<h6>
-                <p>Copyright 2022. Glowforge, Inc. All Rights Reserved</p>
+    </footer>
+    <div>
+        <section>
+            <img src="img/header/tracetype.png" alt="glowforge type logo in teal">
+            <h6>created with <i class="fa-solid fa-heart"></i> in Seattle<h6>
+            <p>Copyright 2022. Glowforge, Inc. All Rights Reserved</p>
             </section>
         </div>
-    </footer>
     
 </body>
 

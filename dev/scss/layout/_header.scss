@@ -9,36 +9,115 @@
         z-index: 10000000000;
         width:100%;
         box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
         >div{
             grid-area: main;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: (5, 1fr);
+            grid-template-areas: 
+            "logo burger"
+            "nava shopping";
+
+            @include lg{
+                grid-template-areas:
+                "logo nava nava shopping"
+            }
 
             #glowlogo{
+                grid-area: logo;
+                padding: 20px 0px 0px;
+                
+                #pin{
+                    padding-right: 20px;
+
+                }
+                #type{
+                    display: none;
+
+                }
 
             }
 
             #burger-container{
+                grid-area: burger;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-left: 16px;
+                padding: 16px 0px 16px 0px;
+                #burger-btn{
+                    border: none;
+                    background-color: var(--white);
+                    font-size: rem-calc(40);
+                    color: var(--gfbluedark);
+                    cursor: pointer;
+                    transition: .25s;
+                    &:hover{
+                    color: var(--gfblue);
+                    }
+                    &:active{
+                        color: var(--gfgold);
+                    }
+                }
+                @include lg{
+                    display: none;
+                }
 
             }
 
             #main-menu{
-                ul{
+                grid-area: nava;
+                
+                
+                ul{ 
+                    font-size: rem-calc(16);
+                    font-weight: 600;
+                    @include lg{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 26px;
+                  
+
+                    cursor: pointer;
+                }
                     margin: 0;
                     padding: 0;
                     li{
                         list-style: none;
+                        padding: 8px;
                     }
                 }
 
             }
 
             #main-menu-2{
+                grid-area: shopping;
+               
                 ul{
+                    font-size: rem-calc(16);
+                    font-weight: 600;
+                    color: var(--gfblue) ;
+
+                    @include lg{
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 26px;
+                    }
+                    
                     margin: 0;
                     padding: 0;
                     li{
+                        padding: 8px;
                         list-style: none;
+
+                        #fontcart{
+
+                        }
+
+                        #sign{
+                            color: white;
+                            margin-top:-18px;
+                        }
                     }
                 }
             }
