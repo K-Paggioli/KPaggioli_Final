@@ -2,6 +2,52 @@
     Header
 ============= */
 
+#main-header{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
+        z-index: 10000000000;
+        width:100%;
+        box-sizing: border-box;
+        >div{
+            grid-area: main;
+            display: flex;
+            justify-content: space-between;
+
+            #glowlogo{
+
+            }
+
+            #burger-container{
+
+            }
+
+            #main-menu{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                    }
+                }
+
+            }
+
+            #main-menu-2{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                    }
+                }
+            }
+        }
+        
+}
+
+
 img{
     height: 40px;
 }
+
