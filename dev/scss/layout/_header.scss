@@ -84,14 +84,25 @@
                     padding: 0;
                     li{
                         list-style: none;
-                        padding: 8px;
+                        padding: 16px;
                     }
+                        #fontcart{
+                        align-items: right; 
+                        box-sizing: border-box;
+
+
+                        }
+                        #sign{
+                            margin-top: -12px;
+
+                        }
                 }
 
             }
 
             #main-menu-2{
                 grid-area: shopping;
+                display: none;
                
                 ul{
                     font-size: rem-calc(16);

@@ -1,0 +1,41 @@
+
+#needidig{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
+
+
+    >div{
+        grid-area: main;
+        #titlethanks{
+            display: flex;
+            align-items: center;
+            font-size: rem-calc(24);
+            padding-left: 24px;
+            padding-right: 24px;
+            justify-content:center;
+
+            #actualfont{
+                font-size: rem-calc(22px);
+                padding-left: 32px;
+                padding-right: 32px;
+
+                @include md{
+                    font-size: rem-calc(32px);
+
+                }
+
+                @include lg{
+                    font-size: rem-calc(48);
+                }
+            }
+
+            #centertext{
+                display: flex;
+                justify-content:center;
+            }
+        }
+
+
+    }
+}
