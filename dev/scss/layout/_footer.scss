@@ -80,12 +80,36 @@ footer{
                         }
                     }
             }
-
+            #contact{
+                #mail{
+                    margin-top: -12px;
+                    a:link, a:visited{
+                        color: var(--gfbluedark);
+                        
+                            &:hover{
+                                color: var(--gfblue);
+                                transition: 0.25s;
+                            }
+                            &:active{
+                                color: var(--gfgold);
+                                transition: 0.25s;
+                            }
+                        }
+                    }
+                #address{
+                    margin-top: 12px;
+                    .italicbegone{
+                        font-style: none;
+                    }
+                }
+            }
         }
 
         #product{
             grid-area: product;
-            padding-right: 32px;
+            @include lg{
+                padding-right: 32px;
+            }
             h4{
                 padding-bottom: 8px;
                 border-bottom: 3px solid var(--gfblue); 
@@ -95,15 +119,31 @@ footer{
 
             #hidephone{
                 display: none;
+
                 @include lg{
                     display: block;
+                    margin-top: -24px;
+                    text-align: left;
+                    margin-left: 0;
+                    padding-left: 0;
+                    font-size: rem-calc(15);
+                    line-height: 18px;
+                    font-weight:400;
+                    li{
+                        list-style: none;
+                        padding-top: 12px;
+
+                    
+                    }
                 }
                 
             }
         }
         #company{
             grid-area: company;
-            padding-right: 32px;
+            @include lg{
+                padding-right: 32px;
+            }
             h4{
                 padding-bottom: 8px;
                 border-bottom: 3px solid var(--gfblue); 
@@ -114,17 +154,165 @@ footer{
                 display: none;
                 @include lg{
                     display: block;
+                    margin-top: -24px;
+                    text-align: left;
+                    margin-left: 0;
+                    padding-left: 0;
+                    font-size: rem-calc(15);
+                    line-height: 18px;
+                    font-weight:400;
+                    li{
+                        list-style: none;
+                        padding-top: 12px;
+
+                    
+                    }
                 }
                 
             }
         }
         #community{
             grid-area: social;
+            
+
             h4{
                 padding-bottom: 8px;
                 border-bottom: 3px solid var(--gfblue); 
                 font-size: rem-calc(20);
-                
+            }
+            #hidetitle{
+                display: none;
+
+                @include md{
+                    display: block;
+                }
+            }
+            #removetitle{
+                @include md{
+                    display: none;
+                }
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: (6,1fr);
+                grid-template-areas:
+                "s1 s2 s3"
+                "s4 s5 s6";
+                width: 100%;
+                @include md{
+                    grid-template-areas:
+                "s1 s2 s3 s4 s5 s6";
+                }
+                #s1{
+                    grid-area: s1;
+                    list-style: none;
+                    font-size: rem-calc(40);
+                    padding-right: 24px;
+                    a:link, a:visited{
+                        color: var(--gfbluedark);
+                        
+                            &:hover{
+                                color: var(--gfblue);
+                                transition: 0.25s;
+                            }
+                            &:active{
+                                color: var(--gfgold);
+                                transition: 0.25s;
+                            }
+                        }
+                }
+
+                #s2{
+                    grid-area: s2;
+                    list-style: none;
+                    font-size: rem-calc(40);
+                    padding-right: 24px;
+                    a:link, a:visited{
+                        color: var(--gfbluedark);
+                        
+                            &:hover{
+                                color: var(--gfblue);
+                                transition: 0.25s;
+                            }
+                            &:active{
+                                color: var(--gfgold);
+                                transition: 0.25s;
+                            }
+                        }
+                }
+                #s3{
+                    grid-area: s3;
+                    list-style: none;
+                    font-size: rem-calc(40);
+                    padding-right: 24px;
+                    a:link, a:visited{
+                        color: var(--gfbluedark);
+                        
+                            &:hover{
+                                color: var(--gfblue);
+                                transition: 0.25s;
+                            }
+                            &:active{
+                                color: var(--gfgold);
+                                transition: 0.25s;
+                            }
+                        }
+                }
+                #s4{
+                    grid-area: s4;
+                    list-style: none;
+                    font-size: rem-calc(40);
+                    padding-right: 24px;
+                    a:link, a:visited{
+                        color: var(--gfbluedark);
+                        
+                            &:hover{
+                                color: var(--gfblue);
+                                transition: 0.25s;
+                            }
+                            &:active{
+                                color: var(--gfgold);
+                                transition: 0.25s;
+                            }
+                        }
+                }
+                #s5{
+                    grid-area: s5;
+                    list-style: none;
+                    font-size: rem-calc(40);
+                    padding-right: 24px;
+                    a:link, a:visited{
+                        color: var(--gfbluedark);
+                        
+                            &:hover{
+                                color: var(--gfblue);
+                                transition: 0.25s;
+                            }
+                            &:active{
+                                color: var(--gfgold);
+                                transition: 0.25s;
+                            }
+                        }
+                }
+                #s6{
+                    grid-area: s6;
+                    list-style: none;
+                    font-size: rem-calc(40);
+                    a:link, a:visited{
+                        color: var(--gfbluedark);
+                        
+                            &:hover{
+                                color: var(--gfblue);
+                                transition: 0.25s;
+                            }
+                            &:active{
+                                color: var(--gfgold);
+                                transition: 0.25s;
+                            }
+                        }
+                }
             }
         }
     }

@@ -343,16 +343,16 @@ body {
 }
 
 .content-space-top {
-  margin-top: 16px;
+  margin-top: 40px;
 }
 @media (min-width: 768px) {
   .content-space-top {
-    margin-top: 24px;
+    margin-top: 48px;
   }
 }
 @media (min-width: 1024px) {
   .content-space-top {
-    margin-top: 30px;
+    margin-top: 64px;
     margin-left: 0;
   }
 }
@@ -682,9 +682,33 @@ footer > div #column1 #call a:link:active, footer > div #column1 #call a:visited
   color: var(--gfgold);
   transition: 0.25s;
 }
+footer > div #column1 #contact #mail {
+  margin-top: -12px;
+}
+footer > div #column1 #contact #mail a:link, footer > div #column1 #contact #mail a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #column1 #contact #mail a:link:hover, footer > div #column1 #contact #mail a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #column1 #contact #mail a:link:active, footer > div #column1 #contact #mail a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
+}
+footer > div #column1 #contact #address {
+  margin-top: 12px;
+}
+footer > div #column1 #contact #address .italicbegone {
+  font-style: none;
+}
 footer > div #product {
   grid-area: product;
-  padding-right: 32px;
+}
+@media (min-width: 1024px) {
+  footer > div #product {
+    padding-right: 32px;
+  }
 }
 footer > div #product h4 {
   padding-bottom: 8px;
@@ -697,11 +721,26 @@ footer > div #product #hidephone {
 @media (min-width: 1024px) {
   footer > div #product #hidephone {
     display: block;
+    margin-top: -24px;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 0.9375rem;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  footer > div #product #hidephone li {
+    list-style: none;
+    padding-top: 12px;
   }
 }
 footer > div #company {
   grid-area: company;
-  padding-right: 32px;
+}
+@media (min-width: 1024px) {
+  footer > div #company {
+    padding-right: 32px;
+  }
 }
 footer > div #company h4 {
   padding-bottom: 8px;
@@ -714,6 +753,17 @@ footer > div #company #hidephone2 {
 @media (min-width: 1024px) {
   footer > div #company #hidephone2 {
     display: block;
+    margin-top: -24px;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 0.9375rem;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  footer > div #company #hidephone2 li {
+    list-style: none;
+    padding-top: 12px;
   }
 }
 footer > div #community {
@@ -723,6 +773,133 @@ footer > div #community h4 {
   padding-bottom: 8px;
   border-bottom: 3px solid var(--gfblue);
   font-size: 1.25rem;
+}
+footer > div #community #hidetitle {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer > div #community #hidetitle {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #community #removetitle {
+    display: none;
+  }
+}
+footer > div #community ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 6, 1fr;
+  grid-template-areas: "s1 s2 s3" "s4 s5 s6";
+  width: 100%;
+}
+@media (min-width: 768px) {
+  footer > div #community ul {
+    grid-template-areas: "s1 s2 s3 s4 s5 s6";
+  }
+}
+footer > div #community ul #s1 {
+  grid-area: s1;
+  list-style: none;
+  font-size: 2.5rem;
+  padding-right: 24px;
+}
+footer > div #community ul #s1 a:link, footer > div #community ul #s1 a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #community ul #s1 a:link:hover, footer > div #community ul #s1 a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #community ul #s1 a:link:active, footer > div #community ul #s1 a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
+}
+footer > div #community ul #s2 {
+  grid-area: s2;
+  list-style: none;
+  font-size: 2.5rem;
+  padding-right: 24px;
+}
+footer > div #community ul #s2 a:link, footer > div #community ul #s2 a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #community ul #s2 a:link:hover, footer > div #community ul #s2 a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #community ul #s2 a:link:active, footer > div #community ul #s2 a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
+}
+footer > div #community ul #s3 {
+  grid-area: s3;
+  list-style: none;
+  font-size: 2.5rem;
+  padding-right: 24px;
+}
+footer > div #community ul #s3 a:link, footer > div #community ul #s3 a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #community ul #s3 a:link:hover, footer > div #community ul #s3 a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #community ul #s3 a:link:active, footer > div #community ul #s3 a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
+}
+footer > div #community ul #s4 {
+  grid-area: s4;
+  list-style: none;
+  font-size: 2.5rem;
+  padding-right: 24px;
+}
+footer > div #community ul #s4 a:link, footer > div #community ul #s4 a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #community ul #s4 a:link:hover, footer > div #community ul #s4 a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #community ul #s4 a:link:active, footer > div #community ul #s4 a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
+}
+footer > div #community ul #s5 {
+  grid-area: s5;
+  list-style: none;
+  font-size: 2.5rem;
+  padding-right: 24px;
+}
+footer > div #community ul #s5 a:link, footer > div #community ul #s5 a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #community ul #s5 a:link:hover, footer > div #community ul #s5 a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #community ul #s5 a:link:active, footer > div #community ul #s5 a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
+}
+footer > div #community ul #s6 {
+  grid-area: s6;
+  list-style: none;
+  font-size: 2.5rem;
+}
+footer > div #community ul #s6 a:link, footer > div #community ul #s6 a:visited {
+  color: var(--gfbluedark);
+}
+footer > div #community ul #s6 a:link:hover, footer > div #community ul #s6 a:visited:hover {
+  color: var(--gfblue);
+  transition: 0.25s;
+}
+footer > div #community ul #s6 a:link:active, footer > div #community ul #s6 a:visited:active {
+  color: var(--gfgold);
+  transition: 0.25s;
 }
 
 #copyright {
