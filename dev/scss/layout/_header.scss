@@ -1,7 +1,104 @@
 /* =============
-    Header
+    Header  (SPECIFY BRANCH TO GRADE VIA FINAL)
 ============= */
 
+#main-header{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
+    box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
+
+    >div{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-areas:
+        "h1 . h2"
+        "h1 . h3";
+
+        @include lg{
+        grid-template-areas:
+        "h1 h3 h3"
+        }
+        #glowlogo{
+            grid-area:h1;
+            padding-top: 10px;
+
+            #pin{
+                @include md{
+                    display: none;
+                }
+
+            }
+            #type{
+                display: none;
+                @include md{
+                    display: block;
+                }
+
+                @include lg{
+                    padding-top: 14px;
+                }
+
+            }
+
+        }
+        #burger-container{
+            grid-area: h2;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding-left: 16px;
+            padding: 16px 0px 16px 0px;
+            #burger-btm{
+               
+            }
+
+
+            @include lg{
+                display: none;
+            }
+        }
+        #main-menu{
+            grid-area: h3;
+            font-size: rem-calc(16);
+            font-weight: 600;
+            padding: 8px;
+
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 26px;
+                li{
+                    list-style: none;
+                    padding: 0px 16px 0px 16px;
+                }
+
+                #font-cart{
+
+                }
+
+                #log{
+
+                }
+
+                #sign{
+                    margin-top: -12px;
+
+                }
+
+            }
+
+        }
+        #main-menu-2{
+
+            display: none;
+        }
+    }
+}
+
+/*=====
+keeps breaking, want to restart to see what i did wrong
 #main-header{
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -12,9 +109,6 @@
         box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
         >div{
             grid-area: main;
-            display: flex;
-            justify-content: left;
-
             #glowlogo{
                 grid-area: logo;
                 padding: 20px 0px 0px;
@@ -31,7 +125,6 @@
             }
 
             #burger-container{
-                grid-area: burger;
                 display: flex;
                 align-items: center;
                 justify-content: right;
@@ -58,9 +151,6 @@
             }
 
             #main-menu{
-                grid-area: nava;
-                
-                
                 ul{ 
                     font-size: rem-calc(16);
                     font-weight: 600;
@@ -93,7 +183,6 @@
             }
 
             #main-menu-2{
-                grid-area: shopping;
                 display: none;
                
                 ul{
@@ -126,7 +215,8 @@
             }
         }
         
-}
+} ============= */
+
 
 
 img{

@@ -201,6 +201,7 @@ footer{
                 "s1 s2 s3"
                 "s4 s5 s6";
                 width: 100%;
+                align-content: center;
                 @include md{
                     grid-template-areas:
                 "s1 s2 s3 s4 s5 s6";

@@ -123,6 +123,32 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/header\/gfFull.png" : {
+      "ft" : 32768,
+      "iS" : 96779,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/gfFull.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/header\/gfPin.png" : {
+      "ft" : 32768,
+      "iS" : 60695,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/gfPin.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/header\/index.png" : {
       "ft" : 32768,
       "iS" : 3914,

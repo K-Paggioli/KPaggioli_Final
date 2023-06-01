@@ -506,59 +506,54 @@ li a:link:active, li a:visited:active {
 }
 
 /* =============
-    Header
+    Header  (SPECIFY BRANCH TO GRADE VIA FINAL)
 ============= */
 #main-header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
-  z-index: 10000000000;
-  width: 100%;
-  box-sizing: border-box;
   box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
 }
 #main-header > div {
   grid-area: main;
   display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: "logo burger" "nava nava";
+  grid-template-columns: 3, 1fr;
+  grid-template-areas: "h1 . h2" "h1 . h3";
 }
 @media (min-width: 1024px) {
   #main-header > div {
-    grid-template-areas: "logo nava ";
+    grid-template-areas: "h1 h3 h3";
   }
 }
 #main-header > div #glowlogo {
-  grid-area: logo;
-  padding: 20px 0px 0px;
+  grid-area: h1;
+  padding-top: 10px;
 }
-#main-header > div #glowlogo #pin {
-  padding-right: 20px;
+@media (min-width: 768px) {
+  #main-header > div #glowlogo #pin {
+    display: none;
+  }
 }
 #main-header > div #glowlogo #type {
   display: none;
 }
+@media (min-width: 768px) {
+  #main-header > div #glowlogo #type {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #main-header > div #glowlogo #type {
+    padding-top: 14px;
+  }
+}
 #main-header > div #burger-container {
-  grid-area: burger;
+  grid-area: h2;
   display: flex;
   align-items: center;
   justify-content: right;
   padding-left: 16px;
   padding: 16px 0px 16px 0px;
-}
-#main-header > div #burger-container #burger-btn {
-  border: none;
-  background-color: var(--white);
-  font-size: 2.5rem;
-  color: var(--gfbluedark);
-  cursor: pointer;
-  transition: 0.25s;
-}
-#main-header > div #burger-container #burger-btn:hover {
-  color: var(--gfblue);
-}
-#main-header > div #burger-container #burger-btn:active {
-  color: var(--gfgold);
 }
 @media (min-width: 1024px) {
   #main-header > div #burger-container {
@@ -566,60 +561,146 @@ li a:link:active, li a:visited:active {
   }
 }
 #main-header > div #main-menu {
-  grid-area: nava;
-}
-#main-header > div #main-menu ul {
+  grid-area: h3;
   font-size: 1rem;
   font-weight: 600;
-  margin: 0;
-  padding: 0;
+  padding: 8px;
 }
-@media (min-width: 1024px) {
-  #main-header > div #main-menu ul {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 26px;
-    cursor: pointer;
-  }
+#main-header > div #main-menu ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 26px;
 }
 #main-header > div #main-menu ul li {
   list-style: none;
-  padding: 16px;
-}
-#main-header > div #main-menu ul #fontcart {
-  align-items: right;
-  box-sizing: border-box;
+  padding: 0px 16px 0px 16px;
 }
 #main-header > div #main-menu ul #sign {
   margin-top: -12px;
 }
 #main-header > div #main-menu-2 {
-  grid-area: shopping;
   display: none;
 }
-#main-header > div #main-menu-2 ul {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--gfblue);
-  margin: 0;
-  padding: 0;
-}
-@media (min-width: 1024px) {
-  #main-header > div #main-menu-2 ul {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 26px;
-  }
-}
-#main-header > div #main-menu-2 ul li {
-  padding: 8px;
-  list-style: none;
-}
-#main-header > div #main-menu-2 ul li #sign {
-  color: white;
-  margin-top: -18px;
-}
 
+/*=====
+keeps breaking, want to restart to see what i did wrong
+#main-header{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
+        z-index: 10000000000;
+        width:100%;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
+        >div{
+            grid-area: main;
+            #glowlogo{
+                grid-area: logo;
+                padding: 20px 0px 0px;
+
+                #pin{
+                    padding-right: 20px;
+
+                }
+                #type{
+                    display: none;
+
+                }
+
+            }
+
+            #burger-container{
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-left: 16px;
+                padding: 16px 0px 16px 0px;
+                #burger-btn{
+                    border: none;
+                    background-color: var(--white);
+                    font-size: rem-calc(40);
+                    color: var(--gfbluedark);
+                    cursor: pointer;
+                    transition: .25s;
+                    &:hover{
+                    color: var(--gfblue);
+                    }
+                    &:active{
+                        color: var(--gfgold);
+                    }
+                }
+                @include lg{
+                    display: none;
+                }
+
+            }
+
+            #main-menu{
+                ul{ 
+                    font-size: rem-calc(16);
+                    font-weight: 600;
+                    @include lg{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 26px;
+
+
+                    cursor: pointer;
+                }
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        padding: 16px;
+                    }
+                        #fontcart{
+                        align-items:; 
+                        box-sizing: border-box;
+
+
+                        }
+                        #sign{
+                            margin-top: -12px;
+
+                        }
+                }
+
+            }
+
+            #main-menu-2{
+                display: none;
+
+                ul{
+                    font-size: rem-calc(16);
+                    font-weight: 600;
+                    color: var(--gfblue) ;
+
+                    @include lg{
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 26px;
+                    }
+
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        padding: 8px;
+                        list-style: none;
+
+                        #fontcart{
+
+                        }
+
+                        #sign{
+                            color: white;
+                            margin-top:-18px;
+                        }
+                    }
+                }
+            }
+        }
+
+} ============= */
 img {
   height: 40px;
 }
@@ -813,6 +894,7 @@ footer > div #community ul {
   grid-template-columns: 6, 1fr;
   grid-template-areas: "s1 s2 s3" "s4 s5 s6";
   width: 100%;
+  align-content: center;
 }
 @media (min-width: 768px) {
   footer > div #community ul {
