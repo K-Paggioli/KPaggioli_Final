@@ -1199,6 +1199,9 @@ footer > div #community ul #s6 a:link:active, footer > div #community ul #s6 a:v
     text-align: right;
   }
 }
+#copyright #moregrid #heart {
+  padding: 0px 6px 0px 4px;
+}
 #copyright #moregrid p {
   grid-area: p;
   text-align: left;
