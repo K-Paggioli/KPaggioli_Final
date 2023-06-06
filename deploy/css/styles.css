@@ -1628,7 +1628,7 @@ img {
 @media (min-width: 768px) {
   #grid > div #family-position {
     display: grid;
-    grid-template-columns: "16px auto 16px";
+    grid-template-columns: "4px auto 4px";
     grid-template-areas: ". main.";
     margin-top: -350px;
     margin-bottom: 200px;
@@ -2109,36 +2109,55 @@ img {
   margin-bottom: 80px;
   border-radius: 16px;
 }
+#gridcard > div #cart-main h1 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 24.7px;
+  padding-bottom: 8px;
+}
 #gridcard > div #cart-main #main-product-cart {
   background-color: var(--gfgrey);
   padding: 16px;
   border-radius: 16px;
 }
-@media (min-width: 576px) {
-  #gridcard > div #cart-main #main-product-cart {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "g1 g2" "g1 g3" "g1 g4";
-  }
-}
 @media (min-width: 768px) {
   #gridcard > div #cart-main #main-product-cart {
+    display: grid;
     grid-template-columns: 35% auto;
     grid-template-areas: "g1 g2" "g1 g3" "g1 g4";
+    gap: 0px 16px;
   }
 }
 #gridcard > div #cart-main #main-product-cart #cart-product-img {
   grid-area: g1;
-  height: 196px;
+  height: 100%;
+  width: 100%;
+}
+#gridcard > div #cart-main #main-product-cart h2 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-size: 2rem;
 }
 #gridcard > div #cart-main #main-product-cart #cart-title {
   grid-area: g2;
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 24.7px;
 }
 #gridcard > div #cart-main #main-product-cart #qty-slider {
   grid-area: g3;
+  margin-right: auto;
+  padding: 8px 48px;
+  border: none;
+  border-radius: 16px;
 }
 #gridcard > div #cart-main #main-product-cart #cart-price {
   grid-area: g4;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 88px;
 }
 
 #gridcontact {

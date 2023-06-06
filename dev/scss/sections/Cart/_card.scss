@@ -21,47 +21,69 @@
         border-radius: 16px;
 
         #cart-main {
+            h1{
+                font-family:'Arvo', serif;
+                font-weight: 700;
+                font-size: rem-calc(36);
+                line-height: 24.7px;
+                padding-bottom: 8px;
+            }
             #main-product-cart {
                 background-color: var(--gfgrey);
                 padding: 16px;
                 border-radius: 16px;
+                
 
-                @include sm {
-                    display: grid;
-                    grid-template-columns: 50% auto;
-                    grid-template-areas:
-                        "g1 g2"
-                        "g1 g3"
-                        "g1 g4";
-
-                }
+               
 
                 @include md{
+                    display: grid;
                     grid-template-columns: 35% auto;
                     grid-template-areas:
                         "g1 g2"
                         "g1 g3"
                         "g1 g4";
+                    gap:0px 16px;
                 }
                 #cart-product-img {
                     grid-area: g1;
-                    height: 196px;
+                    height: 100%;
+                    width: 100%
  
                 }
+                h2{
+                font-family:'Arvo', serif;
+                font-weight: 700;
+                font-size: rem-calc(32)
 
+                }
                 #cart-title {
                     grid-area: g2;
+                    font-family:'Arvo', serif;
+                    font-weight: 700;
+                    font-size: rem-calc(20);
+                    line-height: 24.7px;
+                    
+
+
 
                 }
 
                 #qty-slider {
                     grid-area: g3;
+                    margin-right: auto;
+                    padding: 8px 48px;
+                    border: none;
+                    border-radius: 16px;
                     
 
                 }
 
                 #cart-price {
                     grid-area: g4;
+                    font-weight: 600;
+                    font-size: rem-calc(24);
+                    margin-bottom: 88px;
                 }
             }
 
