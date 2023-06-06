@@ -1,10 +1,188 @@
-#padding{
+#gridaddon {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
 
-    >div{
-        grid-area: main;
+    @include xl {
+        grid-template-columns: auto 1168px auto;
+    }
 
+    >div {
+        grid-area: main;
+        background-color: var(--gfgrey);
+        border-radius: 16px;
+        margin-top: 32px;
+
+        #addon-title {
+            padding-left: 16px;
+            font-family: 'Arvo', sans-serif;
+            font-weight: 700;
+            font-size: rem-calc(18);
+        }
+
+        #margin-in-box {
+            padding: 0px 48px;
+
+            @include md {
+                padding: 16px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #filter {
+
+                #img {
+                    width: 100%;
+                    background-color: navy;
+
+
+                    @include md {
+                        height: 164px;
+                        width: 164px;
+
+                    }
+
+
+                    @include lg {
+                        height: 216px;
+                        width: 216px;
+
+                    }
+
+
+                }
+
+                #title {}
+
+                #price {}
+
+                #button {
+                    padding-top: 16px;
+
+                    
+                }
+
+            }
+
+            #proofgrade {
+                padding-top: 32px;
+
+                @include md{
+                    padding: 0px;
+                }
+
+                #img {
+                    width: 100%;
+                    background-color: navy;
+
+                    @include md {
+                        height: 164px;
+                        width: 164px;
+
+                    }
+
+
+                    @include lg {
+                        height: 216px;
+                        width: 216px;
+
+                    }
+
+
+                }
+
+                #title {}
+
+                #price {}
+
+                #button {
+                    padding-top: 16px;
+                }
+                
+
+
+            }
+
+            #accessorykit {
+                padding-top: 32px;
+    
+                @include md{
+                    padding: 0px;
+                }
+    
+                #img {
+                    width: 100%;
+                    background-color: navy;
+    
+                    @include md {
+                        height: 164px;
+                        width: 164px;
+    
+                    }
+    
+    
+                    @include lg {
+                        height: 216px;
+                        width: 216px;
+    
+                    }
+    
+    
+                }
+    
+                #title {}
+    
+                #price {}
+    
+                #button {
+                    padding-top: 16px;
+                }
+    
+            }
+    
+            #warranty {
+                padding-top: 32px;
+                padding-bottom: 32px;
+    
+                @include md{
+                    padding: 0px;
+                }
+    
+                #img {
+                    width: 100%;
+                    background-color: navy;
+    
+                    @include md {
+                        height: 164px;
+                        width: 164px;
+    
+                    }
+    
+                    @include lg {
+                        height: 216px;
+                        width: 216px;
+    
+                    }
+    
+    
+                }
+    
+                #title {}
+    
+                #price {}
+    
+                #button {
+                    padding-top: 16px;
+                }
+    
+    
+            }
+
+
+        }
+
+       
+
+    }
 }
-}
+

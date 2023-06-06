@@ -437,6 +437,7 @@ h1 h2 h3 {
   color: white !important;
   padding: 12px 18px !important;
   display: inline-block;
+  border: none;
   border-radius: 14px;
   font-weight: 600;
   font-size: 0.875rem;
@@ -1464,13 +1465,138 @@ img {
   }
 }
 
-#padding {
+#gridaddon {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
 }
-#padding > div {
+@media (min-width: 1200px) {
+  #gridaddon {
+    grid-template-columns: auto 1168px auto;
+  }
+}
+#gridaddon > div {
   grid-area: main;
+  background-color: var(--gfgrey);
+  border-radius: 16px;
+  margin-top: 32px;
+}
+#gridaddon > div #addon-title {
+  padding-left: 16px;
+  font-family: "Arvo", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+#gridaddon > div #margin-in-box {
+  padding: 0px 48px;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#gridaddon > div #margin-in-box #filter #img {
+  width: 100%;
+  background-color: navy;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #filter #img {
+    height: 164px;
+    width: 164px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridaddon > div #margin-in-box #filter #img {
+    height: 216px;
+    width: 216px;
+  }
+}
+#gridaddon > div #margin-in-box #filter #button {
+  padding-top: 16px;
+}
+#gridaddon > div #margin-in-box #proofgrade {
+  padding-top: 32px;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #proofgrade {
+    padding: 0px;
+  }
+}
+#gridaddon > div #margin-in-box #proofgrade #img {
+  width: 100%;
+  background-color: navy;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #proofgrade #img {
+    height: 164px;
+    width: 164px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridaddon > div #margin-in-box #proofgrade #img {
+    height: 216px;
+    width: 216px;
+  }
+}
+#gridaddon > div #margin-in-box #proofgrade #button {
+  padding-top: 16px;
+}
+#gridaddon > div #margin-in-box #accessorykit {
+  padding-top: 32px;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #accessorykit {
+    padding: 0px;
+  }
+}
+#gridaddon > div #margin-in-box #accessorykit #img {
+  width: 100%;
+  background-color: navy;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #accessorykit #img {
+    height: 164px;
+    width: 164px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridaddon > div #margin-in-box #accessorykit #img {
+    height: 216px;
+    width: 216px;
+  }
+}
+#gridaddon > div #margin-in-box #accessorykit #button {
+  padding-top: 16px;
+}
+#gridaddon > div #margin-in-box #warranty {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #warranty {
+    padding: 0px;
+  }
+}
+#gridaddon > div #margin-in-box #warranty #img {
+  width: 100%;
+  background-color: navy;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #warranty #img {
+    height: 164px;
+    width: 164px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridaddon > div #margin-in-box #warranty #img {
+    height: 216px;
+    width: 216px;
+  }
+}
+#gridaddon > div #margin-in-box #warranty #button {
+  padding-top: 16px;
 }
 
 #grid {
