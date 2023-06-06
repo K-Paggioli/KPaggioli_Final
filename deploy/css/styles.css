@@ -1707,15 +1707,76 @@ img {
   border-radius: 16px;
   color: var(--white);
   padding-left: 24px;
+  padding-right: 24px;
 }
 #background-color #gridreview > div #reviews-header {
   display: flex;
   justify-content: flex-start;
   margin-right: auto;
+  padding: 8px 0px;
 }
 #background-color #gridreview > div #reviews-header #question {
   padding: 0;
+  margin: 12px;
 }
+#background-color #gridreview > div #reviews-header #writing {
+  margin: 12px;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #reviews-star {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "s d" "l d";
+  }
+}
+#background-color #gridreview > div #reviews-star #main-stars {
+  grid-area: s;
+  color: var(--gfgold);
+  font-size: 2.25rem;
+}
+#background-color #gridreview > div #reviews-star #average-link {
+  grid-area: l;
+  font-size: 0.75rem;
+  padding-top: 16px;
+}
+#background-color #gridreview > div #reviews-star #average-link a:link,
+#background-color #gridreview > div #reviews-star #average-link a:visited {
+  transition: 0.25s;
+  color: var(--white);
+  padding-bottom: 24px;
+}
+#background-color #gridreview > div #reviews-star #average-link a:link:hover,
+#background-color #gridreview > div #reviews-star #average-link a:visited:hover {
+  color: var(--gfblue);
+}
+#background-color #gridreview > div #reviews-star #average-link a:link:active,
+#background-color #gridreview > div #reviews-star #average-link a:visited:active {
+  color: var(--gfgold);
+}
+#background-color #gridreview > div #reviews-star #dropdown-1 {
+  grid-area: d;
+  padding-top: 16px;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #reviews-star #dropdown-1 {
+    text-align: right;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #review-cards {
+    display: grid;
+    grid-template-columns: 48px auto 48px;
+    grid-template-areas: ". card .";
+  }
+  #background-color #gridreview > div #review-cards #div-area-cards {
+    grid-area: card;
+  }
+  #background-color #gridreview > div #review-cards #div-area-cards #review-card-1 {
+    background-color: var(--white);
+  }
+}
+
 #gridhonesty {
   display: grid;
   grid-template-columns: 16px auto 16px;

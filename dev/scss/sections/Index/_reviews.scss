@@ -1,23 +1,25 @@
 #background-color {
     background-color: var(--gfbluedark);
-    @include md{
+
+    @include md {
         background-color: var(--gfbluelight);
     }
+
     #gridreview {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". main .";
         margin-top: 150px;
 
-        @include md{
-            grid-template-columns:32px auto 32px;
+        @include md {
+            grid-template-columns: 32px auto 32px;
         }
 
-        @include lg{
-            grid-template-columns:48px auto 48px;
+        @include lg {
+            grid-template-columns: 48px auto 48px;
         }
 
-        @include xl{
+        @include xl {
             grid-template-columns: auto 1168px auto;
         }
 
@@ -28,35 +30,109 @@
             border-radius: 16px;
             color: var(--white);
             padding-left: 24px;
+            padding-right: 24px;
 
             #reviews-header {
                 display: flex;
                 justify-content: flex-start;
                 margin-right: auto;
+                padding: 8px 0px;
 
-                #h2{
-                    
-                }
+                #h2 {}
 
-                #question{
+                #question {
                     padding: 0;
+                    margin: 12px;
+
                 }
-                #writing{
-                    
+
+                #writing {
+                    margin: 12px;
+
                 }
-                
+
             }
 
-            #reviews-star {}
+            #reviews-star {
+
+
+                @include md {
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas:
+                        "s d"
+                        "l d"
+
+                }
+
+
+                #main-stars {
+                    grid-area: s;
+                    color: var(--gfgold);
+                    font-size: rem-calc(36);
+
+                }
+
+                #average-link {
+                    grid-area: l;
+                    font-size: rem-calc(12);
+                    padding-top: 16px;
+
+                    a:link,
+                    a:visited {
+                        transition: 0.25s;
+                        color: var(--white);
+                        padding-bottom: 24px;
+
+                        &:hover {
+                            color: var(--gfblue);
+                        }
+
+                        &:active {
+                            color: var(--gfgold);
+                        }
+                    }
+
+                }
+
+                #dropdown-1 {
+                    grid-area: d;
+                    padding-top: 16px;
+
+                    @include md {
+                        text-align: right;
+                        padding-top: 0px;
+                    }
+
+                }
+            }
 
             #review-keyword {}
 
             #review-cards {
-                #review-card-1 {}
 
-                #review-card-2 {}
+                @include md {
+                    display: grid;
+                    grid-template-columns: 48px auto 48px;
+                    grid-template-areas: ". card .";
 
-                #review-card-3 {}
+                    #div-area-cards {
+                        grid-area: card;
+                    
+
+                            #review-card-1 {
+                                background-color: var(--white);
+                            }
+
+                            #review-card-2 {}
+
+                            #review-card-3 {}
+                        
+                    }
+
+                }
+
+
             }
 
         }
