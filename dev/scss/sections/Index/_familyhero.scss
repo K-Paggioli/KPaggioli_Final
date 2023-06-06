@@ -4,11 +4,10 @@
         padding-top: 32px;
 
         #bg-img {
-            background-image: url("..img/GlowForgeLineUp.jpg");
-            background-color: brown;
+            background-image: url("../img/GlowForgeLineUp.jpg");
             background-size: cover;
-            height: 188px;
-            background-position: center top;
+            height: 200px;
+            background-position: 20%;
 
             @include md {
                 height: 441px;
@@ -24,12 +23,22 @@
 
 
         #family-position {
-            display: grid;
-            grid-template-columns: "16px auto 16px";
-            grid-template-areas: ". main.";
+            margin-top:-200px;
+            
+            @include md{
+                display: grid;
+                grid-template-columns: "16px auto 16px";
+                grid-template-areas: ". main.";
+                margin-top: -350px;
+                margin-bottom: 200px;
+                margin-right: auto;
+
+            }
 
             @include lg {
-                margin-top: -260px;
+                margin-top: 0px;
+   
+               
             }
 
             @include xl {
@@ -42,9 +51,14 @@
 
             #family-info {
                 grid-area: main;
-                background-color: var(--gfbluedark);
-                opacity: .6;
-                padding: 24px;
+                background-color: rgba(21, 47, 53, 0.6);
+                padding: 42px 24px;
+
+
+                @include md{
+                    border-radius:16px;
+                    
+                }
                 
 
                 @include lg{
@@ -62,8 +76,11 @@
                     color: var(--white);
                     z-index: 10000;
                     font-family: 'Arvo', serif;
-                    font-size: rem-calc(36);
+                    font-size: rem-calc(25);
                     margin-top: -2px;
+                    padding-top: 12px;
+                    padding-bottom: 22px;
+
 
                 }
 
@@ -71,6 +88,11 @@
                     opacity: 1;
                     color: var(--white);
                     z-index: 10000;
+                    display: none;
+
+                    @include md{
+                        display: block;
+                    }
 
                 }
 
@@ -78,6 +100,7 @@
                     opacity: 1;
                     color: var(--white);
                     z-index: 10000;
+                    
 
                 }
             }

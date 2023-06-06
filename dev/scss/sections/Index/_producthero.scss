@@ -125,7 +125,7 @@
                 grid-area: s1;
                 background-color: var(--gfgrey);
                 padding: 16px;
-                list-style:decimal;
+                
                 line-height: 40px;
                 border-radius: 16px;
 
@@ -134,6 +134,9 @@
                 }
                 @include lg{
                     margin-right: 40px;
+                }
+                li{
+                    list-style:decimal;
                 }
             }
 

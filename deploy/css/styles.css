@@ -1410,7 +1410,6 @@ img {
   grid-area: s1;
   background-color: var(--gfgrey);
   padding: 16px;
-  list-style: decimal;
   line-height: 40px;
   border-radius: 16px;
 }
@@ -1423,6 +1422,9 @@ img {
   #gridproduct > div #speculation #specs1 {
     margin-right: 40px;
   }
+}
+#gridproduct > div #speculation #specs1 li {
+  list-style: decimal;
 }
 #gridproduct > div #speculation #specs2 {
   display: none;
@@ -1604,11 +1606,10 @@ img {
   padding-top: 32px;
 }
 #grid > div #bg-img {
-  background-image: url("..img/GlowForgeLineUp.jpg");
-  background-color: brown;
+  background-image: url("../img/GlowForgeLineUp.jpg");
   background-size: cover;
-  height: 188px;
-  background-position: center top;
+  height: 200px;
+  background-position: 20%;
 }
 @media (min-width: 768px) {
   #grid > div #bg-img {
@@ -1622,13 +1623,21 @@ img {
   }
 }
 #grid > div #family-position {
-  display: grid;
-  grid-template-columns: "16px auto 16px";
-  grid-template-areas: ". main.";
+  margin-top: -200px;
+}
+@media (min-width: 768px) {
+  #grid > div #family-position {
+    display: grid;
+    grid-template-columns: "16px auto 16px";
+    grid-template-areas: ". main.";
+    margin-top: -350px;
+    margin-bottom: 200px;
+    margin-right: auto;
+  }
 }
 @media (min-width: 1024px) {
   #grid > div #family-position {
-    margin-top: -260px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -1638,9 +1647,13 @@ img {
 }
 #grid > div #family-position #family-info {
   grid-area: main;
-  background-color: var(--gfbluedark);
-  opacity: 0.6;
-  padding: 24px;
+  background-color: rgba(21, 47, 53, 0.6);
+  padding: 42px 24px;
+}
+@media (min-width: 768px) {
+  #grid > div #family-position #family-info {
+    border-radius: 16px;
+  }
 }
 @media (min-width: 1024px) {
   #grid > div #family-position #family-info {
@@ -1658,13 +1671,21 @@ img {
   color: var(--white);
   z-index: 10000;
   font-family: "Arvo", serif;
-  font-size: 2.25rem;
+  font-size: 1.5625rem;
   margin-top: -2px;
+  padding-top: 12px;
+  padding-bottom: 22px;
 }
 #grid > div #family-position #family-info #family-base {
   opacity: 1;
   color: var(--white);
   z-index: 10000;
+  display: none;
+}
+@media (min-width: 768px) {
+  #grid > div #family-position #family-info #family-base {
+    display: block;
+  }
 }
 #grid > div #family-position #family-info #family-link {
   opacity: 1;
@@ -2066,11 +2087,58 @@ img {
 
 #gridcard {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 24px auto 24px;
   grid-template-areas: ". main .";
+  padding-top: 108px;
+  background-color: var(--gfbluelight);
+}
+@media (min-width: 1024px) {
+  #gridcard {
+    padding-top: 125px;
+  }
+}
+@media (min-width: 1200px) {
+  #gridcard {
+    grid-template-columns: auto 1168px auto;
+  }
 }
 #gridcard > div {
   grid-area: main;
+  background-color: var(--white);
+  padding: 24px 48px;
+  margin-bottom: 80px;
+  border-radius: 16px;
+}
+#gridcard > div #cart-main #main-product-cart {
+  background-color: var(--gfgrey);
+  padding: 16px;
+  border-radius: 16px;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-main #main-product-cart {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "g1 g2" "g1 g3" "g1 g4";
+  }
+}
+@media (min-width: 768px) {
+  #gridcard > div #cart-main #main-product-cart {
+    grid-template-columns: 35% auto;
+    grid-template-areas: "g1 g2" "g1 g3" "g1 g4";
+  }
+}
+#gridcard > div #cart-main #main-product-cart #cart-product-img {
+  grid-area: g1;
+  height: 196px;
+}
+#gridcard > div #cart-main #main-product-cart #cart-title {
+  grid-area: g2;
+}
+#gridcard > div #cart-main #main-product-cart #qty-slider {
+  grid-area: g3;
+}
+#gridcard > div #cart-main #main-product-cart #cart-price {
+  grid-area: g4;
 }
 
 #gridcontact {
