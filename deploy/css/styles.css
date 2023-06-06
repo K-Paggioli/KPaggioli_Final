@@ -1782,6 +1782,11 @@ img {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
 }
+@media (min-width: 1200px) {
+  #gridhonesty {
+    grid-template-columns: auto 1168px auto;
+  }
+}
 #gridhonesty > div {
   grid-area: main;
 }
