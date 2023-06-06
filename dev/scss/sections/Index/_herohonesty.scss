@@ -1,7 +1,28 @@
+#bg-img-honest{
+    background-image: url("../img/GlowforgeTiledInvert.png");
+    height: 80px;
+    background-color: var(--gfgold);
+    width:100%;
+    z-index: 10000;
+    margin-top: -40px;
+
+    @include md{
+        margin-top: 0px;
+        height: 487.58px;
+    }
+}
+
 #gridhonesty{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
+    background-color: var(--gfblue);
+    color: var(--white);
+
+    @include md{
+        background-color: var(--gfbluelight);
+    }
+
 
     @include xl{
         grid-template-columns: auto 1168px auto;
@@ -10,5 +31,43 @@
     >div{
         grid-area: main;
 
+        
+        #honesty-content{
+            padding: 16px 0px;
+            h1{
+                font-family:'Arvo', sans-serif;
+                font-weight: 700;
+                font-size: rem-calc(20);
+                line-height: 24.7px;
+
+                @include md{
+                    font-size: rem-calc(32);
+                    line-height: 59.27px;
+                }
+
+            }
+            p{
+                font-size: rem-calc(14);
+                line-height: 16px;
+
+                @include md{
+                    font-size: rem-calc(18);
+                    line-height: 22px;
+                }
+                a:link,
+                    a:visited {
+                        transition: 0.25s;
+                        color: var(--gfgold);
+                        padding-bottom: 24px;
+
+                        &:hover, &:active {
+                            color: var(--white);
+                        }
+                    }
+
+            }
+        }
 }
 }
+
+

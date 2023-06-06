@@ -373,6 +373,10 @@
 
             #seemore{
                 padding: 24px 0px;
+                margin-bottom:48px;
+                @include md{
+                    margin-bottom: 0px;
+                }
 
 
                 a:link,

@@ -1967,6 +1967,12 @@ img {
 }
 #background-color #gridreview > div #seemore {
   padding: 24px 0px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #seemore {
+    margin-bottom: 0px;
+  }
 }
 #background-color #gridreview > div #seemore a:link,
 #background-color #gridreview > div #seemore a:visited {
@@ -1985,10 +1991,32 @@ img {
   padding: 0px 16px;
 }
 
+#bg-img-honest {
+  background-image: url("../img/GlowforgeTiledInvert.png");
+  height: 80px;
+  background-color: var(--gfgold);
+  width: 100%;
+  z-index: 10000;
+  margin-top: -40px;
+}
+@media (min-width: 768px) {
+  #bg-img-honest {
+    margin-top: 0px;
+    height: 487.58px;
+  }
+}
+
 #gridhonesty {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+  background-color: var(--gfblue);
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  #gridhonesty {
+    background-color: var(--gfbluelight);
+  }
 }
 @media (min-width: 1200px) {
   #gridhonesty {
@@ -1997,6 +2025,42 @@ img {
 }
 #gridhonesty > div {
   grid-area: main;
+}
+#gridhonesty > div #honesty-content {
+  padding: 16px 0px;
+}
+#gridhonesty > div #honesty-content h1 {
+  font-family: "Arvo", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 24.7px;
+}
+@media (min-width: 768px) {
+  #gridhonesty > div #honesty-content h1 {
+    font-size: 2rem;
+    line-height: 59.27px;
+  }
+}
+#gridhonesty > div #honesty-content p {
+  font-size: 0.875rem;
+  line-height: 16px;
+}
+@media (min-width: 768px) {
+  #gridhonesty > div #honesty-content p {
+    font-size: 1.125rem;
+    line-height: 22px;
+  }
+}
+#gridhonesty > div #honesty-content p a:link,
+#gridhonesty > div #honesty-content p a:visited {
+  transition: 0.25s;
+  color: var(--gfgold);
+  padding-bottom: 24px;
+}
+#gridhonesty > div #honesty-content p a:link:hover, #gridhonesty > div #honesty-content p a:link:active,
+#gridhonesty > div #honesty-content p a:visited:hover,
+#gridhonesty > div #honesty-content p a:visited:active {
+  color: var(--white);
 }
 
 #gridcard {
