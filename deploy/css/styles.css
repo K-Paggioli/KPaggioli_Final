@@ -1599,19 +1599,83 @@ img {
   padding-top: 16px;
 }
 
-#grid {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". main .";
-}
 #grid > div {
+  padding-top: 32px;
+}
+#grid > div #bg-img {
+  background-image: url("..img/GlowForgeLineUp.jpg");
+  background-color: brown;
+  background-size: cover;
+  height: 188px;
+  background-position: center top;
+}
+@media (min-width: 768px) {
+  #grid > div #bg-img {
+    height: 441px;
+    background-position: 60% bottom;
+  }
+}
+@media (min-width: 1024px) {
+  #grid > div #bg-img {
+    height: 441px;
+  }
+}
+#grid > div #family-position {
+  display: grid;
+  grid-template-columns: "16px auto 16px";
+  grid-template-areas: ". main.";
+}
+@media (min-width: 1024px) {
+  #grid > div #family-position {
+    margin-top: -260px;
+  }
+}
+@media (min-width: 1200px) {
+  #grid > div #family-position {
+    grid-template-columns: auto 1168px auto;
+  }
+}
+#grid > div #family-position #family-info {
   grid-area: main;
+  background-color: var(--gfbluedark);
+  opacity: 0.6;
+  padding: 24px;
+}
+@media (min-width: 1024px) {
+  #grid > div #family-position #family-info {
+    margin-left: -80px;
+    margin-right: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #grid > div #family-position #family-info {
+    margin-left: 0;
+  }
+}
+#grid > div #family-position #family-info #family-title {
+  opacity: 1;
+  color: var(--white);
+  z-index: 10000;
+  font-family: "Arvo", serif;
+  font-size: 2.25rem;
+  margin-top: -2px;
+}
+#grid > div #family-position #family-info #family-base {
+  opacity: 1;
+  color: var(--white);
+  z-index: 10000;
+}
+#grid > div #family-position #family-info #family-link {
+  opacity: 1;
+  color: var(--white);
+  z-index: 10000;
 }
 
 #gridreview {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+  margin-top: 200px;
 }
 #gridreview > div {
   grid-area: main;

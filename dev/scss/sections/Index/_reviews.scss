@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
+    margin-top: 200px;
 
     >div{
         grid-area: main;

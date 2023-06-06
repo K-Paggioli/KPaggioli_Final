@@ -1,10 +1,90 @@
-#grid{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". main .";
+#grid {
 
-    >div{
-        grid-area: main;
+    >div {
+        padding-top: 32px;
 
-}
+        #bg-img {
+            background-image: url("..img/GlowForgeLineUp.jpg");
+            background-color: brown;
+            background-size: cover;
+            height: 188px;
+            background-position: center top;
+
+            @include md {
+                height: 441px;
+                background-position: 60% bottom;
+            }
+
+            @include lg {
+                height: 441px;
+            }
+
+        }
+
+
+
+        #family-position {
+            display: grid;
+            grid-template-columns: "16px auto 16px";
+            grid-template-areas: ". main.";
+
+            @include lg {
+                margin-top: -260px;
+            }
+
+            @include xl {
+                grid-template-columns: auto 1168px auto;
+            }
+
+
+
+
+
+            #family-info {
+                grid-area: main;
+                background-color: var(--gfbluedark);
+                opacity: .6;
+                padding: 24px;
+                
+
+                @include lg{
+                    margin-left: -80px;
+                    margin-right: 300px;
+
+                }
+
+                @include xl{
+                    margin-left: 0;
+                }
+
+                #family-title {
+                    opacity: 1;
+                    color: var(--white);
+                    z-index: 10000;
+                    font-family: 'Arvo', serif;
+                    font-size: rem-calc(36);
+                    margin-top: -2px;
+
+                }
+
+                #family-base {
+                    opacity: 1;
+                    color: var(--white);
+                    z-index: 10000;
+
+                }
+
+                #family-link {
+                    opacity: 1;
+                    color: var(--white);
+                    z-index: 10000;
+
+                }
+            }
+        }
+
+    }
+
+
+
 }
