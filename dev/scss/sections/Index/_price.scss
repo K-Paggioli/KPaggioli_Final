@@ -1,15 +1,76 @@
-#margins{
+#margins {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
+    position: fixed;
+    z-index: 1000000000;
+    width:100%;
+    box-sizing: border-box;
+    background-color: var(--white);
+    
+    
+  
 
-    >div{
-        grid-area: main;
-        h1{
-
-        }
-        p{
-
-        }
+    @include xl{
+        grid-template-columns: auto 1168px auto;
     }
+
+    >div {
+        grid-area: main;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;;
+
+        margin-top: 78px;
+
+        @include lg{
+            margin-top: 96px;
+        } 
+        margin-bottom: 16px;
+        @include md{
+            border-bottom: 4px solid var(--gfgold);
+        }
+        
+
+        h1 {
+            font-family: 'Arvo', serif;
+            font-weight: 700;
+            font-size: rem-calc(36);
+            margin-bottom: 8px;
+            
+           
+            
+            
+        }
+
+        #product-name {
+            display: none;
+
+            @include md{
+                display: block;
+                margin-right: auto;
+            }
+        }
+
+        #money{
+            margin-right: auto;
+            @include md{
+                margin-right: 16px;
+            }
+        }
+
+        #stock{
+            display: none;
+            @include md {
+                display: block;
+                font-style: italic;
+                padding: 14px;
+                margin-right: 16px;
+                margin-bottom: 4px
+            }
+        }
+        #cart{
+            padding-top: 4px;
+        }
+}
 }

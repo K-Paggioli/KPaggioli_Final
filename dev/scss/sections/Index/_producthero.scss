@@ -1,10 +1,21 @@
-#maingrid{
+#gridproduct{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
+    padding-top: 224px;
      
     >div{
         grid-area: main;
+
+        #mobiletitle{
+            font-family: 'Arvo', serif;
+            font-weight: 700;
+            font-size: rem-calc(18);
+            
+            @include md{
+                display: none;
+            }
+        }
 
         #productimg{
 

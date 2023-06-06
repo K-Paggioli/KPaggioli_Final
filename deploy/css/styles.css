@@ -426,7 +426,7 @@ h1 h2 h3 h4 h5 h6 p {
 }
 
 h1 h2 h3 {
-  font-family: "Arno", serif;
+  font-family: "Arvo", serif;
 }
 
 /* =============
@@ -534,6 +534,10 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+  position: fixed;
+  z-index: 10000000000;
+  width: 100%;
+  box-sizing: border-box;
   box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
 }
 header > div {
@@ -541,10 +545,10 @@ header > div {
   display: grid;
   grid-template-columns: 2, 1fr;
   grid-template-areas: "logo burger " "nav nav";
-  padding: 24px 0;
 }
 @media (min-width: 1024px) {
   header > div {
+    padding: 24px 0;
     grid-template-columns: 20% auto;
     grid-template-areas: "logo nav";
   }
@@ -1225,17 +1229,92 @@ img {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+  position: fixed;
+  z-index: 1000000000;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--white);
+}
+@media (min-width: 1200px) {
+  #margins {
+    grid-template-columns: auto 1168px auto;
+  }
 }
 #margins > div {
   grid-area: main;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 78px;
+  margin-bottom: 16px;
 }
-#maingrid {
+@media (min-width: 1024px) {
+  #margins > div {
+    margin-top: 96px;
+  }
+}
+@media (min-width: 768px) {
+  #margins > div {
+    border-bottom: 4px solid var(--gfgold);
+  }
+}
+#margins > div h1 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-bottom: 8px;
+}
+#margins > div #product-name {
+  display: none;
+}
+@media (min-width: 768px) {
+  #margins > div #product-name {
+    display: block;
+    margin-right: auto;
+  }
+}
+#margins > div #money {
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #margins > div #money {
+    margin-right: 16px;
+  }
+}
+#margins > div #stock {
+  display: none;
+}
+@media (min-width: 768px) {
+  #margins > div #stock {
+    display: block;
+    font-style: italic;
+    padding: 14px;
+    margin-right: 16px;
+    margin-bottom: 4px;
+  }
+}
+#margins > div #cart {
+  padding-top: 4px;
+}
+
+#gridproduct {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+  padding-top: 224px;
 }
-#maingrid > div {
+#gridproduct > div {
   grid-area: main;
+}
+#gridproduct > div #mobiletitle {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  #gridproduct > div #mobiletitle {
+    display: none;
+  }
 }
 #padding {
   display: grid;
