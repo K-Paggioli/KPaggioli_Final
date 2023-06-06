@@ -1,37 +1,190 @@
-#gridproduct{
+#gridproduct {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
-    padding-top: 224px;
-     
-    >div{
+    padding-top: 148px;
+
+    @include md {
+        padding-top: 180px;
+    }
+
+
+    @include lg {
+        padding-top: 200px;
+    }
+
+    @include xl {
+        grid-template-columns: auto 1168px auto;
+    }
+
+    >div {
         grid-area: main;
 
-        #mobiletitle{
+        #mobiletitle {
             font-family: 'Arvo', serif;
             font-weight: 700;
             font-size: rem-calc(18);
-            
-            @include md{
+            line-height: 16px;
+            border-bottom: 4px solid var(--gfgold);
+            padding-top: 8px;
+            margin-bottom: 24px;
+
+            @include md {
                 display: none;
             }
         }
 
-        #productimg{
+        #productimg {
+
+            ul {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas:
+                    "h1 h1"
+                    "h2 h3";
+                gap: 16px;
+
+                @include lg {
+                    grid-template-columns: (6, 1fr);
+                    grid-template-areas:
+                        "h1 h1 h2 h2 h2 h2"
+                        "h1 h1 h3 h3 h4 h4";
+                }
+
+                #hero1 {
+                    grid-area: h1;
+                    height: 238.57px;
+                    background-color: orangered;
+
+                    @include md {
+                        height: 401.33px;
+                    }
+
+                }
+
+                #hero2 {
+                    grid-area: h2;
+                    height: 98.76px;
+                    background-color: goldenrod;
+
+                    @include md {
+                        height: 207.33px;
+                    }
+
+                }
+
+                #hero3 {
+                    grid-area: h3;
+                    height: 98.76px;
+                    background-color: teal;
+
+                    @include md {
+                        height: 207.33px;
+                    }
+
+                    @include lg {
+                        height: 178px;
+                    }
+
+
+                }
+
+                #hero4 {
+                    grid-area: h4;
+                    display: none;
+                    background-color: cornflowerblue;
+
+
+                    @include lg {
+                        display: block;
+                        height: 178px;
+                    }
+
+
+                }
+
+            }
+
 
         }
 
-        #specs1{
+        #speculation{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "s1 s1"
+            ". as";
+
+            @include md{
+                grid-template-areas: 
+                "s1 s2"
+                " . as";
+            }
+            padding-top: 32px;
+            #specs1 {
+                grid-area: s1;
+                background-color: var(--gfgrey);
+                padding: 16px;
+                list-style:decimal;
+                line-height: 40px;
+                border-radius: 16px;
+
+                @include md{
+                    margin-right: 0px;
+                }
+                @include lg{
+                    margin-right: 40px;
+                }
+            }
+
+            #specs2 {
+                
+                display: none;
+
+                @include md{
+                grid-area: s2;
+                display: block;
+                background-color: var(--gfgrey);
+                padding: 16px;
+                list-style:decimal;
+                line-height: 40px;
+                border-radius: 16px;
+                margin-left: 16px;
+                }
+
+                @include lg{
+                    margin-left: 40px;
+                }
+
+            }
+
+            aside {
+                grid-area: as;
+                padding-top: 16px;
+                text-align: right;
+                font-style: italic;
+
+               
+                a:link,
+            a:visited {
+                transition: 0.25s;
+                color: var(--gfblue);
+
+                &:hover, &:active{
+                    color: var(--gfgold);
+                }
+
+            }
+
+            @include md{
+                padding-top: 32px;
+                    
+            }
+
+
+            }
 
         }
 
-        #specs2{
-
-
-        }
-
-        #aside{
-
-        }
     }
 }

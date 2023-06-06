@@ -1301,7 +1301,22 @@ img {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
-  padding-top: 224px;
+  padding-top: 148px;
+}
+@media (min-width: 768px) {
+  #gridproduct {
+    padding-top: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridproduct {
+    padding-top: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  #gridproduct {
+    grid-template-columns: auto 1168px auto;
+  }
 }
 #gridproduct > div {
   grid-area: main;
@@ -1310,12 +1325,145 @@ img {
   font-family: "Arvo", serif;
   font-weight: 700;
   font-size: 1.125rem;
+  line-height: 16px;
+  border-bottom: 4px solid var(--gfgold);
+  padding-top: 8px;
+  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   #gridproduct > div #mobiletitle {
     display: none;
   }
 }
+#gridproduct > div #productimg ul {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "h1 h1" "h2 h3";
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  #gridproduct > div #productimg ul {
+    grid-template-columns: 6, 1fr;
+    grid-template-areas: "h1 h1 h2 h2 h2 h2" "h1 h1 h3 h3 h4 h4";
+  }
+}
+#gridproduct > div #productimg ul #hero1 {
+  grid-area: h1;
+  height: 238.57px;
+  background-color: orangered;
+}
+@media (min-width: 768px) {
+  #gridproduct > div #productimg ul #hero1 {
+    height: 401.33px;
+  }
+}
+#gridproduct > div #productimg ul #hero2 {
+  grid-area: h2;
+  height: 98.76px;
+  background-color: goldenrod;
+}
+@media (min-width: 768px) {
+  #gridproduct > div #productimg ul #hero2 {
+    height: 207.33px;
+  }
+}
+#gridproduct > div #productimg ul #hero3 {
+  grid-area: h3;
+  height: 98.76px;
+  background-color: teal;
+}
+@media (min-width: 768px) {
+  #gridproduct > div #productimg ul #hero3 {
+    height: 207.33px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridproduct > div #productimg ul #hero3 {
+    height: 178px;
+  }
+}
+#gridproduct > div #productimg ul #hero4 {
+  grid-area: h4;
+  display: none;
+  background-color: cornflowerblue;
+}
+@media (min-width: 1024px) {
+  #gridproduct > div #productimg ul #hero4 {
+    display: block;
+    height: 178px;
+  }
+}
+#gridproduct > div #speculation {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "s1 s1" ". as";
+  padding-top: 32px;
+}
+@media (min-width: 768px) {
+  #gridproduct > div #speculation {
+    grid-template-areas: "s1 s2" " . as";
+  }
+}
+#gridproduct > div #speculation #specs1 {
+  grid-area: s1;
+  background-color: var(--gfgrey);
+  padding: 16px;
+  list-style: decimal;
+  line-height: 40px;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  #gridproduct > div #speculation #specs1 {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridproduct > div #speculation #specs1 {
+    margin-right: 40px;
+  }
+}
+#gridproduct > div #speculation #specs2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gridproduct > div #speculation #specs2 {
+    grid-area: s2;
+    display: block;
+    background-color: var(--gfgrey);
+    padding: 16px;
+    list-style: decimal;
+    line-height: 40px;
+    border-radius: 16px;
+    margin-left: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridproduct > div #speculation #specs2 {
+    margin-left: 40px;
+  }
+}
+#gridproduct > div #speculation aside {
+  grid-area: as;
+  padding-top: 16px;
+  text-align: right;
+  font-style: italic;
+}
+#gridproduct > div #speculation aside a:link,
+#gridproduct > div #speculation aside a:visited {
+  transition: 0.25s;
+  color: var(--gfblue);
+}
+#gridproduct > div #speculation aside a:link:hover, #gridproduct > div #speculation aside a:link:active,
+#gridproduct > div #speculation aside a:visited:hover,
+#gridproduct > div #speculation aside a:visited:active {
+  color: var(--gfgold);
+}
+@media (min-width: 768px) {
+  #gridproduct > div #speculation aside {
+    padding-top: 32px;
+  }
+}
+
 #padding {
   display: grid;
   grid-template-columns: 16px auto 16px;
