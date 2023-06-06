@@ -1221,6 +1221,76 @@ img {
   height: 40px;
 }
 
+#margins {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#margins > div {
+  grid-area: main;
+}
+#maingrid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#maingrid > div {
+  grid-area: main;
+}
+#padding {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#padding > div {
+  grid-area: main;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#grid > div {
+  grid-area: main;
+}
+
+#gridreview {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#gridreview > div {
+  grid-area: main;
+}
+
+#gridhonesty {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#gridhonesty > div {
+  grid-area: main;
+}
+
+#gridcard {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#gridcard > div {
+  grid-area: main;
+}
+
+#gridcontact {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#gridcontact > div {
+  grid-area: main;
+}
+
 #needidig {
   display: grid;
   grid-template-columns: 16px auto 16px;

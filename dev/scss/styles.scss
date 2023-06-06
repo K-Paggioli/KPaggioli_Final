@@ -19,4 +19,12 @@
 @import "layout/_footer";
 
 // Sections Styles
+@import "sections/Index/_price";
+@import "sections/Index/_producthero";
+@import "sections/Index/_addons";
+@import "sections/Index/_familyhero";
+@import "sections/Index/_reviews";
+@import "sections/Index/_herohonesty";
+@import "sections/Cart/_card";
+@import "sections/Checkout/_contact";
 @import "sections/ThankYou/_thx";

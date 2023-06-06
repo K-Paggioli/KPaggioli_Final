@@ -1,0 +1,15 @@
+#margins{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
+
+    >div{
+        grid-area: main;
+        h1{
+
+        }
+        p{
+
+        }
+    }
+}
