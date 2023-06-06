@@ -34,26 +34,42 @@
 
             #reviews-header {
                 display: flex;
-                justify-content: flex-start;
-                margin-right: auto;
-                padding: 8px 0px;
+                text-align: center;
+                border-bottom: 4px solid var(--gfgold);
 
-                #h2 {}
 
-                #question {
-                    padding: 0;
-                    margin: 12px;
+                .flex1 {
+
+                    h2 {}
 
                 }
 
-                #writing {
-                    margin: 12px;
 
+                .flex2 {
+                    #question {
+                        justify-content: space-around;
+                        padding: 0;
+                        margin: 12px;
+
+                    }
                 }
+
+                .flex3 {
+                    justify-content: space-between;
+                    align-content: right;
+
+                    #writing {
+                        margin: 12px;
+
+                    }
+                }
+
+                .flex-items {}
 
             }
 
             #reviews-star {
+                padding-top: 16px;
 
 
                 @include md {
@@ -113,26 +129,269 @@
 
                 @include md {
                     display: grid;
-                    grid-template-columns: 48px auto 48px;
-                    grid-template-areas: ". card .";
+                    grid-template-columns: 72px auto 72px;
+                    grid-template-areas:
+                        ". card .";
 
-                    #div-area-cards {
-                        grid-area: card;
-                    
+                }
 
-                            #review-card-1 {
-                                background-color: var(--white);
+                #grid-area-cards {
+                    grid-area: card;
+                    color: var(--gfbluedark);
+
+
+                    #review-card-1 {
+                        margin-top: 24px;
+                        background-color: var(--white);
+                        padding: 16px;
+                        border-radius: 16px;
+
+                        @include md {
+                            padding: 24px;
+                        }
+
+                        #top-info-rev {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            #default-user {
+                                font-size: rem-calc(24);
+                                border: 2px solid var(--gfbluedark);
+                                padding: 6px;
+                                border-radius: 8px;
+                                margin-right: 16px;
+
                             }
 
-                            #review-card-2 {}
+                            #cards-stars {
+                                font-size: rem-calc(32);
+                                color: var(--gfgold);
 
-                            #review-card-3 {}
-                        
+
+                            }
+
+                        }
+
+                        #card-title {
+                            font-weight: 400;
+                            font-size: rem-calc(24);
+                            margin-top: 16px;
+
+                        }
+
+                        #username {
+                            margin-top: -16px;
+
+                            a:link,
+                            a:visited {
+                                transition: 0.25s;
+                                color: var(--gfblue);
+                                padding-bottom: 24px;
+                                font-size: rem-calc(16);
+
+                                &:hover, &:active {
+                                    color: var(--gfgold);
+                                }
+                            }
+
+
+                        }
+
+                        #rev-card-content {
+                            font-size: rem-calc(14);
+                            line-height: 20px;
+                            padding:16px 0px 0px;
+                            margin-top: -4px;
+                        }
+
+                        #rev-card-img {
+                            display: flex;
+                            justify-content: flex-start;
+                            gap: 16px;
+
+                            #rev-img-1{
+                                height: 85px;
+                                background-color: slategray;
+                            @include md{
+                                height: 145px;
+                            }
+
+                            }
+
+                            #rev-img-2{
+                                height: 85px;
+                            background-color: slategray;
+                            @include md{
+                                height: 145px;
+                            }
+
+                            }
+                            
+                        }
+
+                    }
+
+                    #review-card-2 {
+                        margin-top: 24px;
+                        background-color: var(--white);
+                        padding: 16px;
+                        border-radius: 16px;
+
+                        @include md {
+                            padding: 24px;
+                        }
+
+                        #top-info-rev {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            #default-user {
+                                font-size: rem-calc(24);
+                                border: 2px solid var(--gfbluedark);
+                                padding: 6px;
+                                border-radius: 8px;
+                                margin-right: 16px;
+
+                            }
+
+                            #cards-stars {
+                                font-size: rem-calc(32);
+                                color: var(--gfgold);
+
+
+                            }
+
+                        }
+
+                        #card-title {
+                            font-weight: 400;
+                            font-size: rem-calc(24);
+                            margin-top: 16px;
+
+                        }
+
+                        #username {
+                            margin-top: -16px;
+
+                            a:link,
+                            a:visited {
+                                transition: 0.25s;
+                                color: var(--gfblue);
+                                padding-bottom: 24px;
+                                font-size: rem-calc(16);
+
+                                &:hover, &:active {
+                                    color: var(--gfgold);
+                                }
+                            }
+
+
+                        }
+
+                        #rev-card-content {
+                            font-size: rem-calc(14);
+                            line-height: 20px;
+                            padding:16px 0px 0px;
+                            margin-top: -4px;
+                            margin-bottom: 4px;
+                        }
+                    }
+
+                    #review-card-3 {
+                        margin-top: 24px;
+                        background-color: var(--white);
+                        padding: 16px;
+                        border-radius: 16px;
+
+                        @include md {
+                            padding: 24px;
+                        }
+
+                        #top-info-rev {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            #default-user {
+                                font-size: rem-calc(24);
+                                border: 2px solid var(--gfbluedark);
+                                padding: 6px;
+                                border-radius: 8px;
+                                margin-right: 16px;
+
+                            }
+
+                            #cards-stars {
+                                font-size: rem-calc(32);
+                                color: var(--gfgold);
+
+
+                            }
+
+                        }
+
+                        #card-title {
+                            font-weight: 400;
+                            font-size: rem-calc(24);
+                            margin-top: 16px;
+
+                        }
+
+                        #username {
+                            margin-top: -16px;
+
+                            a:link,
+                            a:visited {
+                                transition: 0.25s;
+                                color: var(--gfblue);
+                                padding-bottom: 24px;
+                                font-size: rem-calc(16);
+
+                                &:hover, &:active {
+                                    color: var(--gfgold);
+                                }
+                            }
+
+
+                        }
+
+                        #rev-card-content {
+                            font-size: rem-calc(14);
+                            line-height: 20px;
+                            padding:16px 0px 0px;
+                            margin-top: -4px;
+                            margin-bottom: 4px;
+                        }
                     }
 
                 }
 
 
+            }
+
+            #seemore{
+                padding: 24px 0px;
+
+
+                a:link,
+                a:visited {
+                    transition: 0.25s;
+                    color: var(--white);
+                    padding-bottom: 24px;
+                    font-size: rem-calc(24);
+                    font-weight:600;
+
+
+                    &:hover, &:active {
+                        color: var(--gfblue);
+                    }
+                }
+                i{
+                    padding: 0px 16px;
+
+                }
             }
 
         }

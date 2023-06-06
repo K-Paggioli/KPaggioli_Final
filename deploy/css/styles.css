@@ -1711,16 +1711,23 @@ img {
 }
 #background-color #gridreview > div #reviews-header {
   display: flex;
-  justify-content: flex-start;
-  margin-right: auto;
-  padding: 8px 0px;
+  text-align: center;
+  border-bottom: 4px solid var(--gfgold);
 }
-#background-color #gridreview > div #reviews-header #question {
+#background-color #gridreview > div #reviews-header .flex2 #question {
+  justify-content: space-around;
   padding: 0;
   margin: 12px;
 }
-#background-color #gridreview > div #reviews-header #writing {
+#background-color #gridreview > div #reviews-header .flex3 {
+  justify-content: space-between;
+  align-content: right;
+}
+#background-color #gridreview > div #reviews-header .flex3 #writing {
   margin: 12px;
+}
+#background-color #gridreview > div #reviews-star {
+  padding-top: 16px;
 }
 @media (min-width: 768px) {
   #background-color #gridreview > div #reviews-star {
@@ -1766,15 +1773,216 @@ img {
 @media (min-width: 768px) {
   #background-color #gridreview > div #review-cards {
     display: grid;
-    grid-template-columns: 48px auto 48px;
+    grid-template-columns: 72px auto 72px;
     grid-template-areas: ". card .";
   }
-  #background-color #gridreview > div #review-cards #div-area-cards {
-    grid-area: card;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards {
+  grid-area: card;
+  color: var(--gfbluedark);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 {
+  margin-top: 24px;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 {
+    padding: 24px;
   }
-  #background-color #gridreview > div #review-cards #div-area-cards #review-card-1 {
-    background-color: var(--white);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #top-info-rev {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #top-info-rev #default-user {
+  font-size: 1.5rem;
+  border: 2px solid var(--gfbluedark);
+  padding: 6px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #top-info-rev #cards-stars {
+  font-size: 2rem;
+  color: var(--gfgold);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #card-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #username {
+  margin-top: -16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #username a:link,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #username a:visited {
+  transition: 0.25s;
+  color: var(--gfblue);
+  padding-bottom: 24px;
+  font-size: 1rem;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #username a:link:hover, #background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #username a:link:active,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #username a:visited:hover,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #username a:visited:active {
+  color: var(--gfgold);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #rev-card-content {
+  font-size: 0.875rem;
+  line-height: 20px;
+  padding: 16px 0px 0px;
+  margin-top: -4px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #rev-card-img {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #rev-card-img #rev-img-1 {
+  height: 85px;
+  background-color: slategray;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #rev-card-img #rev-img-1 {
+    height: 145px;
   }
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #rev-card-img #rev-img-2 {
+  height: 85px;
+  background-color: slategray;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #rev-card-img #rev-img-2 {
+    height: 145px;
+  }
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 {
+  margin-top: 24px;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 {
+    padding: 24px;
+  }
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #top-info-rev {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #top-info-rev #default-user {
+  font-size: 1.5rem;
+  border: 2px solid var(--gfbluedark);
+  padding: 6px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #top-info-rev #cards-stars {
+  font-size: 2rem;
+  color: var(--gfgold);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #card-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #username {
+  margin-top: -16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #username a:link,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #username a:visited {
+  transition: 0.25s;
+  color: var(--gfblue);
+  padding-bottom: 24px;
+  font-size: 1rem;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #username a:link:hover, #background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #username a:link:active,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #username a:visited:hover,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #username a:visited:active {
+  color: var(--gfgold);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #rev-card-content {
+  font-size: 0.875rem;
+  line-height: 20px;
+  padding: 16px 0px 0px;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 {
+  margin-top: 24px;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 {
+    padding: 24px;
+  }
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #top-info-rev {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #top-info-rev #default-user {
+  font-size: 1.5rem;
+  border: 2px solid var(--gfbluedark);
+  padding: 6px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #top-info-rev #cards-stars {
+  font-size: 2rem;
+  color: var(--gfgold);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #card-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #username {
+  margin-top: -16px;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #username a:link,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #username a:visited {
+  transition: 0.25s;
+  color: var(--gfblue);
+  padding-bottom: 24px;
+  font-size: 1rem;
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #username a:link:hover, #background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #username a:link:active,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #username a:visited:hover,
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #username a:visited:active {
+  color: var(--gfgold);
+}
+#background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #rev-card-content {
+  font-size: 0.875rem;
+  line-height: 20px;
+  padding: 16px 0px 0px;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+#background-color #gridreview > div #seemore {
+  padding: 24px 0px;
+}
+#background-color #gridreview > div #seemore a:link,
+#background-color #gridreview > div #seemore a:visited {
+  transition: 0.25s;
+  color: var(--white);
+  padding-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#background-color #gridreview > div #seemore a:link:hover, #background-color #gridreview > div #seemore a:link:active,
+#background-color #gridreview > div #seemore a:visited:hover,
+#background-color #gridreview > div #seemore a:visited:active {
+  color: var(--gfblue);
+}
+#background-color #gridreview > div #seemore i {
+  padding: 0px 16px;
 }
 
 #gridhonesty {
