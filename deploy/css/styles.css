@@ -1671,16 +1671,51 @@ img {
   z-index: 10000;
 }
 
-#gridreview {
+#background-color {
+  background-color: var(--gfbluedark);
+}
+@media (min-width: 768px) {
+  #background-color {
+    background-color: var(--gfbluelight);
+  }
+}
+#background-color #gridreview {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
-  margin-top: 200px;
+  margin-top: 150px;
 }
-#gridreview > div {
+@media (min-width: 768px) {
+  #background-color #gridreview {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #background-color #gridreview {
+    grid-template-columns: 48px auto 48px;
+  }
+}
+@media (min-width: 1200px) {
+  #background-color #gridreview {
+    grid-template-columns: auto 1168px auto;
+  }
+}
+#background-color #gridreview > div {
   grid-area: main;
+  margin-top: 16px;
+  background-color: var(--gfbluedark);
+  border-radius: 16px;
+  color: var(--white);
+  padding-left: 24px;
 }
-
+#background-color #gridreview > div #reviews-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+#background-color #gridreview > div #reviews-header #question {
+  padding: 0;
+}
 #gridhonesty {
   display: grid;
   grid-template-columns: 16px auto 16px;

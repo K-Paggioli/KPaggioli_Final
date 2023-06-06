@@ -1,11 +1,65 @@
-#gridreview{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". main .";
-    margin-top: 200px;
+#background-color {
+    background-color: var(--gfbluedark);
+    @include md{
+        background-color: var(--gfbluelight);
+    }
+    #gridreview {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". main .";
+        margin-top: 150px;
 
-    >div{
-        grid-area: main;
+        @include md{
+            grid-template-columns:32px auto 32px;
+        }
 
-}
+        @include lg{
+            grid-template-columns:48px auto 48px;
+        }
+
+        @include xl{
+            grid-template-columns: auto 1168px auto;
+        }
+
+        >div {
+            grid-area: main;
+            margin-top: 16px;
+            background-color: var(--gfbluedark);
+            border-radius: 16px;
+            color: var(--white);
+            padding-left: 24px;
+
+            #reviews-header {
+                display: flex;
+                justify-content: flex-start;
+                margin-right: auto;
+
+                #h2{
+                    
+                }
+
+                #question{
+                    padding: 0;
+                }
+                #writing{
+                    
+                }
+                
+            }
+
+            #reviews-star {}
+
+            #review-keyword {}
+
+            #review-cards {
+                #review-card-1 {}
+
+                #review-card-2 {}
+
+                #review-card-3 {}
+            }
+
+        }
+    }
+
 }
