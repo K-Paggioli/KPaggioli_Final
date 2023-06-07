@@ -2307,6 +2307,11 @@ img {
 #gridcard > div #cart-sub #card-color #cart-flex #add-ons-warranty #button-warranty {
   padding-top: 16px;
 }
+#gridcard #directional-links {
+  display: flex;
+  justify-content: space-between;
+}
+
 #gridcontact {
   display: grid;
   grid-template-columns: 16px auto 16px;

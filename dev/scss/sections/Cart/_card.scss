@@ -292,5 +292,8 @@
 
     }
 
-    #directional-links {}
+    #directional-links {
+        display:flex;
+        justify-content: space-between;
+    }
 }
