@@ -1506,7 +1506,7 @@ img {
   #gridaddon > div #margin-in-box {
     padding: 16px;
     display: flex;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     gap: 16px;
     justify-content: space-between;
   }
@@ -1515,7 +1515,6 @@ img {
   display: grid;
   grid-template-rows: 5, 1fr;
   grid-template-areas: "f1 f1 f2 f3 f4";
-  position: relative;
 }
 #gridaddon > div #margin-in-box #filter #img {
   grid-area: f1;
@@ -1554,7 +1553,6 @@ img {
   display: grid;
   grid-template-rows: 5, 1fr;
   grid-template-areas: "p1 p1 p2 p3 p4";
-  position: relative;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #proofgrade {
@@ -1593,7 +1591,6 @@ img {
   display: grid;
   grid-template-rows: 5, 1fr;
   grid-template-areas: "a1 a1 a2 a3 a4";
-  position: relative;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #accessorykit {
@@ -1638,7 +1635,6 @@ img {
   display: grid;
   grid-template-rows: 5, 1fr;
   grid-template-areas: "w1 w1 w2 w3 w4";
-  position: relative;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #warranty {
@@ -1795,7 +1791,7 @@ img {
 }
 @media (min-width: 1200px) {
   #background-color #gridreview {
-    grid-template-columns: auto 1168px auto;
+    grid-template-columns: auto 1090px auto;
   }
 }
 #background-color #gridreview > div {
@@ -2163,10 +2159,10 @@ img {
 
 #gridcard {
   display: grid;
-  grid-template-columns: 40px auto 40px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
   padding-top: 108px;
-  background-color: var(--gfbluelight);
+  background-color: var(--white);
 }
 @media (min-width: 1024px) {
   #gridcard {
@@ -2180,10 +2176,7 @@ img {
 }
 #gridcard > div {
   grid-area: main;
-  background-color: var(--white);
-  padding: 24px 24px;
   margin-bottom: 80px;
-  border-radius: 16px;
 }
 #gridcard > div #cart-main h1 {
   font-family: "Arvo", serif;
@@ -2235,6 +2228,9 @@ img {
   font-size: 1.5rem;
   margin-bottom: 88px;
 }
+#gridcard > div #cart-sub {
+  padding-top: 32px;
+}
 #gridcard > div #cart-sub h1 {
   font-family: "Arvo", serif;
   font-weight: 700;
@@ -2257,24 +2253,27 @@ img {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 56px;
     flex-wrap: wrap;
-    padding: 16px 64px;
+    padding: 16px 96px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex {
+    padding: 16px;
     display: flex;
     flex-wrap: nowrap;
+    gap: 16px;
     justify-content: space-between;
-    padding: 0px;
-    padding: 16px 0px;
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter {
   padding: 0px;
   margin: 0px;
   padding-top: 16px;
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "f1 f1 f2 f3 f4";
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter {
@@ -2282,28 +2281,45 @@ img {
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
+  grid-area: f1;
   width: 100%;
   background-color: navy;
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
-    height: 200px;
-    width: 200px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
-    height: 164px;
-    width: 164px;
+    height: 180px;
+    width: 180px;
   }
 }
+#gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #title-filter {
+  grid-area: f2;
+}
+#gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #price-filter {
+  grid-area: f3;
+}
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #button-filter {
+  grid-area: f4;
   padding-top: 16px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #button-filter {
+    padding-top: 38px;
+  }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade {
   padding: 0px;
   margin: 0px;
   padding-top: 32px;
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "p1 p1 p2 p3 p4";
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade {
@@ -2311,22 +2327,30 @@ img {
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
+  grid-area: p1;
   width: 100%;
   background-color: navy;
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
-    height: 200px;
-    width: 200px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
-    height: 164px;
-    width: 164px;
+    height: 180px;
+    width: 180px;
   }
 }
+#gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #title-proof {
+  grid-area: p2;
+}
+#gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #price-proof {
+  grid-area: p3;
+}
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #button-proof {
+  grid-area: p4;
   padding-top: 16px;
   display: flex;
   justify-content: space-between;
@@ -2341,6 +2365,9 @@ img {
   padding: 0px;
   margin: 0px;
   padding-top: 32px;
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "a1 a1 a2 a3 a4";
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory {
@@ -2348,23 +2375,37 @@ img {
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
+  grid-area: a1;
   width: 100%;
   background-color: navy;
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
-    height: 200px;
-    width: 200px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
-    height: 164px;
-    width: 164px;
+    height: 180px;
+    width: 180px;
   }
 }
+#gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #title-acc {
+  grid-area: a2;
+}
+#gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #price-acc {
+  grid-area: a3;
+}
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #button-acc {
+  grid-area: a4;
   padding-top: 16px;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #button-acc {
+    padding-top: 38px;
+  }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty {
   padding: 0px;
@@ -2387,14 +2428,14 @@ img {
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
-    height: 200px;
-    width: 200px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
-    height: 164px;
-    width: 164px;
+    height: 180px;
+    width: 180px;
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #title-warranty {
@@ -2406,6 +2447,12 @@ img {
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #button-warranty {
   grid-area: w4;
   padding-top: 16px;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #button-warranty {
+    padding-top: 38px;
+  }
 }
 
 #directional-links {

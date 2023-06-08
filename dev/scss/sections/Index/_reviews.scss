@@ -20,7 +20,7 @@
         }
 
         @include xl {
-            grid-template-columns: auto 1168px auto;
+            grid-template-columns: auto 1090px auto;
         }
 
         >div {
@@ -31,6 +31,7 @@
             color: var(--white);
             padding-left: 24px;
             padding-right: 24px;
+
 
             #reviews-header {
                 display: flex;

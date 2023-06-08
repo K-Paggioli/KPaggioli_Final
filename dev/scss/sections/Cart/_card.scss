@@ -1,9 +1,9 @@
 #gridcard {
     display: grid;
-    grid-template-columns: 40px auto 40px;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
     padding-top: 108px;
-    background-color: var(--gfbluelight);
+    background-color: var(--white);
 
     @include lg {
         padding-top: 125px;
@@ -15,10 +15,8 @@
 
     >div {
         grid-area: main;
-        background-color: var(--white);
-        padding: 24px 24px;
         margin-bottom: 80px;
-        border-radius: 16px;
+
 
         #cart-main {
             h1 {
@@ -93,6 +91,7 @@
         }
 
         #cart-sub {
+            padding-top: 32px;
             h1 {
                 font-family: 'Arvo', serif;
                 font-weight: 700;
@@ -115,62 +114,76 @@
 
                     #cart-flex {
 
-                        @include md {
+                        @include md{
                             display: flex;
                             justify-content: space-between;
-                            gap: 50px;
+                            gap: 56px;
                             flex-wrap: wrap;
-                            padding: 16px 64px;
-
+                            padding: 16px 96px;
+            
                         }
-
-                        @include lg {
+            
+                        @include lg{
+                            padding:16px;
                             display: flex;
                             flex-wrap: nowrap;
+                            gap:16px;
                             justify-content: space-between;
-                            padding: 0px;
-                            padding: 16px 0px;
                         }
-
 
 
                         #add-ons-filter {
                             padding: 0px;
                             margin: 0px;
                             padding-top: 16px;
+                            display: grid;
+                            grid-template-rows: (5, 1fr);
+                            grid-template-areas:
+                            "f1 f1 f2 f3 f4";
 
                             @include md{
                                 padding-top: 0px;
                             }
 
                             #img-filter {
+                                grid-area: f1;
                                 width: 100%;
                                 background-color: navy;
 
 
-                                @include md {
-                                    height: 200px;
-                                    width: 200px;
-
+                                @include md{
+                                    height: 224px;
+                                    width: 224px;
+            
                                 }
-
-
+            
+            
                                 @include lg {
-                                    height: 164px;
-                                    width: 164px;
-
+                                    height: 180px;
+                                    width: 180px;
+            
                                 }
 
 
 
                             }
 
-                            #title-filter {}
+                            #title-filter {
+                                grid-area: f2;
+                            }
 
-                            #price-filter {}
+                            #price-filter {
+                                grid-area: f3;
+                            }
 
                             #button-filter {
+                                grid-area: f4;
                                 padding-top: 16px;
+                                text-align: right;
+
+                                @include md{
+                                    padding-top: 38px;
+                                }
 
 
                             }
@@ -180,40 +193,51 @@
                             padding: 0px;
                             margin: 0px;
                             padding-top: 32px;
+                            display: grid;
+                grid-template-rows: (5, 1fr);
+                grid-template-areas:
+                "p1 p1 p2 p3 p4";
 
                             @include md {
                                 padding: 0px;
                             }
 
                             #img-proof {
+                                grid-area: p1;
                                 width: 100%;
                                 background-color: navy;
 
-                                @include md {
-                                    height: 200px;
-                                    width: 200px;
-
+                                @include md{
+                                    height: 224px;
+                                    width: 224px;
+            
                                 }
-
-
+            
+            
                                 @include lg {
-                                    height: 164px;
-                                    width: 164px;
-
+                                    height: 180px;
+                                    width: 180px;
+            
                                 }
 
 
 
                             }
 
-                            #title-proof {}
+                            #title-proof {
+                                grid-area: p2;
+                            }
 
-                            #price-proof {}
+                            #price-proof {
+                                grid-area: p3;
+                            }
 
                             #button-proof {
+                                grid-area: p4;
                                 padding-top: 16px;
                                 display: flex;
                                 justify-content: space-between;
+
 
                                 #QTY {
                                     margin-right: 4px;
@@ -233,37 +257,52 @@
                             padding: 0px;
                             margin: 0px;
                             padding-top: 32px;
+                            display: grid;
+                grid-template-rows: (5, 1fr);
+                grid-template-areas:
+                "a1 a1 a2 a3 a4";
 
                             @include md {
                                 padding: 0px;
                             }
 
                             #img-acc {
+                                grid-area: a1;
                                 width: 100%;
                                 background-color: navy;
 
-                                @include md {
-                                    height: 200px;
-                                    width: 200px;
-
+                                @include md{
+                                    height: 224px;
+                                    width: 224px;
+            
                                 }
-
-
+            
+            
                                 @include lg {
-                                    height: 164px;
-                                    width: 164px;
-
+                                    height: 180px;
+                                    width: 180px;
+            
                                 }
 
 
                             }
 
-                            #title-acc {}
+                            #title-acc {
+                                grid-area: a2;
+                            }
 
-                            #price-acc {}
+                            #price-acc {
+                                grid-area: a3;
+                            }
 
                             #button-acc {
+                                grid-area: a4;
                                 padding-top: 16px;
+                                text-align: right;
+
+                                @include lg{
+                                    padding-top: 38px;
+                                }
                             }
                         }
 
@@ -286,17 +325,17 @@
                                 width: 100%;
                                 background-color: navy;
 
-                                @include md {
-                                    height: 200px;
-                                    width: 200px;
-
+                                @include md{
+                                    height: 224px;
+                                    width: 224px;
+            
                                 }
-
-
+            
+            
                                 @include lg {
-                                    height: 164px;
-                                    width: 164px;
-
+                                    height: 180px;
+                                    width: 180px;
+            
                                 }
 
 
@@ -314,6 +353,10 @@
                             #button-warranty {
                                 grid-area: w4;
                                 padding-top: 16px;
+                                text-align: right;
+                                @include lg{
+                                    padding-top: 38px;
+                                }
                             }
                         }
 
