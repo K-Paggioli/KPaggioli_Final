@@ -2680,7 +2680,7 @@ img {
   display: flex;
 }
 #gridcontact > div #column2 {
-  grid-area: c1;
+  grid-area: c2;
 }
 
 #needidig {
