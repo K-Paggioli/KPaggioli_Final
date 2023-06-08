@@ -56,23 +56,35 @@
                 "c1 c2";
             }
             
-            #column-1{
+            #column1{
                 grid-area: c1;
 
                 #contact-info{
-                    h1{
-                        font-family: 'Arvo', serif;
-                    }
+
                     #forms-contact{
-                        width:100%;
+
+                        form{
+                            width:100%;
+                        }
+
+                        #forms-horizontal-2{
+                            display: flex;
+                        }
+
                     }
                 }
+
+                #shipping-info{
+
+                }
+
+
 
                 
 
             }
 
-            #column-2{
+            #column2{
                 grid-area: c1;
 
             }

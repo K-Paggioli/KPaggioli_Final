@@ -2670,16 +2670,16 @@ img {
     grid-template-areas: "c1 c2";
   }
 }
-#gridcontact > div #column-1 {
+#gridcontact > div #column1 {
   grid-area: c1;
 }
-#gridcontact > div #column-1 #contact-info h1 {
-  font-family: "Arvo", serif;
-}
-#gridcontact > div #column-1 #contact-info #forms-contact {
+#gridcontact > div #column1 #contact-info #forms-contact form {
   width: 100%;
 }
-#gridcontact > div #column-2 {
+#gridcontact > div #column1 #contact-info #forms-contact #forms-horizontal-2 {
+  display: flex;
+}
+#gridcontact > div #column2 {
   grid-area: c1;
 }
 
