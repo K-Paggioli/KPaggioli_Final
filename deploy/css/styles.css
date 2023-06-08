@@ -2312,13 +2312,64 @@ img {
   justify-content: space-between;
 }
 
+#checkout-grid-title {
+  background-color: var(--gfblue);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". t .";
+}
+@media (min-width: 1200px) {
+  #checkout-grid-title {
+    grid-template-columns: auto 1168px auto;
+  }
+}
+#checkout-grid-title #checkout-title {
+  grid-area: t;
+  padding-top: 96px;
+  padding-bottom: 24px;
+  color: var(--white);
+  font-family: "arvo", serif;
+  font-size: 1.5rem;
+}
+@media (min-width: 1024px) {
+  #checkout-grid-title #checkout-title {
+    padding-top: 116px;
+  }
+}
+
 #gridcontact {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
 }
+@media (min-width: 1200px) {
+  #gridcontact {
+    grid-template-columns: auto 1168px auto;
+  }
+}
 #gridcontact > div {
   grid-area: main;
+  padding-top: 8px;
+}
+@media (min-width: 768px) {
+  #gridcontact > div {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-areas: "c1 c2";
+  }
+}
+@media (min-width: 1024px) {
+  #gridcontact > div {
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-areas: "c1 c2";
+  }
+}
+#gridcontact > div #column-1 {
+  grid-area: c1;
+}
+#gridcontact > div #column-2 {
+  grid-area: c1;
 }
 
 #needidig {
