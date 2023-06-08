@@ -1,8 +1,14 @@
 #background-color {
     background-color: var(--gfbluedark);
+    margin-top: -152px;
 
     @include md {
         background-color: var(--gfbluelight);
+        margin-top: -86px;
+    }
+
+    @include lg{
+        margin-top: -124px;
     }
 
     #gridreview {

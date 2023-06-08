@@ -17,15 +17,21 @@
             padding-left: 16px;
             font-family: 'Arvo', sans-serif;
             font-weight: 700;
-            font-size: rem-calc(18);
+            font-size: rem-calc(22);
+            margin-bottom:-4px;
+
+            @include md {
+                margin-bottom: -24px;
+            }
+
         }
 
         #margin-in-box {
             padding: 0px 48px;
 
-           
 
-            @include md{
+
+            @include md {
                 display: flex;
                 justify-content: space-between;
                 gap: 56px;
@@ -34,29 +40,29 @@
 
             }
 
-            @include lg{
-                padding:16px;
+            @include lg {
+                padding: 16px;
                 display: flex;
                 flex-wrap: nowrap;
-                gap:16px;
+                gap: 16px;
                 justify-content: space-between;
             }
 
-            
+
 
             #filter {
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
-                "f1 f1 f2 f3 f4";
-                
+                    "f1 f1 f2 f3 f4";
+
                 #img {
                     grid-area: f1;
                     width: 100%;
                     background-color: navy;
 
 
-                    @include md{
+                    @include md {
                         height: 224px;
                         width: 224px;
 
@@ -85,10 +91,10 @@
                     grid-area: f4;
                     padding-top: 16px;
 
-                    @include md{
+                    @include md {
                         padding-top: 38px;
                     }
-                    
+
                 }
 
             }
@@ -98,9 +104,9 @@
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
-                "p1 p1 p2 p3 p4";
-            
-                @include md{
+                    "p1 p1 p2 p3 p4";
+
+                @include md {
                     padding: 0px;
                 }
 
@@ -109,7 +115,7 @@
                     width: 100%;
                     background-color: navy;
 
-                    @include md{
+                    @include md {
                         height: 224px;
                         width: 224px;
 
@@ -128,17 +134,18 @@
 
                 #title {
                     grid-area: p2;
-            
+
                 }
 
                 #price {
                     grid-area: p3;
                 }
 
-                #button {grid-area: p4;
+                #button {
+                    grid-area: p4;
                     padding-top: 16px;
                 }
-                
+
 
 
             }
@@ -148,19 +155,19 @@
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
-                "a1 a1 a2 a3 a4";
-                
-    
-                @include md{
+                    "a1 a1 a2 a3 a4";
+
+
+                @include md {
                     padding: 0px;
                 }
-    
+
                 #img {
                     grid-area: a1;
                     width: 100%;
                     background-color: navy;
-    
-                    @include md{
+
+                    @include md {
                         height: 224px;
                         width: 224px;
 
@@ -173,48 +180,48 @@
 
                     }
 
-    
-    
+
+
                 }
-    
+
                 #title {
                     grid-area: a2;
                 }
-    
+
                 #price {
                     grid-area: a3;
                 }
-    
+
                 #button {
                     grid-area: a4;
                     padding-top: 16px;
 
-                    @include lg{
+                    @include lg {
                         padding-top: 38px;
                     }
                 }
-    
+
             }
-    
+
             #warranty {
                 padding-top: 32px;
                 padding-bottom: 32px;
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
-                "w1 w1 w2 w3 w4";
-                
-                
-                @include md{
+                    "w1 w1 w2 w3 w4";
+
+
+                @include md {
                     padding: 0px;
                 }
-    
+
                 #img {
                     grid-area: w1;
                     width: 100%;
                     background-color: navy;
-    
-                    @include md{
+
+                    @include md {
                         height: 224px;
                         width: 224px;
 
@@ -227,35 +234,34 @@
 
                     }
 
-    
-    
+
+
                 }
-    
+
                 #title {
                     grid-area: w2;
                 }
-    
+
                 #price {
                     grid-area: w3;
                 }
-    
+
                 #button {
                     grid-area: w4;
                     padding-top: 16px;
 
-                    @include lg{
+                    @include lg {
                         padding-top: 38px;
                     }
                 }
-    
-    
+
+
             }
 
 
         }
 
-       
+
 
     }
 }
-

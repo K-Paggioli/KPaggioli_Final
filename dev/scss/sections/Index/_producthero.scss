@@ -117,32 +117,45 @@
 
             @include md{
                 grid-template-areas: 
-                "s1 s2"
+                "s1 s1"
+                "s2 s2"
                 " . as";
+            }
+
+            @include lg{
+                grid-template-areas: 
+            "s1 s2"
+            ". as";
             }
             padding-top: 32px;
             #specs1 {
                 grid-area: s1;
                 background-color: var(--gfgrey);
                 padding: 16px;
+                padding-left: 32px;
                 
                 line-height: 40px;
                 border-radius: 16px;
 
                 @include md{
                     margin-right: 0px;
+                    margin-bottom: 24px;
                 }
                 @include lg{
                     margin-right: 40px;
+                    margin-bottom: 0;
                 }
-                li{
-                    list-style:decimal;
+                ul{
+                    li{
+                        list-style: disc;
+                    }
                 }
+                
             }
 
             #specs2 {
-                
                 display: none;
+
 
                 @include md{
                 grid-area: s2;
@@ -152,11 +165,17 @@
                 list-style:decimal;
                 line-height: 40px;
                 border-radius: 16px;
-                margin-left: 16px;
+                padding-left: 32px;
                 }
 
                 @include lg{
                     margin-left: 40px;
+                }
+
+                ul{
+                    li{
+                        list-style: disc;
+                    }
                 }
 
             }

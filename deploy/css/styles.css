@@ -1403,28 +1403,36 @@ img {
 }
 @media (min-width: 768px) {
   #gridproduct > div #speculation {
-    grid-template-areas: "s1 s2" " . as";
+    grid-template-areas: "s1 s1" "s2 s2" " . as";
+  }
+}
+@media (min-width: 1024px) {
+  #gridproduct > div #speculation {
+    grid-template-areas: "s1 s2" ". as";
   }
 }
 #gridproduct > div #speculation #specs1 {
   grid-area: s1;
   background-color: var(--gfgrey);
   padding: 16px;
+  padding-left: 32px;
   line-height: 40px;
   border-radius: 16px;
 }
 @media (min-width: 768px) {
   #gridproduct > div #speculation #specs1 {
     margin-right: 0px;
+    margin-bottom: 24px;
   }
 }
 @media (min-width: 1024px) {
   #gridproduct > div #speculation #specs1 {
     margin-right: 40px;
+    margin-bottom: 0;
   }
 }
-#gridproduct > div #speculation #specs1 li {
-  list-style: decimal;
+#gridproduct > div #speculation #specs1 ul li {
+  list-style: disc;
 }
 #gridproduct > div #speculation #specs2 {
   display: none;
@@ -1438,13 +1446,16 @@ img {
     list-style: decimal;
     line-height: 40px;
     border-radius: 16px;
-    margin-left: 16px;
+    padding-left: 32px;
   }
 }
 @media (min-width: 1024px) {
   #gridproduct > div #speculation #specs2 {
     margin-left: 40px;
   }
+}
+#gridproduct > div #speculation #specs2 ul li {
+  list-style: disc;
 }
 #gridproduct > div #speculation aside {
   grid-area: as;
@@ -1488,7 +1499,13 @@ img {
   padding-left: 16px;
   font-family: "Arvo", sans-serif;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.375rem;
+  margin-bottom: -4px;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #addon-title {
+    margin-bottom: -24px;
+  }
 }
 #gridaddon > div #margin-in-box {
   padding: 0px 48px;
@@ -1700,8 +1717,8 @@ img {
 @media (min-width: 768px) {
   #grid > div #family-position {
     display: grid;
-    grid-template-columns: "4px auto 4px";
-    grid-template-areas: ". main.";
+    grid-template-columns: 32px auto 128px;
+    grid-template-areas: ". main .";
     margin-top: -350px;
     margin-bottom: 200px;
     margin-right: auto;
@@ -1709,12 +1726,13 @@ img {
 }
 @media (min-width: 1024px) {
   #grid > div #family-position {
-    margin-top: 0px;
+    margin-top: -332px;
+    grid-template-columns: 124px auto 48px;
   }
 }
 @media (min-width: 1200px) {
   #grid > div #family-position {
-    grid-template-columns: auto 1168px auto;
+    grid-template-columns: auto 1090px auto;
   }
 }
 #grid > div #family-position #family-info {
@@ -1748,6 +1766,11 @@ img {
   padding-top: 12px;
   padding-bottom: 22px;
 }
+@media (min-width: 768px) {
+  #grid > div #family-position #family-info #family-title {
+    font-size: 2.375rem;
+  }
+}
 #grid > div #family-position #family-info #family-base {
   opacity: 1;
   color: var(--white);
@@ -1757,6 +1780,11 @@ img {
 @media (min-width: 768px) {
   #grid > div #family-position #family-info #family-base {
     display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: -32px;
+    margin-bottom: 24px;
   }
 }
 #grid > div #family-position #family-info #family-link {
@@ -1767,10 +1795,17 @@ img {
 
 #background-color {
   background-color: var(--gfbluedark);
+  margin-top: -152px;
 }
 @media (min-width: 768px) {
   #background-color {
     background-color: var(--gfbluelight);
+    margin-top: -86px;
+  }
+}
+@media (min-width: 1024px) {
+  #background-color {
+    margin-top: -124px;
   }
 }
 #background-color #gridreview {
@@ -2243,8 +2278,13 @@ img {
   border-radius: 16px;
   margin-bottom: 40px;
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 80px auto 60px;
   grid-template-areas: ". sub .";
+}
+@media (min-width: 768px) {
+  #gridcard > div #cart-sub #card-color {
+    grid-template-columns: 16px auto 16px;
+  }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card {
   grid-area: sub;

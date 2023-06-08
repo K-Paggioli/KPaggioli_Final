@@ -8,6 +8,7 @@
             background-size: cover;
             height: 200px;
             background-position: 20%;
+            
 
             @include md {
                 height: 441px;
@@ -27,8 +28,8 @@
             
             @include md{
                 display: grid;
-                grid-template-columns: "4px auto 4px";
-                grid-template-areas: ". main.";
+                grid-template-columns: 32px auto 128px;
+                grid-template-areas: ". main .";
                 margin-top: -350px;
                 margin-bottom: 200px;
                 margin-right: auto;
@@ -36,13 +37,15 @@
             }
 
             @include lg {
-                margin-top: 0px;
+                margin-top: -332px;
+                grid-template-columns: 124px auto 48px;
+
    
                
             }
 
             @include xl {
-                grid-template-columns: auto 1168px auto;
+                grid-template-columns: auto 1090px auto;
             }
 
 
@@ -81,6 +84,10 @@
                     padding-top: 12px;
                     padding-bottom: 22px;
 
+                    @include md{
+                        font-size: rem-calc(38);
+                    }
+
 
                 }
 
@@ -90,8 +97,14 @@
                     z-index: 10000;
                     display: none;
 
+
                     @include md{
                         display: block;
+                        font-size: rem-calc(14);
+                        font-weight:600;
+                        font-style: italic;
+                        margin-top: -32px;
+                        margin-bottom: 24px;
                     }
 
                 }

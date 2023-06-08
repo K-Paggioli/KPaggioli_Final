@@ -106,8 +106,12 @@
                 border-radius: 16px;
                 margin-bottom: 40px;
                 display: grid;
-                grid-template-columns: 16px auto 16px;
+                grid-template-columns: 80px auto 60px;
                 grid-template-areas: ". sub .";
+
+                @include md{
+                    grid-template-columns:16px auto 16px;
+                }
 
                 #grid-inside-card {
                     grid-area: sub;
