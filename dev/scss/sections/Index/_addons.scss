@@ -81,10 +81,14 @@
 
                 #title {
                     grid-area: f2;
+                    font-size: rem-calc(16);
+                    font-weight: 700;
+
                 }
 
                 #price {
                     grid-area: f3;
+                    font-size: rem-calc(16)
                 }
 
                 #button {

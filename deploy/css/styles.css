@@ -1552,9 +1552,12 @@ img {
 }
 #gridaddon > div #margin-in-box #filter #title {
   grid-area: f2;
+  font-size: 1rem;
+  font-weight: 700;
 }
 #gridaddon > div #margin-in-box #filter #price {
   grid-area: f3;
+  font-size: 1rem;
 }
 #gridaddon > div #margin-in-box #filter #button {
   grid-area: f4;
