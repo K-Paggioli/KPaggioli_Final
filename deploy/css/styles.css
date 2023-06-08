@@ -2695,6 +2695,7 @@ img {
   padding: 16px 0px;
 }
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 form input {
+  box-sizing: border-box;
   width: 100%;
   padding: 8px;
   margin: 8px 0px;
