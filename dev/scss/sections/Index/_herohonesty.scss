@@ -5,6 +5,7 @@
     width:100%;
     z-index: 10000;
     margin-top: -40px;
+    position: relative;
 
     @include md{
         margin-top: 0px;
@@ -59,9 +60,10 @@
                         transition: 0.25s;
                         color: var(--gfgold);
                         padding-bottom: 24px;
+                        font-weight: 600;
 
                         &:hover, &:active {
-                            color: var(--white);
+                            color: var(--gfbluedark);
                         }
                     }
 

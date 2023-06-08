@@ -119,11 +119,12 @@
                 #dropdown-1 {
                     grid-area: d;
                     margin-top: 24px;
+                    text-align: right;
 
                     button {
                         background-color: var(--gfblue);
                         color: white;
-                        padding: 8px 8px;
+                        padding: 8px 64px;
                         width: 100%;
                         display: inline-block;
                         border: none;
@@ -131,6 +132,10 @@
                         font-weight: 600;
                         font-size: rem-calc(14);
                         transition: 0.25s;
+
+                        @include lg{
+                            width: 75%
+                        }
 
                         &:active {
                             background-color: var(--gfgold);

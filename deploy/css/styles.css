@@ -601,7 +601,7 @@ header > div #glowlogo {
   grid-area: logo;
 }
 header > div #glowlogo #pin {
-  padding-top: 9px;
+  padding-top: 16px;
 }
 @media (min-width: 1024px) {
   header > div #glowlogo #pin {
@@ -1579,6 +1579,10 @@ img {
   grid-template-areas: "f1 f1 f2 f3 f4";
 }
 #gridaddon > div #margin-in-box #filter #img {
+  background-image: url(../img/addons/filter.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
   grid-area: f1;
   width: 100%;
   background-color: navy;
@@ -1626,8 +1630,10 @@ img {
 }
 #gridaddon > div #margin-in-box #proofgrade #img {
   grid-area: p1;
-  width: 100%;
-  background-color: navy;
+  background-image: url(../img/addons/proofgrade.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #proofgrade #img {
@@ -1664,8 +1670,10 @@ img {
 }
 #gridaddon > div #margin-in-box #accessorykit #img {
   grid-area: a1;
-  width: 100%;
-  background-color: navy;
+  background-image: url(../img/addons/accessory.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #accessorykit #img {
@@ -1708,8 +1716,10 @@ img {
 }
 #gridaddon > div #margin-in-box #warranty #img {
   grid-area: w1;
-  width: 100%;
-  background-color: navy;
+  background-image: url(../img/addons/warranty.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #warranty #img {
@@ -1948,11 +1958,12 @@ img {
 #background-color #gridreview > div #reviews-star #dropdown-1 {
   grid-area: d;
   margin-top: 24px;
+  text-align: right;
 }
 #background-color #gridreview > div #reviews-star #dropdown-1 button {
   background-color: var(--gfblue);
   color: white;
-  padding: 8px 8px;
+  padding: 8px 64px;
   width: 100%;
   display: inline-block;
   border: none;
@@ -1960,6 +1971,11 @@ img {
   font-weight: 600;
   font-size: 0.875rem;
   transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  #background-color #gridreview > div #reviews-star #dropdown-1 button {
+    width: 75%;
+  }
 }
 #background-color #gridreview > div #reviews-star #dropdown-1 button:active {
   background-color: var(--gfgold);
@@ -2226,6 +2242,7 @@ img {
   width: 100%;
   z-index: 10000;
   margin-top: -40px;
+  position: relative;
 }
 @media (min-width: 768px) {
   #bg-img-honest {
@@ -2284,11 +2301,12 @@ img {
   transition: 0.25s;
   color: var(--gfgold);
   padding-bottom: 24px;
+  font-weight: 600;
 }
 #gridhonesty > div #honesty-content p a:link:hover, #gridhonesty > div #honesty-content p a:link:active,
 #gridhonesty > div #honesty-content p a:visited:hover,
 #gridhonesty > div #honesty-content p a:visited:active {
-  color: var(--white);
+  color: var(--gfbluedark);
 }
 
 #gridcard {
@@ -2421,6 +2439,11 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
   grid-area: f1;
+  background-image: url(../img/addons/filter.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
+  grid-area: f1;
   width: 100%;
   background-color: navy;
 }
@@ -2467,8 +2490,10 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
   grid-area: p1;
-  width: 100%;
-  background-color: navy;
+  background-image: url(../img/addons/proofgrade.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
@@ -2515,8 +2540,10 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
   grid-area: a1;
-  width: 100%;
-  background-color: navy;
+  background-image: url(../img/addons/accessory.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
@@ -2563,7 +2590,10 @@ img {
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
   grid-area: w1;
   width: 100%;
-  background-color: navy;
+  background-image: url(../img/addons/warranty.png);
+  height: 224px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
@@ -2716,6 +2746,9 @@ img {
   margin: 8px 0px;
   color: var(--gfblue);
   font-style: italic;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(71, 145, 162, 0.25);
 }
 @media (min-width: 1024px) {
   #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #forms-horizontal-2 {
@@ -2801,6 +2834,9 @@ img {
   margin: 8px 0px;
   color: var(--gfblue);
   font-style: italic;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(71, 145, 162, 0.25);
 }
 @media (min-width: 1024px) {
   #gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 {
@@ -3062,6 +3098,11 @@ img {
   padding-top: 90px;
   padding-bottom: 150px;
 }
+@media (min-width: 768px) {
+  #column2 {
+    padding-top: 32px;
+  }
+}
 #column2 #ctwogrid {
   grid-area: main;
   margin-top: 32px;
@@ -3207,7 +3248,17 @@ img {
   padding-right: 24px;
   justify-content: center;
   color: var(--gfgold);
-  margin-top: 100px;
+  margin-top: 175px;
+}
+@media (min-width: 768px) {
+  #needidig > div #titlethanks {
+    margin-top: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #needidig > div #titlethanks {
+    margin-top: 300px;
+  }
 }
 #needidig > div #titlethanks #actualfont {
   font-size: 1.25rem;
@@ -3232,13 +3283,13 @@ img {
 }
 #needidig > div #centertext a:link,
 #needidig > div #centertext a:visited {
-  color: var(--gfbluedark);
+  color: var(--gfgold);
   font-weight: 600;
 }
 #needidig > div #centertext a:link:hover, #needidig > div #centertext a:link:active,
 #needidig > div #centertext a:visited:hover,
 #needidig > div #centertext a:visited:active {
-  color: var(--gfgold);
+  color: var(--gfbluedark);
   transition: 0.25s;
 }
 #needidig > div #buttons-thx {

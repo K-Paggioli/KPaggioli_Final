@@ -16,7 +16,16 @@
             padding-right: 24px;
             justify-content: center;
             color: var(--gfgold);
-            margin-top: 100px;
+            margin-top: 175px;
+
+            @include md{
+                margin-top: 200px;
+            }
+
+            @include lg{
+                margin-top: 300px;
+            }
+            
 
             #actualfont {
                 font-size: rem-calc(20px);
@@ -46,12 +55,12 @@
 
             a:link,
             a:visited {
-                color: var(--gfbluedark);
+                color: var(--gfgold);
                 font-weight: 600;
 
                 &:hover,
                 &:active {
-                    color: var(--gfgold);
+                    color: var(--gfbluedark);
                     transition: 0.25s;
                 }
             }

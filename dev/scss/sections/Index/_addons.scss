@@ -57,6 +57,11 @@
                     "f1 f1 f2 f3 f4";
 
                 #img {
+                    background-image: url(../img/addons/filter.png);
+                    height: 224px;
+                    background-size: cover;
+                    background-position: center;
+
                     grid-area: f1;
                     width: 100%;
                     background-color: navy;
@@ -116,8 +121,11 @@
 
                 #img {
                     grid-area: p1;
-                    width: 100%;
-                    background-color: navy;
+                    background-image: url(../img/addons/proofgrade.png);
+                    height: 224px;
+                    background-size: cover;
+                    background-position: center;
+
 
                     @include md {
                         height: 224px;
@@ -168,8 +176,11 @@
 
                 #img {
                     grid-area: a1;
-                    width: 100%;
-                    background-color: navy;
+                    background-image: url(../img/addons/accessory.png);
+                    height: 224px;
+                    background-size: cover;
+                    background-position: center;
+
 
                     @include md {
                         height: 224px;
@@ -183,7 +194,6 @@
                         width: 180px;
 
                     }
-
 
 
                 }
@@ -222,8 +232,11 @@
 
                 #img {
                     grid-area: w1;
-                    width: 100%;
-                    background-color: navy;
+                    background-image: url(../img/addons/warranty.png);
+                    height: 224px;
+                    background-size: cover;
+                    background-position: center;
+
 
                     @include md {
                         height: 224px;

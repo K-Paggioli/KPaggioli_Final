@@ -34,10 +34,11 @@ header {
 
         #glowlogo {
             grid-area: logo;
+            
 
 
             #pin {
-                padding-top: 9px;
+                padding-top: 16px;
 
                 @include lg {
                     padding-top:0px;

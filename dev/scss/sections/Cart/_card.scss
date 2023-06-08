@@ -92,6 +92,7 @@
 
         #cart-sub {
             padding-top: 32px;
+
             h1 {
                 font-family: 'Arvo', serif;
                 font-weight: 700;
@@ -109,8 +110,8 @@
                 grid-template-columns: 80px auto 60px;
                 grid-template-areas: ". sub .";
 
-                @include md{
-                    grid-template-columns:16px auto 16px;
+                @include md {
+                    grid-template-columns: 16px auto 16px;
                 }
 
                 #grid-inside-card {
@@ -118,20 +119,20 @@
 
                     #cart-flex {
 
-                        @include md{
+                        @include md {
                             display: flex;
                             justify-content: space-between;
                             gap: 56px;
                             flex-wrap: wrap;
                             padding: 16px 96px;
-            
+
                         }
-            
-                        @include lg{
-                            padding:16px;
+
+                        @include lg {
+                            padding: 16px;
                             display: flex;
                             flex-wrap: nowrap;
-                            gap:16px;
+                            gap: 16px;
                             justify-content: space-between;
                         }
 
@@ -143,29 +144,35 @@
                             display: grid;
                             grid-template-rows: (5, 1fr);
                             grid-template-areas:
-                            "f1 f1 f2 f3 f4";
+                                "f1 f1 f2 f3 f4";
 
-                            @include md{
+                            @include md {
                                 padding-top: 0px;
                             }
 
                             #img-filter {
                                 grid-area: f1;
+                                background-image: url(../img/addons/filter.png);
+                                height: 224px;
+                                background-size: cover;
+                                background-position: center;
+
+                                grid-area: f1;
                                 width: 100%;
                                 background-color: navy;
 
 
-                                @include md{
+                                @include md {
                                     height: 224px;
                                     width: 224px;
-            
+
                                 }
-            
-            
+
+
                                 @include lg {
                                     height: 180px;
                                     width: 180px;
-            
+
                                 }
 
 
@@ -185,7 +192,7 @@
                                 padding-top: 16px;
                                 text-align: right;
 
-                                @include md{
+                                @include md {
                                     padding-top: 38px;
                                 }
 
@@ -198,9 +205,9 @@
                             margin: 0px;
                             padding-top: 32px;
                             display: grid;
-                grid-template-rows: (5, 1fr);
-                grid-template-areas:
-                "p1 p1 p2 p3 p4";
+                            grid-template-rows: (5, 1fr);
+                            grid-template-areas:
+                                "p1 p1 p2 p3 p4";
 
                             @include md {
                                 padding: 0px;
@@ -208,20 +215,23 @@
 
                             #img-proof {
                                 grid-area: p1;
-                                width: 100%;
-                                background-color: navy;
+                                background-image: url(../img/addons/proofgrade.png);
+                                height: 224px;
+                                background-size: cover;
+                                background-position: center;
 
-                                @include md{
+
+                                @include md {
                                     height: 224px;
                                     width: 224px;
-            
+
                                 }
-            
-            
+
+
                                 @include lg {
                                     height: 180px;
                                     width: 180px;
-            
+
                                 }
 
 
@@ -262,9 +272,9 @@
                             margin: 0px;
                             padding-top: 32px;
                             display: grid;
-                grid-template-rows: (5, 1fr);
-                grid-template-areas:
-                "a1 a1 a2 a3 a4";
+                            grid-template-rows: (5, 1fr);
+                            grid-template-areas:
+                                "a1 a1 a2 a3 a4";
 
                             @include md {
                                 padding: 0px;
@@ -272,20 +282,24 @@
 
                             #img-acc {
                                 grid-area: a1;
-                                width: 100%;
-                                background-color: navy;
+                                background-image: url(../img/addons/accessory.png);
+                                height: 224px;
+                                background-size: cover;
+                                background-position: center;
 
-                                @include md{
+
+
+                                @include md {
                                     height: 224px;
                                     width: 224px;
-            
+
                                 }
-            
-            
+
+
                                 @include lg {
                                     height: 180px;
                                     width: 180px;
-            
+
                                 }
 
 
@@ -304,7 +318,7 @@
                                 padding-top: 16px;
                                 text-align: right;
 
-                                @include lg{
+                                @include lg {
                                     padding-top: 38px;
                                 }
                             }
@@ -327,21 +341,25 @@
                             #img-warranty {
                                 grid-area: w1;
                                 width: 100%;
-                                background-color: navy;
+                                background-image: url(../img/addons/warranty.png);
+                                height: 224px;
+                                background-size: cover;
+                                background-position: center;
 
-                                @include md{
+
+
+                                @include md {
                                     height: 224px;
                                     width: 224px;
-            
+
                                 }
-            
-            
+
+
                                 @include lg {
                                     height: 180px;
                                     width: 180px;
-            
-                                }
 
+                                }
 
 
                             }
@@ -358,7 +376,8 @@
                                 grid-area: w4;
                                 padding-top: 16px;
                                 text-align: right;
-                                @include lg{
+
+                                @include lg {
                                     padding-top: 38px;
                                 }
                             }
@@ -380,33 +399,34 @@
     justify-content: space-between;
     align-items: center;
 
-    #left-side{
-        
+    #left-side {
+
         a:link,
-            a:visited {
-                display: inline-block;
-                transition: 0.25s;
-                color: var(--gfbluedark);
-                font-size: rem-calc(15);
+        a:visited {
+            display: inline-block;
+            transition: 0.25s;
+            color: var(--gfbluedark);
+            font-size: rem-calc(15);
 
 
-                &:hover {
-                    color: var(--gfblue);
-                }
+            &:hover {
+                color: var(--gfblue);
+            }
 
-                &:active {
-                    color: var(--gfgold);
-                }
-}
-    }
-    #ileft{
-        padding-right:8px;
+            &:active {
+                color: var(--gfgold);
+            }
+        }
     }
 
-    #iright{
+    #ileft {
+        padding-right: 8px;
+    }
+
+    #iright {
         padding-left: 8px;
     }
-    
+
 
 
 }

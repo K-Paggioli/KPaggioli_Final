@@ -3,6 +3,10 @@
     grid-template-columns: 24px auto 24px;
     grid-template-areas: ". main .";
     padding-top: 90px;
+
+    @include md{
+        padding-top: 32px;
+    }
     padding-bottom: 150px;
 
 
