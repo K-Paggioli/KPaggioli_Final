@@ -17,16 +17,18 @@ html {
     }
 
     ul {
-
         @include lg{
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            justify-content: flex-start;
+            align-items:baseline;
             height: 100%;
         }
 
         li {
             text-align: right;
+            font-weight: 600;
+
+
 
             @include lg{
                 margin-left: 24px;
@@ -52,6 +54,33 @@ html {
                 }
             }
         }
+
+        #nav-start{
+
+            @include lg{
+                margin-left: 8px;
+            }
+        }
+
+            #cart-icon{
+                display: none;
+
+                @include lg{
+                    display: block;
+                }
+
+            }
+
+            #cart-word{
+                @include lg{
+                    display: none;
+                }
+            }
+
+            #sign{
+                padding-bottom: 16px;
+            }
+
 
         #gallery-button{
             margin-right: auto;

@@ -490,13 +490,14 @@ html {
 @media (min-width: 1024px) {
   #main-menu ul {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
     height: 100%;
   }
 }
 #main-menu ul li {
   text-align: right;
+  font-weight: 600;
 }
 @media (min-width: 1024px) {
   #main-menu ul li {
@@ -524,6 +525,27 @@ html {
     padding-bottom: 0;
   }
 }
+@media (min-width: 1024px) {
+  #main-menu ul #nav-start {
+    margin-left: 8px;
+  }
+}
+#main-menu ul #cart-icon {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #main-menu ul #cart-icon {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #main-menu ul #cart-word {
+    display: none;
+  }
+}
+#main-menu ul #sign {
+  padding-bottom: 16px;
+}
 #main-menu ul #gallery-button {
   margin-right: auto;
 }
@@ -542,6 +564,11 @@ header {
   box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
   background-color: var(--white);
 }
+@media (min-width: 1200px) {
+  header {
+    grid-template-columns: auto 1168px auto;
+  }
+}
 header > div {
   grid-area: main;
   display: grid;
@@ -557,13 +584,13 @@ header > div {
 }
 header > div #glowlogo {
   grid-area: logo;
-  padding-top: 10px;
 }
 header > div #glowlogo #pin {
   padding-top: 9px;
 }
 @media (min-width: 1024px) {
   header > div #glowlogo #pin {
+    padding-top: 0px;
     display: none;
   }
 }
