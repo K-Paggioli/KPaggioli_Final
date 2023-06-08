@@ -23,11 +23,26 @@
         #margin-in-box {
             padding: 0px 48px;
 
-            @include md {
-                padding: 16px;
+           
+
+            @include md{
                 display: flex;
                 justify-content: space-between;
+                gap: 56px;
+                flex-wrap: wrap;
+                padding: 16px 96px;
+
             }
+
+            @include lg{
+                padding:16px;
+                display: flex;
+                flex-wrap: none;
+                gap:16px;
+                justify-content: space-between;
+            }
+
+            
 
             #filter {
 
@@ -36,18 +51,19 @@
                     background-color: navy;
 
 
-                    @include md {
-                        height: 164px;
-                        width: 164px;
+                    @include md{
+                        height: 224px;
+                        width: 224px;
 
                     }
 
 
                     @include lg {
-                        height: 216px;
-                        width: 216px;
+                        height: 180px;
+                        width: 180px;
 
                     }
+
 
 
                 }
@@ -75,18 +91,19 @@
                     width: 100%;
                     background-color: navy;
 
-                    @include md {
-                        height: 164px;
-                        width: 164px;
+                    @include md{
+                        height: 224px;
+                        width: 224px;
 
                     }
 
 
                     @include lg {
-                        height: 216px;
-                        width: 216px;
+                        height: 180px;
+                        width: 180px;
 
                     }
+
 
 
                 }
@@ -114,18 +131,19 @@
                     width: 100%;
                     background-color: navy;
     
-                    @include md {
-                        height: 164px;
-                        width: 164px;
-    
+                    @include md{
+                        height: 224px;
+                        width: 224px;
+
                     }
-    
-    
+
+
                     @include lg {
-                        height: 216px;
-                        width: 216px;
-    
+                        height: 180px;
+                        width: 180px;
+
                     }
+
     
     
                 }
@@ -152,17 +170,19 @@
                     width: 100%;
                     background-color: navy;
     
-                    @include md {
-                        height: 164px;
-                        width: 164px;
-    
+                    @include md{
+                        height: 224px;
+                        width: 224px;
+
                     }
-    
+
+
                     @include lg {
-                        height: 216px;
-                        width: 216px;
-    
+                        height: 180px;
+                        width: 180px;
+
                     }
+
     
     
                 }

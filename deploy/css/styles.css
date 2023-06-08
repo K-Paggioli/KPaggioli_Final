@@ -1495,8 +1495,19 @@ img {
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    flex-wrap: wrap;
+    padding: 16px 96px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridaddon > div #margin-in-box {
     padding: 16px;
     display: flex;
+    flex-wrap: none;
+    gap: 16px;
     justify-content: space-between;
   }
 }
@@ -1506,14 +1517,14 @@ img {
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #filter #img {
-    height: 164px;
-    width: 164px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridaddon > div #margin-in-box #filter #img {
-    height: 216px;
-    width: 216px;
+    height: 180px;
+    width: 180px;
   }
 }
 #gridaddon > div #margin-in-box #filter #button {
@@ -1533,14 +1544,14 @@ img {
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #proofgrade #img {
-    height: 164px;
-    width: 164px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridaddon > div #margin-in-box #proofgrade #img {
-    height: 216px;
-    width: 216px;
+    height: 180px;
+    width: 180px;
   }
 }
 #gridaddon > div #margin-in-box #proofgrade #button {
@@ -1560,14 +1571,14 @@ img {
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #accessorykit #img {
-    height: 164px;
-    width: 164px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridaddon > div #margin-in-box #accessorykit #img {
-    height: 216px;
-    width: 216px;
+    height: 180px;
+    width: 180px;
   }
 }
 #gridaddon > div #margin-in-box #accessorykit #button {
@@ -1588,14 +1599,14 @@ img {
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #warranty #img {
-    height: 164px;
-    width: 164px;
+    height: 224px;
+    width: 224px;
   }
 }
 @media (min-width: 1024px) {
   #gridaddon > div #margin-in-box #warranty #img {
-    height: 216px;
-    width: 216px;
+    height: 180px;
+    width: 180px;
   }
 }
 #gridaddon > div #margin-in-box #warranty #button {
