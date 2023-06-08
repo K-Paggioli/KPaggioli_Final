@@ -378,4 +378,28 @@
 #directional-links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    #left-side{
+        a:link,
+            a:visited {
+                display: inline-block;
+                transition: 0.25s;
+                color: var(--gfbluedark);
+
+
+                &:hover {
+                    color: var(--gfblue);
+                }
+
+                &:active {
+                    color: var(--gfgold);
+                }
+}
+    }
+    
+
+i{
+    padding: 0px 8px;
+}
 }

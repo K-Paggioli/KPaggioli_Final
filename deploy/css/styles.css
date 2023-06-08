@@ -2579,6 +2579,24 @@ img {
 #directional-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+#directional-links #left-side a:link,
+#directional-links #left-side a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--gfbluedark);
+}
+#directional-links #left-side a:link:hover,
+#directional-links #left-side a:visited:hover {
+  color: var(--gfblue);
+}
+#directional-links #left-side a:link:active,
+#directional-links #left-side a:visited:active {
+  color: var(--gfgold);
+}
+#directional-links i {
+  padding: 0px 8px;
 }
 
 #checkout-grid-title {
