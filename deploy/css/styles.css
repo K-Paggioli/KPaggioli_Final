@@ -2703,6 +2703,8 @@ img {
   width: 100%;
   padding: 8px;
   margin: 8px 0px;
+  color: var(--gfblue);
+  font-style: italic;
 }
 @media (min-width: 1024px) {
   #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #forms-horizontal-2 {
@@ -2789,6 +2791,8 @@ img {
   width: 100%;
   padding: 8px;
   margin: 8px 0px;
+  color: var(--gfblue);
+  font-style: italic;
 }
 @media (min-width: 1024px) {
   #gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 {
@@ -2800,7 +2804,37 @@ img {
     margin-right: 60px;
   }
 }
-
+@media (min-width: 1024px) {
+  #gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 #forms-horizontal-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 #forms-horizontal-3 form input {
+    width: 100%;
+    margin-right: 16px;
+  }
+}
+#gridcontact > div #column1 #pick-shipping {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #pick-shipping {
+    display: grid;
+    grid-template-columns: 16px auto 72px;
+    grid-template-areas: ". form .";
+  }
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid {
+  grid-area: form;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content {
+  background-color: var(--gfgrey);
+  padding: 24px;
+  border-radius: 16px;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content label input {
+  padding-right: 8px;
+}
 #needidig {
   display: grid;
   grid-template-columns: 16px auto 16px;
