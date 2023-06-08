@@ -2934,6 +2934,38 @@ img {
   padding: 24px;
   border-radius: 16px;
 }
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent h4 {
+  font-family: "Arvo", serif;
+  font-size: 1.25rem;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p {
+  margin-top: -8px;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+#gridcontact > div #column2 #ctwogrid #totals {
+  margin-top: 32px;
+}
+#gridcontact > div #column2 #ctwogrid #totals #subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+#gridcontact > div #column2 #ctwogrid #totals #taxes {
+  display: flex;
+  justify-content: space-between;
+}
+#gridcontact > div #column2 #ctwogrid #totals #shiptotal {
+  display: flex;
+  justify-content: space-between;
+}
+#gridcontact > div #column2 #ctwogrid #totals #grandtotal {
+  display: flex;
+  justify-content: space-between;
+}
+#gridcontact > div #column2 #ctwogrid #totals #buynow {
+  margin-top: 32px;
+  text-align: right;
+}
 
 #needidig {
   display: grid;

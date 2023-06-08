@@ -413,6 +413,51 @@
                     color: var(--white);
                     padding: 24px;
                     border-radius: 16px;
+
+                    #warrcontent{
+                        h4{
+                            font-family: 'Arvo', serif;
+                            font-size: rem-calc(20);
+                        }
+
+                        p{
+                            margin-top: -8px;
+                            font-size: rem-calc(16);
+                            line-height: rem-calc(30);
+                        }
+
+                    }
+                }
+
+                #totals{
+                    margin-top: 32px;
+
+                    #subtotal{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    #taxes{
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+
+                    #shiptotal{
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+
+                    #grandtotal{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    #buynow{
+                        margin-top: 32px;
+                        text-align: right;
+                    }
                 }
             }
 
