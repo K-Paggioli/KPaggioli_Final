@@ -1,65 +1,106 @@
-
-#needidig{
+#needidig {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
     background-color: var(--gfblue);
 
 
-    >div{
+    >div {
         grid-area: main;
-        #titlethanks{
+
+        #titlethanks {
             display: flex;
             align-items: center;
             font-size: rem-calc(24);
             padding-left: 24px;
             padding-right: 24px;
-            justify-content:center;
+            justify-content: center;
             color: var(--gfgold);
             margin-top: 100px;
 
-            #actualfont{
+            #actualfont {
                 font-size: rem-calc(20px);
                 padding-left: 32px;
                 padding-right: 32px;
                 color: var(--white);
 
-                @include md{
+
+                @include md {
                     font-size: rem-calc(32px);
 
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(48);
                 }
             }
         }
-        #centertext{
+
+        #centertext {
             text-align: center;
-            margin-bottom: 100px;
+
             color: var(--white);
+            margin-bottom: 48px;
 
-            @include md{
-                margin-bottom: 120px;
-            }
 
-            @include lg{
-                margin-bottom: 150px;
-            }
 
-            a:link, a:visited{
-                color: var(--white);
-                
-                    &:hover{
-                        color: var(--gfblue);
-                        transition: 0.25s;
-                    }
-                    &:active{
-                        color: var(--gfgold);
-                        transition: 0.25s;
-                    }
+            a:link,
+            a:visited {
+                color: var(--gfbluedark);
+                font-weight: 600;
+
+                &:hover,
+                &:active {
+                    color: var(--gfgold);
+                    transition: 0.25s;
                 }
+            }
         }
 
+        #buttons-thx {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+            margin: 16px 10% 100px;
+
+            @include md {
+
+                margin: 16px 20% 120px;
+            }
+
+            @include lg {
+
+                margin: 16px 30% 150px;
+            }
+
+            button {
+                background-color: var(--gfbluedark);
+                color: white;
+                padding: 12px 18px;
+                display: inline-block;
+                border: none;
+                border-radius: 14px;
+                font-weight: 600;
+                font-size: rem-calc(14);
+                transition: 0.25s;
+
+                &:hover,&:active {
+                    background-color: var(--gfgold) !important;
+                }
+
+                a:link,
+            a:visited {
+                display: inline-block;
+                transition: 0.25s;
+                color: var(--white);
+                
+
+                
+                
+
+            }
+        }
     }
+}
 }
