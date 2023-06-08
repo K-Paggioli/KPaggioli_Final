@@ -2684,7 +2684,7 @@ img {
   #gridcontact > div #column1 {
     border-right: 6px solid var(--gfbluemed);
     margin-top: 24px;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
   }
 }
 #gridcontact > div #column1 #contact-info h1 {
@@ -2845,15 +2845,43 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday label input {
+  margin-right: 8px;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday label #bday {
+  font-style: italic;
+  color: var(--gfblue);
+  padding-left: 4px;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday p {
+  font-weight: 600;
+}
 #gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday label input {
+  margin-right: 12px;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday label #bday {
+  font-style: italic;
+  color: var(--gfblue);
+  padding-left: 4px;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday p {
+  font-weight: 600;
+}
 #gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same label input {
+  margin-right: 12px;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same p {
+  font-weight: 600;
 }
 #gridcontact > div #column1 #directional-link-check {
   margin-top: 32px;
@@ -2927,6 +2955,44 @@ img {
   padding: 24px;
   border-radius: 16px;
 }
+#gridcontact > div #column2 #ctwogrid #cardformatinv #gfproflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: -16px;
+  margin-bottom: -14px;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #gfproflex h4 {
+  font-family: "Arvo", serif;
+  font-size: 1.25rem;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #gfproflex p {
+  font-weight: 600;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #airfilterflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #airfilterflex label input {
+  margin-right: 8px;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #proofgrdflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #proofgrdflex label input {
+  margin-right: 8px;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #accflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv #accflex label input {
+  margin-right: 8px;
+}
 #gridcontact > div #column2 #ctwogrid #cardformatwarr {
   margin-top: 32px;
   background-color: var(--gfbluedark);
@@ -2937,11 +3003,29 @@ img {
 #gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent h4 {
   font-family: "Arvo", serif;
   font-size: 1.25rem;
+  margin-top: 0px;
 }
 #gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p {
   margin-top: -8px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.875rem;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p a:link,
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--white);
+  font-size: 0.9375rem;
+  text-decoration: underline;
+  font-size: 0.9375rem;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p a:link:hover, #gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p a:link:active,
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p a:visited:hover,
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent p a:visited:active {
+  color: var(--gfgold);
+}
+#gridcontact > div #column2 #ctwogrid #cardformatwarr #warrcontent #buttonprot {
+  text-align: right;
 }
 #gridcontact > div #column2 #ctwogrid #totals {
   margin-top: 32px;
@@ -2949,6 +3033,8 @@ img {
 #gridcontact > div #column2 #ctwogrid #totals #subtotal {
   display: flex;
   justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 #gridcontact > div #column2 #ctwogrid #totals #taxes {
   display: flex;
@@ -2961,12 +3047,149 @@ img {
 #gridcontact > div #column2 #ctwogrid #totals #grandtotal {
   display: flex;
   justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.375rem;
 }
 #gridcontact > div #column2 #ctwogrid #totals #buynow {
   margin-top: 32px;
   text-align: right;
 }
 
+#column2 {
+  display: grid;
+  grid-template-columns: 24px auto 24px;
+  grid-template-areas: ". main .";
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+#column2 #ctwogrid {
+  grid-area: main;
+  margin-top: 32px;
+}
+#column2 #ctwogrid #cardformatinv {
+  background-color: var(--gfgrey);
+  padding: 24px;
+  border-radius: 16px;
+}
+#column2 #ctwogrid #cardformatinv #gfproflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: -16px;
+  margin-bottom: -14px;
+}
+#column2 #ctwogrid #cardformatinv #gfproflex h4 {
+  font-family: "Arvo", serif;
+  font-size: 1.25rem;
+}
+#column2 #ctwogrid #cardformatinv #gfproflex p {
+  font-weight: 600;
+}
+#column2 #ctwogrid #cardformatinv #airfilterflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#column2 #ctwogrid #cardformatinv #airfilterflex label input {
+  margin-right: 8px;
+}
+#column2 #ctwogrid #cardformatinv #proofgrdflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#column2 #ctwogrid #cardformatinv #proofgrdflex label input {
+  margin-right: 8px;
+}
+#column2 #ctwogrid #cardformatinv #accflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#column2 #ctwogrid #cardformatinv #accflex label input {
+  margin-right: 8px;
+}
+#column2 #ctwogrid #cardformatwarr {
+  margin-top: 32px;
+  background-color: var(--gfbluedark);
+  color: var(--white);
+  padding: 24px;
+  border-radius: 16px;
+}
+#column2 #ctwogrid #cardformatwarr #warrcontent h4 {
+  font-family: "Arvo", serif;
+  font-size: 1.25rem;
+  margin-top: 0px;
+}
+#column2 #ctwogrid #cardformatwarr #warrcontent p {
+  margin-top: -8px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+#column2 #ctwogrid #cardformatwarr #warrcontent p a:link,
+#column2 #ctwogrid #cardformatwarr #warrcontent p a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--white);
+  font-size: 0.9375rem;
+  text-decoration: underline;
+  font-size: 0.9375rem;
+}
+#column2 #ctwogrid #cardformatwarr #warrcontent p a:link:hover, #column2 #ctwogrid #cardformatwarr #warrcontent p a:link:active,
+#column2 #ctwogrid #cardformatwarr #warrcontent p a:visited:hover,
+#column2 #ctwogrid #cardformatwarr #warrcontent p a:visited:active {
+  color: var(--gfgold);
+}
+#column2 #ctwogrid #cardformatwarr #warrcontent #buttonprot {
+  text-align: right;
+}
+#column2 #ctwogrid #totals {
+  margin-top: 32px;
+}
+#column2 #ctwogrid #totals #subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+#column2 #ctwogrid #totals #taxes {
+  display: flex;
+  justify-content: space-between;
+}
+#column2 #ctwogrid #totals #shiptotal {
+  display: flex;
+  justify-content: space-between;
+}
+#column2 #ctwogrid #totals #grandtotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+#column2 #ctwogrid #totals #directional-mobile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  align-items: baseline;
+}
+#column2 #ctwogrid #totals #directional-mobile #backchk a:link,
+#column2 #ctwogrid #totals #directional-mobile #backchk a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--gfbluedark);
+  font-size: 0.9375rem;
+}
+#column2 #ctwogrid #totals #directional-mobile #backchk a:link:hover,
+#column2 #ctwogrid #totals #directional-mobile #backchk a:visited:hover {
+  color: var(--gfblue);
+}
+#column2 #ctwogrid #totals #directional-mobile #backchk a:link:active,
+#column2 #ctwogrid #totals #directional-mobile #backchk a:visited:active {
+  color: var(--gfgold);
+}
+#column2 #ctwogrid #totals #directional-mobile #backchk i {
+  padding-right: 8px;
+}
 #needidig {
   display: grid;
   grid-template-columns: 16px auto 16px;

@@ -325,14 +325,6 @@
       "oAP" : "\/dev\/content\/Checkout\/contact.html",
       "oF" : 0
     },
-    "\/dev\/content\/Checkout\/mobilecolumn.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/Checkout\/mobilecolumn.html",
-      "oF" : 0
-    },
     "\/dev\/content\/Index\/addons.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -379,6 +371,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/Index\/reviews.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/MobileCheckout\/mobilecolumn.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/MobileCheckout\/mobilecolumn.html",
       "oF" : 0
     },
     "\/dev\/content\/ThankYou\/thx.kit" : {
@@ -439,6 +439,14 @@
       "oF" : 2,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/mobilecheckout.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/mobilecheckout.html",
+      "oF" : 2
     },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,

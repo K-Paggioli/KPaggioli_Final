@@ -86,22 +86,22 @@
                             <section id="fiveday">
                                 <label id="5day" class="container">
                                     <input type="checkbox">
-                                    FREE 5-day shipping (business days)
-                                    <span class="checkmark"></span>
+                                    FREE 5-day shipping <span id="bday">(business days)</span>
+                                    <span id="checkm" class="checkmark"></span>
                                 </label>
                                 <p> FREE</p>
                             </section>
                             <section id="twoday">
                                 <label class="container">
-                                    <input type="checkbox">2-day shipping (business days)
-                                    <span class="checkmark"></span>
+                                    <input type="checkbox">2-day shipping <span id="bday">(business days)</span>
+                                    <span id="checkm"class="checkmark"></span></label>
                                     <p>$10.00</p>
                             </section>
                             
                            <section id="same">
                             <label class="container">
                             <input type="checkbox">Same-day shipping
-                            <span class="checkmark"></span>
+                            <span class="checkmark"></span></label>
                             <p>$30.00</p>
                            </section>
                         </div>
@@ -117,7 +117,7 @@
                         </section>
                         <section id="right-side">
                             <div id="mobilenewrev">
-                                <a class="blue-button" href="#">review order<i id="iright" class="fa-solid fa-caret-down"></i></a>
+                                <a class="blue-button" href="mobilecheckout.html">review order<i id="iright" class="fa-solid fa-caret-down"></i></a>
                             </div>
                             <div id="otherproceed">
                                 <a class="blue-button" href="#">go to payment<i id="iright" class="fa-solid fa-caret-down"></i></a>
@@ -133,31 +133,43 @@
         <section id="column2">
             <div id="ctwogrid">
                 <section id="cardformatinv">
-                    <div>
-                        <h4>Glowforge pro</h4>
-                        <p>$6995.00</p>
-                        <label class="container"> Glowforge Air Filter
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <p>$1295.00</p>
-                        <label class="container"> Premium Proofgrade Materials ($150 Value)
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                            <p>FREE</p>
-                        </label>
-                        <label class="container"> Glowforge Accessory Kit
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                            <p>FREE</p>
-                        </label>
+                    <div id="invcontent">
+                        <div id="gfproflex">
+                            <h4>Glowforge Pro</h4>
+                            <p>$6995.00</p>
+                        </div>
+                        <div id="airfilterflex">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">Glowforge Air Filter
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>$1295.00</p>
+                        </div>
+                        <div id="proofgrdflex">
+                            <label class="container"> 
+                                <input type="checkbox" checked="checked">Premium Proofgrade <br>Materials ($150 Value)
+                                <span class="checkmark"></span>
+                            </label>
+                                <p>FREE</p>
+                        </div>
+                        <div id="accflex">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">Glowforge Accessory Kit
+                                <span class="checkmark"></span></label>
+                                <p>FREE</p>
+                        </div>
+                        
+                        
                     </div>
                 </section>
                 <section id="cardformatwarr">
                     <div id="warrcontent">
                         <h4>Add an Extended Warranty?</h4>
-                        <p>You’ve made an investment, so let us help you protect it. Protect your Glowforge incase of mechanical and electrical failure today. <a href="#">Learn More</a></p>
-                        <a class="blue-button" href="#">Protect My Glowforge</a>
+                        <p>You’ve made an investment, so let us help you protect it. Protect your Glowforge incase of mechanical and electrical failure today. <br><a href="#">Learn More</a></p>
+                        <div id="buttonprot">
+                            <a class="blue-button" href="#">Protect My Glowforge</a>
+                        </div>
+                        
                     </div>
                 </section>
                 <section id="totals">
