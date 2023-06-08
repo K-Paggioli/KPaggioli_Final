@@ -7,7 +7,7 @@
         margin-top: -86px;
     }
 
-    @include lg{
+    @include lg {
         margin-top: -124px;
     }
 
@@ -42,41 +42,36 @@
             #reviews-header {
                 display: flex;
                 text-align: center;
+                justify-content: space-between;
+                align-content: right;
                 border-bottom: 4px solid var(--gfgold);
 
-
-                .flex1 {
-
-                    h2 {}
-
+                #header-review {
+                    font-family: 'Arvo', serif;
+                    font-size: rem-calc(22);
+                    font-weight: 700;
+                    margin-top: -14px;
+                    margin-bottom: -6px;
                 }
 
+                #writing {
+                    margin-top: 8px;
 
-                .flex2 {
-                    #question {
-                        justify-content: space-around;
-                        padding: 0;
-                        margin: 12px;
-
+                    @include lg {
+                        margin-top: 26px;
+                        margin-left: 8px;
                     }
+
+
                 }
 
-                .flex3 {
-                    justify-content: space-between;
-                    align-content: right;
-
-                    #writing {
-                        margin: 12px;
-
-                    }
-                }
 
                 .flex-items {}
 
             }
 
             #reviews-star {
-                padding-top: 16px;
+                padding-top: 24px;
 
 
                 @include md {
@@ -100,6 +95,9 @@
                     grid-area: l;
                     font-size: rem-calc(12);
                     padding-top: 16px;
+                    text-decoration: underline;
+
+                    margin-right: 120px;
 
                     a:link,
                     a:visited {
@@ -120,17 +118,50 @@
 
                 #dropdown-1 {
                     grid-area: d;
-                    padding-top: 16px;
+                    margin-top: 24px;
+                    background-color: var(--gfblue);
+                    color: white;
+                    padding: 4px 0px;
+                    width: 100%;
+                    display: inline-block;
+                    border: none;
+                    border-radius: 0px;
+                    font-weight: 600;
+                    font-size: rem-calc(14);
+                    transition: 0.25s;
 
-                    @include md {
-                        text-align: right;
-                        padding-top: 0px;
+                    &:active {
+                        background-color: var(--gfgold);
                     }
+
+                    &:hover {
+                        background-color: var(--gfbluelight);
+                    }
+
 
                 }
             }
 
-            #review-keyword {}
+            #review-keyword {
+                background-color: var(--gfblue);
+                color: white;
+                padding: 4px 0px;
+                width: 100%;
+                display: inline-block;
+                border: none;
+                border-radius: 14px;
+                font-weight: 600;
+                font-size: rem-calc(14);
+                transition: 0.25s;
+
+                &:active {
+                    background-color: var(--gfgold);
+                }
+
+                &:hover {
+                    background-color: var(--gfbluelight);
+                }
+            }
 
             #review-cards {
 
@@ -197,7 +228,8 @@
                                 padding-bottom: 24px;
                                 font-size: rem-calc(16);
 
-                                &:hover, &:active {
+                                &:hover,
+                                &:active {
                                     color: var(--gfgold);
                                 }
                             }
@@ -208,7 +240,7 @@
                         #rev-card-content {
                             font-size: rem-calc(14);
                             line-height: 20px;
-                            padding:16px 0px 0px;
+                            padding: 16px 0px 0px;
                             margin-top: -4px;
                         }
 
@@ -217,24 +249,26 @@
                             justify-content: flex-start;
                             gap: 16px;
 
-                            #rev-img-1{
+                            #rev-img-1 {
                                 height: 85px;
                                 background-color: slategray;
-                            @include md{
-                                height: 145px;
-                            }
+
+                                @include md {
+                                    height: 145px;
+                                }
 
                             }
 
-                            #rev-img-2{
+                            #rev-img-2 {
                                 height: 85px;
-                            background-color: slategray;
-                            @include md{
-                                height: 145px;
-                            }
+                                background-color: slategray;
+
+                                @include md {
+                                    height: 145px;
+                                }
 
                             }
-                            
+
                         }
 
                     }
@@ -289,7 +323,8 @@
                                 padding-bottom: 24px;
                                 font-size: rem-calc(16);
 
-                                &:hover, &:active {
+                                &:hover,
+                                &:active {
                                     color: var(--gfgold);
                                 }
                             }
@@ -300,7 +335,7 @@
                         #rev-card-content {
                             font-size: rem-calc(14);
                             line-height: 20px;
-                            padding:16px 0px 0px;
+                            padding: 16px 0px 0px;
                             margin-top: -4px;
                             margin-bottom: 4px;
                         }
@@ -356,7 +391,8 @@
                                 padding-bottom: 24px;
                                 font-size: rem-calc(16);
 
-                                &:hover, &:active {
+                                &:hover,
+                                &:active {
                                     color: var(--gfgold);
                                 }
                             }
@@ -367,7 +403,7 @@
                         #rev-card-content {
                             font-size: rem-calc(14);
                             line-height: 20px;
-                            padding:16px 0px 0px;
+                            padding: 16px 0px 0px;
                             margin-top: -4px;
                             margin-bottom: 4px;
                         }
@@ -378,10 +414,11 @@
 
             }
 
-            #seemore{
+            #seemore {
                 padding: 24px 0px;
-                margin-bottom:48px;
-                @include md{
+                margin-bottom: 48px;
+
+                @include md {
                     margin-bottom: 0px;
                 }
 
@@ -392,14 +429,16 @@
                     color: var(--white);
                     padding-bottom: 24px;
                     font-size: rem-calc(24);
-                    font-weight:600;
+                    font-weight: 600;
 
 
-                    &:hover, &:active {
+                    &:hover,
+                    &:active {
                         color: var(--gfblue);
                     }
                 }
-                i{
+
+                i {
                     padding: 0px 16px;
 
                 }

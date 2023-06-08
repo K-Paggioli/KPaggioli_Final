@@ -1871,22 +1871,28 @@ img {
 #background-color #gridreview > div #reviews-header {
   display: flex;
   text-align: center;
-  border-bottom: 4px solid var(--gfgold);
-}
-#background-color #gridreview > div #reviews-header .flex2 #question {
-  justify-content: space-around;
-  padding: 0;
-  margin: 12px;
-}
-#background-color #gridreview > div #reviews-header .flex3 {
   justify-content: space-between;
   align-content: right;
+  border-bottom: 4px solid var(--gfgold);
 }
-#background-color #gridreview > div #reviews-header .flex3 #writing {
-  margin: 12px;
+#background-color #gridreview > div #reviews-header #header-review {
+  font-family: "Arvo", serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-top: -14px;
+  margin-bottom: -6px;
+}
+#background-color #gridreview > div #reviews-header #writing {
+  margin-top: 8px;
+}
+@media (min-width: 1024px) {
+  #background-color #gridreview > div #reviews-header #writing {
+    margin-top: 26px;
+    margin-left: 8px;
+  }
 }
 #background-color #gridreview > div #reviews-star {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 @media (min-width: 768px) {
   #background-color #gridreview > div #reviews-star {
@@ -1904,6 +1910,8 @@ img {
   grid-area: l;
   font-size: 0.75rem;
   padding-top: 16px;
+  text-decoration: underline;
+  margin-right: 120px;
 }
 #background-color #gridreview > div #reviews-star #average-link a:link,
 #background-color #gridreview > div #reviews-star #average-link a:visited {
@@ -1921,13 +1929,41 @@ img {
 }
 #background-color #gridreview > div #reviews-star #dropdown-1 {
   grid-area: d;
-  padding-top: 16px;
+  margin-top: 24px;
+  background-color: var(--gfblue);
+  color: white;
+  padding: 4px 0px;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 0px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: 0.25s;
 }
-@media (min-width: 768px) {
-  #background-color #gridreview > div #reviews-star #dropdown-1 {
-    text-align: right;
-    padding-top: 0px;
-  }
+#background-color #gridreview > div #reviews-star #dropdown-1:active {
+  background-color: var(--gfgold);
+}
+#background-color #gridreview > div #reviews-star #dropdown-1:hover {
+  background-color: var(--gfbluelight);
+}
+#background-color #gridreview > div #review-keyword {
+  background-color: var(--gfblue);
+  color: white;
+  padding: 4px 0px;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: 0.25s;
+}
+#background-color #gridreview > div #review-keyword:active {
+  background-color: var(--gfgold);
+}
+#background-color #gridreview > div #review-keyword:hover {
+  background-color: var(--gfbluelight);
 }
 @media (min-width: 768px) {
   #background-color #gridreview > div #review-cards {
