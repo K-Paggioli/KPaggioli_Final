@@ -1504,6 +1504,9 @@ img {
   padding-top: 16px;
   text-align: right;
   font-style: italic;
+  font-size: 0.9375rem;
+  text-decoration: underline;
+  color: var(--gfblue);
 }
 #gridproduct > div #speculation aside a:link,
 #gridproduct > div #speculation aside a:visited {
@@ -2680,10 +2683,12 @@ img {
   padding-bottom: 8px;
   margin-right: 40px;
 }
-#gridcontact > div #column1 #contact-info #forms-contact {
-  display: grid;
-  grid-template-columns: 0px auto 60px;
-  grid-template-areas: ". form .";
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #contact-info #forms-contact {
+    display: grid;
+    grid-template-columns: 0px auto 60px;
+    grid-template-areas: ". form .";
+  }
 }
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 {
   grid-area: form;
@@ -2699,18 +2704,66 @@ img {
     display: flex;
     justify-content: space-between;
   }
-  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #forms-horizontal-2 #spacing-form-1 {
-    margin-right: 8px;
-    width: 80%;
-  }
-  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #forms-horizontal-2 #spacing-form-1 #first {
+  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #forms-horizontal-2 form input {
     width: 100%;
-  }
-  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #forms-horizontal-2 #last {
-    width: 100%;
+    margin-right: 60px;
   }
 }
-#gridcontact > div #column2 {
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why {
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why {
+    margin-right: -18px;
+  }
+}
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:link,
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--gfblue);
+  padding-bottom: 24px;
+  font-size: 0.9375rem;
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--gfblue);
+}
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:link:hover, #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:link:active,
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:visited:hover,
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:visited:active {
+  color: var(--gfgold);
+}
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links {
+    margin-right: -18px;
+  }
+}
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct {
+  margin-bottom: -20px;
+}
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:link,
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--gfblue);
+  padding-bottom: 24px;
+  font-size: 1rem;
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--gfblue);
+}
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:link:hover, #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:link:active,
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:visited:hover,
+#gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:visited:active {
+  color: var(--gfgold);
+}
+#gridcontact > div #column1 #contact-info #column2 {
   grid-area: c2;
 }
 

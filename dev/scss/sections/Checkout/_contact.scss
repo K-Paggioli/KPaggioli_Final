@@ -69,9 +69,12 @@
                 }
 
                 #forms-contact {
-                    display: grid;
-                    grid-template-columns: 0px auto 60px;
-                    grid-template-areas: ". form .";
+                    @include md{
+                        display: grid;
+                        grid-template-columns: 0px auto 60px;
+                        grid-template-areas: ". form .";
+                    }
+                    
 
                     #allforms1 {
                         grid-area: form;
@@ -92,24 +95,10 @@
                                 display: flex;
                                 justify-content: space-between;
 
-                                #spacing-form-1{
-                                    margin-right:8px;
-                                    width:80%;
-                                    #first {
-                                        width: 100%;
-                                      input {
-            
-    
-    
-                                        }
-                                    }
-                                }
-
-                               
-                                #last{
-                                    width:100%;
+                                form {
                                     input {
-
+                                        width: 100%;
+                                        margin-right: 60px;
 
                                     }
                                 }
@@ -118,25 +107,81 @@
 
 
                         }
+
+                        #info-why {
+                            text-align: right;
+
+                            @include md{
+                                margin-right: -18px;
+                            }
+                            
+
+                            a:link,
+                            a:visited {
+                                display: inline-block;
+                                transition: 0.25s;
+                                color: var(--gfblue);
+                                padding-bottom: 24px;
+                                font-size: rem-calc(15);
+                                font-style: italic;
+                                text-decoration: underline;
+                                color: var(--gfblue);
+
+                                &:hover,
+                                &:active {
+                                    color: var(--gfgold);
+                                }
+                            }
+                        }
+
+                        #contact-sign-links{
+                            @include md{
+                                margin-right: -18px;
+                            }
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-end;
+                            gap: 16px;
+
+                            #haveacct{
+                                margin-bottom: -20px;
+                                a:link,
+                            a:visited {
+                                display: inline-block;
+                                transition: 0.25s;
+                                color: var(--gfblue);
+                                padding-bottom: 24px;
+                                font-size: rem-calc(16);
+                                font-style: italic;
+                                text-decoration: underline;
+                                color: var(--gfblue);
+
+                                &:hover,
+                                &:active {
+                                    color: var(--gfgold);
+                                }
+
+                            }
+
+                        }
+
                     }
-
-
-
                 }
+
+                #shipping-info {}
+
+
+
+
+
             }
 
-            #shipping-info {}
+            #column2 {
+                grid-area: c2;
 
-
-
-
-
-        }
-
-        #column2 {
-            grid-area: c2;
+            }
 
         }
-
     }
+}
 }
