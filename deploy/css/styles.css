@@ -2748,23 +2748,3 @@ img {
     margin: 16px 30% 150px;
   }
 }
-#needidig > div #buttons-thx button {
-  background-color: var(--gfbluedark);
-  color: white;
-  padding: 12px 18px;
-  display: inline-block;
-  border: none;
-  border-radius: 14px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  transition: 0.25s;
-}
-#needidig > div #buttons-thx button:hover, #needidig > div #buttons-thx button:active {
-  background-color: var(--gfgold) !important;
-}
-#needidig > div #buttons-thx button a:link,
-#needidig > div #buttons-thx button a:visited {
-  display: inline-block;
-  transition: 0.25s;
-  color: var(--white);
-}
