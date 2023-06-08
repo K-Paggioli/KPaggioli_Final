@@ -170,68 +170,6 @@
                         }
                     }
 
-                    #shipping-info {
-                        h1 {
-                            font-family: 'Arvo', serif;
-                            font-size: rem-calc(36);
-                            border-bottom: 4px solid var(--gfgold);
-                            padding-bottom: 8px;
-
-                            @include md {
-                                margin-right: 60px;
-                            }
-
-                        }
-
-                        #forms-shipping {
-                            @include md {
-                                display: grid;
-                                grid-template-columns: 0px auto 60px;
-                                grid-template-areas: ". form .";
-                            }
-
-
-                            #allforms2 {
-                                grid-area: form;
-                                padding: 16px 0px;
-
-                                form {
-                                    input {
-                                        box-sizing: border-box;
-                                        width: 100%;
-                                        padding: 8px;
-                                        margin: 8px 0px;
-
-                                        ;
-
-                                    }
-                                }
-
-                                #forms-horizontal-2 {
-                                    @include lg {
-                                        display: flex;
-                                        justify-content: space-between;
-
-                                        form {
-                                            input {
-                                                width: 100%;
-                                                margin-right: 60px;
-
-                                            }
-                                        }
-
-                                    }
-
-
-                                }
-                            }
-                        }
-                    }
-
-
-
-
-
                 }
 
                 #column2 {
@@ -239,6 +177,64 @@
 
                 }
 
+            }
+
+            #shipping-info {
+                h1 {
+                    font-family: 'Arvo', serif;
+                    font-size: rem-calc(36);
+                    border-bottom: 4px solid var(--gfgold);
+                    padding-bottom: 8px;
+
+                    @include md {
+                        margin-right: 60px;
+                    }
+
+                }
+
+                #forms-shipping {
+                    @include md {
+                        display: grid;
+                        grid-template-columns: 0px auto 60px;
+                        grid-template-areas: ". form .";
+                    }
+
+
+                    #allforms2 {
+                        grid-area: form;
+                        padding: 16px 0px;
+
+                        form {
+                            input {
+                                box-sizing: border-box;
+                                width: 100%;
+                                padding: 8px;
+                                margin: 8px 0px;
+
+                                ;
+
+                            }
+                        }
+
+                        #forms-horizontal-2 {
+                            @include lg {
+                                display: flex;
+                                justify-content: space-between;
+
+                                form {
+                                    input {
+                                        width: 100%;
+                                        margin-right: 60px;
+
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                    }
+                }
             }
         }
     }

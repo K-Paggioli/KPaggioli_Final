@@ -2759,46 +2759,46 @@ img {
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:visited:active {
   color: var(--gfgold);
 }
-#gridcontact > div #column1 #contact-info #forms-contact #shipping-info h1 {
+#gridcontact > div #column1 #contact-info #column2 {
+  grid-area: c2;
+}
+#gridcontact > div #column1 #shipping-info h1 {
   font-family: "Arvo", serif;
   font-size: 2.25rem;
   border-bottom: 4px solid var(--gfgold);
   padding-bottom: 8px;
 }
 @media (min-width: 768px) {
-  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info h1 {
+  #gridcontact > div #column1 #shipping-info h1 {
     margin-right: 60px;
   }
 }
 @media (min-width: 768px) {
-  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping {
+  #gridcontact > div #column1 #shipping-info #forms-shipping {
     display: grid;
     grid-template-columns: 0px auto 60px;
     grid-template-areas: ". form .";
   }
 }
-#gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 {
+#gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 {
   grid-area: form;
   padding: 16px 0px;
 }
-#gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 form input {
+#gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 form input {
   box-sizing: border-box;
   width: 100%;
   padding: 8px;
   margin: 8px 0px;
 }
 @media (min-width: 1024px) {
-  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 {
+  #gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 {
     display: flex;
     justify-content: space-between;
   }
-  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 form input {
+  #gridcontact > div #column1 #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 form input {
     width: 100%;
     margin-right: 60px;
   }
-}
-#gridcontact > div #column1 #contact-info #column2 {
-  grid-area: c2;
 }
 
 #needidig {
