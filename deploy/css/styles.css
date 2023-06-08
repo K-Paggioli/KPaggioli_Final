@@ -2832,9 +2832,16 @@ img {
   padding: 24px;
   border-radius: 16px;
 }
-#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content label input {
-  padding-right: 8px;
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday {
+  display: flex;
+  justify-content: space-between;
 }
+#gridcontact > div #column1 #directional-link-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #needidig {
   display: grid;
   grid-template-columns: 16px auto 16px;

@@ -274,7 +274,7 @@
                         padding: 24px;
                         border-radius: 16px;
 
-                        #5day {
+                        #fiveday {
                             display: flex;
                             justify-content: space-between;
 
@@ -288,10 +288,10 @@
                             }
 
                             p{
-                                
+
                             }
 
-                            #2day {
+                            #twoday {
                                 label {
 
                                     input {}
@@ -318,6 +318,12 @@
                         }
                     }
                 }
+            }
+
+            #directional-link-check{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
         }
     }
