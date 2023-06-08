@@ -592,7 +592,7 @@ header > div {
 }
 @media (min-width: 1024px) {
   header > div {
-    padding: 24px 0;
+    padding-top: 20px;
     grid-template-columns: 20% auto;
     grid-template-areas: "logo nav";
   }
@@ -1294,7 +1294,7 @@ img {
 }
 @media (min-width: 1024px) {
   #margins > div {
-    margin-top: 96px;
+    margin-top: 72px;
   }
 }
 @media (min-width: 768px) {
@@ -1354,7 +1354,7 @@ img {
 }
 @media (min-width: 1024px) {
   #gridproduct {
-    padding-top: 200px;
+    padding-top: 172px;
   }
 }
 @media (min-width: 1200px) {
@@ -2297,7 +2297,7 @@ img {
 }
 @media (min-width: 1024px) {
   #gridcard {
-    padding-top: 125px;
+    padding-top: 96px;
   }
 }
 @media (min-width: 1200px) {
@@ -2615,7 +2615,10 @@ img {
 }
 
 #checkout-grid-title {
-  background-color: var(--gfblue);
+  background-color: var(--gfbluemed);
+  background-image: url("../img/GlowforgeTiledInvert.png");
+  width: 100%;
+  z-index: 10000;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". t .";
@@ -2627,7 +2630,7 @@ img {
 }
 #checkout-grid-title #checkout-title {
   grid-area: t;
-  padding-top: 96px;
+  padding-top: 100px;
   padding-bottom: 24px;
   color: var(--white);
   font-family: "arvo", serif;
@@ -2635,7 +2638,7 @@ img {
 }
 @media (min-width: 1024px) {
   #checkout-grid-title #checkout-title {
-    padding-top: 116px;
+    padding-top: 94px;
   }
 }
 
