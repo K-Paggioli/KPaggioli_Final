@@ -45,8 +45,14 @@
             
 
             #filter {
+                display: grid;
+                grid-template-rows: (5, 1fr);
+                grid-template-areas:
+                "f1 f1 f2 f3 f4";
+                position: relative;
 
                 #img {
+                    grid-area: f1;
                     width: 100%;
                     background-color: navy;
 
@@ -68,13 +74,21 @@
 
                 }
 
-                #title {}
+                #title {
+                    grid-area: f2;
+                }
 
-                #price {}
+                #price {
+                    grid-area: f3;
+                }
 
                 #button {
+                    grid-area: f4;
                     padding-top: 16px;
 
+                    @include md{
+                        padding-top: 38px;
+                    }
                     
                 }
 
@@ -82,12 +96,18 @@
 
             #proofgrade {
                 padding-top: 32px;
+                display: grid;
+                grid-template-rows: (5, 1fr);
+                grid-template-areas:
+                "p1 p1 p2 p3 p4";
+                position: relative;
 
                 @include md{
                     padding: 0px;
                 }
 
                 #img {
+                    grid-area: p1;
                     width: 100%;
                     background-color: navy;
 
@@ -108,11 +128,16 @@
 
                 }
 
-                #title {}
+                #title {
+                    grid-area: p2;
+            
+                }
 
-                #price {}
+                #price {
+                    grid-area: p3;
+                }
 
-                #button {
+                #button {grid-area: p4;
                     padding-top: 16px;
                 }
                 
@@ -122,12 +147,18 @@
 
             #accessorykit {
                 padding-top: 32px;
+                display: grid;
+                grid-template-rows: (5, 1fr);
+                grid-template-areas:
+                "a1 a1 a2 a3 a4";
+                position: relative;
     
                 @include md{
                     padding: 0px;
                 }
     
                 #img {
+                    grid-area: a1;
                     width: 100%;
                     background-color: navy;
     
@@ -148,12 +179,21 @@
     
                 }
     
-                #title {}
+                #title {
+                    grid-area: a2;
+                }
     
-                #price {}
+                #price {
+                    grid-area: a3;
+                }
     
                 #button {
+                    grid-area: a4;
                     padding-top: 16px;
+
+                    @include lg{
+                        padding-top: 38px;
+                    }
                 }
     
             }
@@ -161,12 +201,18 @@
             #warranty {
                 padding-top: 32px;
                 padding-bottom: 32px;
-    
+                display: grid;
+                grid-template-rows: (5, 1fr);
+                grid-template-areas:
+                "w1 w1 w2 w3 w4";
+                position: relative;
+                
                 @include md{
                     padding: 0px;
                 }
     
                 #img {
+                    grid-area: w1;
                     width: 100%;
                     background-color: navy;
     
@@ -187,12 +233,21 @@
     
                 }
     
-                #title {}
+                #title {
+                    grid-area: w2;
+                }
     
-                #price {}
+                #price {
+                    grid-area: w3;
+                }
     
                 #button {
+                    grid-area: w4;
                     padding-top: 16px;
+
+                    @include lg{
+                        padding-top: 38px;
+                    }
                 }
     
     

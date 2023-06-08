@@ -1511,7 +1511,14 @@ img {
     justify-content: space-between;
   }
 }
+#gridaddon > div #margin-in-box #filter {
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "f1 f1 f2 f3 f4";
+  position: relative;
+}
 #gridaddon > div #margin-in-box #filter #img {
+  grid-area: f1;
   width: 100%;
   background-color: navy;
 }
@@ -1527,11 +1534,27 @@ img {
     width: 180px;
   }
 }
+#gridaddon > div #margin-in-box #filter #title {
+  grid-area: f2;
+}
+#gridaddon > div #margin-in-box #filter #price {
+  grid-area: f3;
+}
 #gridaddon > div #margin-in-box #filter #button {
+  grid-area: f4;
   padding-top: 16px;
+}
+@media (min-width: 768px) {
+  #gridaddon > div #margin-in-box #filter #button {
+    padding-top: 38px;
+  }
 }
 #gridaddon > div #margin-in-box #proofgrade {
   padding-top: 32px;
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "p1 p1 p2 p3 p4";
+  position: relative;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #proofgrade {
@@ -1539,6 +1562,7 @@ img {
   }
 }
 #gridaddon > div #margin-in-box #proofgrade #img {
+  grid-area: p1;
   width: 100%;
   background-color: navy;
 }
@@ -1554,11 +1578,22 @@ img {
     width: 180px;
   }
 }
+#gridaddon > div #margin-in-box #proofgrade #title {
+  grid-area: p2;
+}
+#gridaddon > div #margin-in-box #proofgrade #price {
+  grid-area: p3;
+}
 #gridaddon > div #margin-in-box #proofgrade #button {
+  grid-area: p4;
   padding-top: 16px;
 }
 #gridaddon > div #margin-in-box #accessorykit {
   padding-top: 32px;
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "a1 a1 a2 a3 a4";
+  position: relative;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #accessorykit {
@@ -1566,6 +1601,7 @@ img {
   }
 }
 #gridaddon > div #margin-in-box #accessorykit #img {
+  grid-area: a1;
   width: 100%;
   background-color: navy;
 }
@@ -1581,12 +1617,28 @@ img {
     width: 180px;
   }
 }
+#gridaddon > div #margin-in-box #accessorykit #title {
+  grid-area: a2;
+}
+#gridaddon > div #margin-in-box #accessorykit #price {
+  grid-area: a3;
+}
 #gridaddon > div #margin-in-box #accessorykit #button {
+  grid-area: a4;
   padding-top: 16px;
+}
+@media (min-width: 1024px) {
+  #gridaddon > div #margin-in-box #accessorykit #button {
+    padding-top: 38px;
+  }
 }
 #gridaddon > div #margin-in-box #warranty {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: grid;
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "w1 w1 w2 w3 w4";
+  position: relative;
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #warranty {
@@ -1594,6 +1646,7 @@ img {
   }
 }
 #gridaddon > div #margin-in-box #warranty #img {
+  grid-area: w1;
   width: 100%;
   background-color: navy;
 }
@@ -1609,8 +1662,20 @@ img {
     width: 180px;
   }
 }
+#gridaddon > div #margin-in-box #warranty #title {
+  grid-area: w2;
+}
+#gridaddon > div #margin-in-box #warranty #price {
+  grid-area: w3;
+}
 #gridaddon > div #margin-in-box #warranty #button {
+  grid-area: w4;
   padding-top: 16px;
+}
+@media (min-width: 1024px) {
+  #gridaddon > div #margin-in-box #warranty #button {
+    padding-top: 38px;
+  }
 }
 
 #grid > div {
