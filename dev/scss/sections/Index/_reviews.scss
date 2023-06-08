@@ -143,23 +143,26 @@
             }
 
             #review-keyword {
-                background-color: var(--gfblue);
-                color: white;
-                padding: 4px 0px;
-                width: 100%;
-                display: inline-block;
-                border: none;
-                border-radius: 14px;
-                font-weight: 600;
-                font-size: rem-calc(14);
-                transition: 0.25s;
+            
+                #button-rev{
+                    background-color: var(--gfblue);
+                    color: white;
+                    padding: 4px 0px;
+                    width: 100%;
+                    display: inline-block;
+                    border: none;
+                    border-radius: 0px;
+                    font-weight: 600;
+                    font-size: rem-calc(14);
+                    transition: 0.25s;
 
-                &:active {
-                    background-color: var(--gfgold);
-                }
+                    &:active {
+                        background-color: var(--gfgold);
+                    }
 
-                &:hover {
-                    background-color: var(--gfbluelight);
+                    &:hover {
+                        background-color: var(--gfbluelight);
+                    }
                 }
             }
 

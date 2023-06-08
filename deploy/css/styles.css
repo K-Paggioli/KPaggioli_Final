@@ -1947,22 +1947,22 @@ img {
 #background-color #gridreview > div #reviews-star #dropdown-1:hover {
   background-color: var(--gfbluelight);
 }
-#background-color #gridreview > div #review-keyword {
+#background-color #gridreview > div #review-keyword #button-rev {
   background-color: var(--gfblue);
   color: white;
   padding: 4px 0px;
   width: 100%;
   display: inline-block;
   border: none;
-  border-radius: 14px;
+  border-radius: 0px;
   font-weight: 600;
   font-size: 0.875rem;
   transition: 0.25s;
 }
-#background-color #gridreview > div #review-keyword:active {
+#background-color #gridreview > div #review-keyword #button-rev:active {
   background-color: var(--gfgold);
 }
-#background-color #gridreview > div #review-keyword:hover {
+#background-color #gridreview > div #review-keyword #button-rev:hover {
   background-color: var(--gfbluelight);
 }
 @media (min-width: 768px) {
