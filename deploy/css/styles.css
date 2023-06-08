@@ -2655,6 +2655,12 @@ img {
 #gridcontact > div #column-1 {
   grid-area: c1;
 }
+#gridcontact > div #column-1 #contact-info h1 {
+  font-family: "Arvo", serif;
+}
+#gridcontact > div #column-1 #contact-info #forms-contact {
+  width: 100%;
+}
 #gridcontact > div #column-2 {
   grid-area: c1;
 }
