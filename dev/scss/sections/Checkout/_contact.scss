@@ -58,7 +58,11 @@
 
         #column1 {
             grid-area: c1;
-
+            @include md{
+                border-right: 6px solid var(--gfbluemed);
+                margin-top: 24px;
+                margin-bottom: 75px;
+            }
             #contact-info {
                 h1 {
                     font-family: 'Arvo', serif;
@@ -67,7 +71,7 @@
                     padding-bottom: 8px;
 
                     @include md {
-                        margin-right: 60px;
+                        margin-right: 48px;
                     }
 
                 }
@@ -75,7 +79,7 @@
                 #forms-contact {
                     @include md {
                         display: grid;
-                        grid-template-columns: 0px auto 60px;
+                        grid-template-columns: 0px auto 48px;
                         grid-template-areas: ". form .";
                     }
 
@@ -174,10 +178,6 @@
 
                 }
 
-                #column2 {
-                    grid-area: c2;
-
-                }
 
             }
 
@@ -189,7 +189,7 @@
                     padding-bottom: 8px;
 
                     @include md {
-                        margin-right: 60px;
+                        margin-right: 48px;
                     }
 
                 }
@@ -197,7 +197,7 @@
                 #forms-shipping {
                     @include md {
                         display: grid;
-                        grid-template-columns: 0px auto 60px;
+                        grid-template-columns: 0px auto 48px;
                         grid-template-areas: ". form .";
                     }
 
@@ -277,6 +277,7 @@
                         #fiveday {
                             display: flex;
                             justify-content: space-between;
+                            align-items: center;
 
                             label {
 
@@ -284,47 +285,137 @@
 
                                 span {}
 
-                              
-                            }
-
-                            p{
 
                             }
 
-                            #twoday {
+                            p {}
+                        }
+                        #twoday {
+                            display: flex;
+                        justify-content: space-between;
+                        align-items:center;
+                            label {
+
+                                input {}
+
+                                span {}
+
+                                p {}
+                            }
+                        }
+
+                            #same {
+                                display: flex;
+                         justify-content: space-between;
+                        align-items:center;
                                 label {
 
                                     input {}
 
                                     span {}
 
+
                                     p {}
-                                }
-
-                                #same {
-                                    label {
-
-                                        input {}
-
-                                        span {}
-
-
-                                        p {}
-                                    }
-                                }
+                                
                             }
-
-
                         }
                     }
                 }
             }
 
-            #directional-link-check{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            #directional-link-check {
+                margin-top: 32px;
+                margin-bottom: 108px;
+                @include md {
+                    display: grid;
+                    grid-template-columns: 16px auto 72px;
+                    grid-template-areas: ". link .";
+                }
+                
+                #link-check-grid{
+                    grid-area: link;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    #left-side{
+                        a:link,
+            a:visited {
+                display: inline-block;
+                transition: 0.25s;
+                color: var(--gfbluedark);
+                font-size: rem-calc(15);
+
+
+                &:hover {
+                    color: var(--gfblue);
+                }
+
+                &:active {
+                    color: var(--gfgold);
+                }
+}
+                    }
+
+                    #right-side{
+                        #mobilenewrev{
+                            @include md{
+                                display: none;
+                            }
+                        }
+
+                        #otherproceed{
+                            display: none;
+
+                            @include md{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                #ileft{
+                    padding-right:8px;
+                }
+
+                #iright{
+                    padding-left: 8px;
+                }
             }
+        }
+
+
+        #column2{
+            grid-area: c2;
+            display: none;
+            
+            @include md{
+                display: block;
+                display: grid;
+                grid-template-columns: 48px auto 0px;
+            grid-template-areas:". main .";
+            }
+            
+
+            #ctwogrid{
+                grid-area: main;
+                margin-top: 32px;
+
+                #cardformatinv{
+                    background-color: var(--gfgrey);
+                    padding: 24px;
+                    border-radius: 16px;
+                }
+
+                #cardformatwarr{
+                    margin-top: 32px;
+                    background-color: var(--gfbluedark);
+                    color: var(--white);
+                    padding: 24px;
+                    border-radius: 16px;
+                }
+            }
+
         }
     }
 }

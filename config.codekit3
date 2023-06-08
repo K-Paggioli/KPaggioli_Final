@@ -325,6 +325,14 @@
       "oAP" : "\/dev\/content\/Checkout\/contact.html",
       "oF" : 0
     },
+    "\/dev\/content\/Checkout\/mobilecolumn.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Checkout\/mobilecolumn.html",
+      "oF" : 0
+    },
     "\/dev\/content\/Index\/addons.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -607,6 +615,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/Checkout\/_contact.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/Checkout\/_mobilecolumn.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/Checkout\/_mobilecolumn.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

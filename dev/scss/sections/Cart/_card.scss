@@ -381,11 +381,13 @@
     align-items: center;
 
     #left-side{
+        
         a:link,
             a:visited {
                 display: inline-block;
                 transition: 0.25s;
                 color: var(--gfbluedark);
+                font-size: rem-calc(15);
 
 
                 &:hover {
@@ -397,9 +399,14 @@
                 }
 }
     }
+    #ileft{
+        padding-right:8px;
+    }
+
+    #iright{
+        padding-left: 8px;
+    }
     
 
-i{
-    padding: 0px 8px;
-}
+
 }

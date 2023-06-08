@@ -2604,6 +2604,7 @@ img {
   display: inline-block;
   transition: 0.25s;
   color: var(--gfbluedark);
+  font-size: 0.9375rem;
 }
 #directional-links #left-side a:link:hover,
 #directional-links #left-side a:visited:hover {
@@ -2613,8 +2614,11 @@ img {
 #directional-links #left-side a:visited:active {
   color: var(--gfgold);
 }
-#directional-links i {
-  padding: 0px 8px;
+#directional-links #ileft {
+  padding-right: 8px;
+}
+#directional-links #iright {
+  padding-left: 8px;
 }
 
 #checkout-grid-title {
@@ -2676,6 +2680,13 @@ img {
 #gridcontact > div #column1 {
   grid-area: c1;
 }
+@media (min-width: 768px) {
+  #gridcontact > div #column1 {
+    border-right: 6px solid var(--gfbluemed);
+    margin-top: 24px;
+    margin-bottom: 75px;
+  }
+}
 #gridcontact > div #column1 #contact-info h1 {
   font-family: "Arvo", serif;
   font-size: 2.25rem;
@@ -2684,13 +2695,13 @@ img {
 }
 @media (min-width: 768px) {
   #gridcontact > div #column1 #contact-info h1 {
-    margin-right: 60px;
+    margin-right: 48px;
   }
 }
 @media (min-width: 768px) {
   #gridcontact > div #column1 #contact-info #forms-contact {
     display: grid;
-    grid-template-columns: 0px auto 60px;
+    grid-template-columns: 0px auto 48px;
     grid-template-areas: ". form .";
   }
 }
@@ -2761,9 +2772,6 @@ img {
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:visited:active {
   color: var(--gfgold);
 }
-#gridcontact > div #column1 #contact-info #column2 {
-  grid-area: c2;
-}
 #gridcontact > div #column1 #shipping-info h1 {
   font-family: "Arvo", serif;
   font-size: 2.25rem;
@@ -2772,13 +2780,13 @@ img {
 }
 @media (min-width: 768px) {
   #gridcontact > div #column1 #shipping-info h1 {
-    margin-right: 60px;
+    margin-right: 48px;
   }
 }
 @media (min-width: 768px) {
   #gridcontact > div #column1 #shipping-info #forms-shipping {
     display: grid;
-    grid-template-columns: 0px auto 60px;
+    grid-template-columns: 0px auto 48px;
     grid-template-areas: ". form .";
   }
 }
@@ -2835,11 +2843,96 @@ img {
 #gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-#gridcontact > div #column1 #directional-link-check {
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#gridcontact > div #column1 #directional-link-check {
+  margin-top: 32px;
+  margin-bottom: 108px;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #directional-link-check {
+    display: grid;
+    grid-template-columns: 16px auto 72px;
+    grid-template-areas: ". link .";
+  }
+}
+#gridcontact > div #column1 #directional-link-check #link-check-grid {
+  grid-area: link;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#gridcontact > div #column1 #directional-link-check #link-check-grid #left-side a:link,
+#gridcontact > div #column1 #directional-link-check #link-check-grid #left-side a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--gfbluedark);
+  font-size: 0.9375rem;
+}
+#gridcontact > div #column1 #directional-link-check #link-check-grid #left-side a:link:hover,
+#gridcontact > div #column1 #directional-link-check #link-check-grid #left-side a:visited:hover {
+  color: var(--gfblue);
+}
+#gridcontact > div #column1 #directional-link-check #link-check-grid #left-side a:link:active,
+#gridcontact > div #column1 #directional-link-check #link-check-grid #left-side a:visited:active {
+  color: var(--gfgold);
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #directional-link-check #link-check-grid #right-side #mobilenewrev {
+    display: none;
+  }
+}
+#gridcontact > div #column1 #directional-link-check #link-check-grid #right-side #otherproceed {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #directional-link-check #link-check-grid #right-side #otherproceed {
+    display: block;
+  }
+}
+#gridcontact > div #column1 #directional-link-check #ileft {
+  padding-right: 8px;
+}
+#gridcontact > div #column1 #directional-link-check #iright {
+  padding-left: 8px;
+}
+#gridcontact > div #column2 {
+  grid-area: c2;
+  display: none;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column2 {
+    display: block;
+    display: grid;
+    grid-template-columns: 48px auto 0px;
+    grid-template-areas: ". main .";
+  }
+}
+#gridcontact > div #column2 #ctwogrid {
+  grid-area: main;
+  margin-top: 32px;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatinv {
+  background-color: var(--gfgrey);
+  padding: 24px;
+  border-radius: 16px;
+}
+#gridcontact > div #column2 #ctwogrid #cardformatwarr {
+  margin-top: 32px;
+  background-color: var(--gfbluedark);
+  color: var(--white);
+  padding: 24px;
+  border-radius: 16px;
 }
 
 #needidig {
