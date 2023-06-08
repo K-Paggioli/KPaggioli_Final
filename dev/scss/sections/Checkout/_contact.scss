@@ -1,18 +1,17 @@
-
-#checkout-grid-title
-{
+#checkout-grid-title {
     background-color: var(--gfbluemed);
     background-image: url("../img/GlowforgeTiledInvert.png");
-    width:100%;
+    width: 100%;
     z-index: 10000;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". t .";
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1168px auto;
     }
-    #checkout-title{
+
+    #checkout-title {
         grid-area: t;
         padding-top: 100px;
         padding-bottom: 24px;
@@ -20,74 +19,124 @@
         font-family: 'arvo', serif;
         font-size: rem-calc(24);
 
-        @include lg{
+        @include lg {
             padding-top: 94px
         }
-    
+
     }
 }
 
 
-#gridcontact{
+#gridcontact {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1168px auto;
     }
-        >div{
-            grid-area: main;
-            padding-top: 8px;
 
-            
+    >div {
+        grid-area: main;
+        padding-top: 8px;
 
-            @include md{
-                display: grid;
-                grid-template-columns: 60% auto;
-                grid-template-areas:
+
+
+        @include md {
+            display: grid;
+            grid-template-columns: 55% auto;
+            grid-template-areas:
                 "c1 c2";
-            }
-
-            @include lg{
-                display: grid;
-                grid-template-columns: 70% auto;
-                grid-template-areas:
-                "c1 c2";
-            }
-            
-            #column1{
-                grid-area: c1;
-
-                #contact-info{
-
-                    #forms-contact{
-
-                        form{
-                            width:100%;
-                        }
-
-                        #forms-horizontal-2{
-                            display: flex;
-                        }
-
-                    }
-                }
-
-                #shipping-info{
-
-                }
-
-
-
-                
-
-            }
-
-            #column2{
-                grid-area: c2;
-
-            }
-    
         }
+
+        @include lg {
+            display: grid;
+            grid-template-columns: 60% auto;
+            grid-template-areas:
+                "c1 c2";
+        }
+
+        #column1 {
+            grid-area: c1;
+
+            #contact-info {
+                h1 {
+                    font-family: 'Arvo', serif;
+                    font-size: rem-calc(36);
+                    border-bottom: 4px solid var(--gfgold);
+                    padding-bottom: 8px;
+                    margin-right: 40px;
+                }
+
+                #forms-contact {
+                    display: grid;
+                    grid-template-columns: 0px auto 60px;
+                    grid-template-areas: ". form .";
+
+                    #allforms1 {
+                        grid-area: form;
+                        padding: 16px 0px;
+
+                        form {
+                            input {
+                                width: 100%;
+                                padding: 8px;
+                                margin: 8px 0px;
+                                ;
+
+                            }
+                        }
+
+                        #forms-horizontal-2 {
+                            @include lg {
+                                display: flex;
+                                justify-content: space-between;
+
+                                #spacing-form-1{
+                                    margin-right:8px;
+                                    width:80%;
+                                    #first {
+                                        width: 100%;
+                                      input {
+            
+    
+    
+                                        }
+                                    }
+                                }
+
+                               
+                                #last{
+                                    width:100%;
+                                    input {
+
+
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                    }
+
+
+
+                }
+            }
+
+            #shipping-info {}
+
+
+
+
+
+        }
+
+        #column2 {
+            grid-area: c2;
+
+        }
+
     }
+}
