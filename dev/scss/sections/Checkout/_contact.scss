@@ -65,16 +65,20 @@
                     font-size: rem-calc(36);
                     border-bottom: 4px solid var(--gfgold);
                     padding-bottom: 8px;
-                    margin-right: 40px;
+
+                    @include md {
+                        margin-right: 60px;
+                    }
+
                 }
 
                 #forms-contact {
-                    @include md{
+                    @include md {
                         display: grid;
                         grid-template-columns: 0px auto 60px;
                         grid-template-areas: ". form .";
                     }
-                    
+
 
                     #allforms1 {
                         grid-area: form;
@@ -86,7 +90,7 @@
                                 width: 100%;
                                 padding: 8px;
                                 margin: 8px 0px;
-                                
+
                                 ;
 
                             }
@@ -112,11 +116,8 @@
 
                         #info-why {
                             text-align: right;
+                            margin-top: 16px;
 
-                            @include md{
-                                margin-right: -18px;
-                            }
-                            
 
                             a:link,
                             a:visited {
@@ -136,54 +137,109 @@
                             }
                         }
 
-                        #contact-sign-links{
-                            @include md{
-                                margin-right: -18px;
-                            }
+                        #contact-sign-links {
+
                             display: flex;
                             align-items: flex-end;
                             justify-content: flex-end;
                             gap: 16px;
 
-                            #haveacct{
+                            #haveacct {
                                 margin-bottom: -20px;
-                                a:link,
-                            a:visited {
-                                display: inline-block;
-                                transition: 0.25s;
-                                color: var(--gfblue);
-                                padding-bottom: 24px;
-                                font-size: rem-calc(16);
-                                font-style: italic;
-                                text-decoration: underline;
-                                color: var(--gfblue);
 
-                                &:hover,
-                                &:active {
-                                    color: var(--gfgold);
+                                a:link,
+                                a:visited {
+                                    display: inline-block;
+                                    transition: 0.25s;
+                                    color: var(--gfblue);
+                                    padding-bottom: 24px;
+                                    font-size: rem-calc(16);
+                                    font-style: italic;
+                                    text-decoration: underline;
+                                    color: var(--gfblue);
+
+                                    &:hover,
+                                    &:active {
+                                        color: var(--gfgold);
+                                    }
+
                                 }
 
                             }
 
                         }
-
                     }
+
+                    #shipping-info {
+                        h1 {
+                            font-family: 'Arvo', serif;
+                            font-size: rem-calc(36);
+                            border-bottom: 4px solid var(--gfgold);
+                            padding-bottom: 8px;
+
+                            @include md {
+                                margin-right: 60px;
+                            }
+
+                        }
+
+                        #forms-shipping {
+                            @include md {
+                                display: grid;
+                                grid-template-columns: 0px auto 60px;
+                                grid-template-areas: ". form .";
+                            }
+
+
+                            #allforms2 {
+                                grid-area: form;
+                                padding: 16px 0px;
+
+                                form {
+                                    input {
+                                        box-sizing: border-box;
+                                        width: 100%;
+                                        padding: 8px;
+                                        margin: 8px 0px;
+
+                                        ;
+
+                                    }
+                                }
+
+                                #forms-horizontal-2 {
+                                    @include lg {
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        form {
+                                            input {
+                                                width: 100%;
+                                                margin-right: 60px;
+
+                                            }
+                                        }
+
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+
                 }
 
-                #shipping-info {}
+                #column2 {
+                    grid-area: c2;
 
-
-
-
-
-            }
-
-            #column2 {
-                grid-area: c2;
+                }
 
             }
-
         }
     }
-}
 }

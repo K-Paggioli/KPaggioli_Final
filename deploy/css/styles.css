@@ -2681,7 +2681,11 @@ img {
   font-size: 2.25rem;
   border-bottom: 4px solid var(--gfgold);
   padding-bottom: 8px;
-  margin-right: 40px;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #contact-info h1 {
+    margin-right: 60px;
+  }
 }
 @media (min-width: 768px) {
   #gridcontact > div #column1 #contact-info #forms-contact {
@@ -2712,11 +2716,7 @@ img {
 }
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why {
   text-align: right;
-}
-@media (min-width: 768px) {
-  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why {
-    margin-right: -18px;
-  }
+  margin-top: 16px;
 }
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:link,
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #info-why a:visited {
@@ -2740,11 +2740,6 @@ img {
   justify-content: flex-end;
   gap: 16px;
 }
-@media (min-width: 768px) {
-  #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links {
-    margin-right: -18px;
-  }
-}
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct {
   margin-bottom: -20px;
 }
@@ -2763,6 +2758,44 @@ img {
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:visited:hover,
 #gridcontact > div #column1 #contact-info #forms-contact #allforms1 #contact-sign-links #haveacct a:visited:active {
   color: var(--gfgold);
+}
+#gridcontact > div #column1 #contact-info #forms-contact #shipping-info h1 {
+  font-family: "Arvo", serif;
+  font-size: 2.25rem;
+  border-bottom: 4px solid var(--gfgold);
+  padding-bottom: 8px;
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info h1 {
+    margin-right: 60px;
+  }
+}
+@media (min-width: 768px) {
+  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping {
+    display: grid;
+    grid-template-columns: 0px auto 60px;
+    grid-template-areas: ". form .";
+  }
+}
+#gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 {
+  grid-area: form;
+  padding: 16px 0px;
+}
+#gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0px;
+}
+@media (min-width: 1024px) {
+  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #gridcontact > div #column1 #contact-info #forms-contact #shipping-info #forms-shipping #allforms2 #forms-horizontal-2 form input {
+    width: 100%;
+    margin-right: 60px;
+  }
 }
 #gridcontact > div #column1 #contact-info #column2 {
   grid-area: c2;
