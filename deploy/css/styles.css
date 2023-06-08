@@ -1930,40 +1930,55 @@ img {
 #background-color #gridreview > div #reviews-star #dropdown-1 {
   grid-area: d;
   margin-top: 24px;
+}
+#background-color #gridreview > div #reviews-star #dropdown-1 button {
   background-color: var(--gfblue);
   color: white;
-  padding: 4px 0px;
+  padding: 8px 8px;
   width: 100%;
   display: inline-block;
   border: none;
-  border-radius: 0px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 0.875rem;
   transition: 0.25s;
 }
-#background-color #gridreview > div #reviews-star #dropdown-1:active {
+#background-color #gridreview > div #reviews-star #dropdown-1 button:active {
   background-color: var(--gfgold);
 }
-#background-color #gridreview > div #reviews-star #dropdown-1:hover {
+#background-color #gridreview > div #reviews-star #dropdown-1 button:hover {
   background-color: var(--gfbluelight);
 }
-#background-color #gridreview > div #review-keyword #button-rev {
+#background-color #gridreview > div #reviews-star #dropdown-1 button #carat-rev {
+  padding: 0px 8px;
+}
+#background-color #gridreview > div #review-keyword {
+  font-size: 1.25rem;
+}
+#background-color #gridreview > div #review-keyword #buttons-rev button {
   background-color: var(--gfblue);
   color: white;
-  padding: 4px 0px;
+  padding: 8px 8px;
   width: 100%;
   display: inline-block;
   border: none;
-  border-radius: 0px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 0.875rem;
   transition: 0.25s;
+  margin: 4px 0px;
 }
-#background-color #gridreview > div #review-keyword #button-rev:active {
+#background-color #gridreview > div #review-keyword #buttons-rev button:active {
   background-color: var(--gfgold);
 }
-#background-color #gridreview > div #review-keyword #button-rev:hover {
+#background-color #gridreview > div #review-keyword #buttons-rev button:hover {
   background-color: var(--gfbluelight);
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div #review-keyword #buttons-rev button {
+    width: auto;
+    padding: 8px 24px;
+  }
 }
 @media (min-width: 768px) {
   #background-color #gridreview > div #review-cards {

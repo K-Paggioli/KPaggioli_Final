@@ -119,335 +119,352 @@
                 #dropdown-1 {
                     grid-area: d;
                     margin-top: 24px;
-                    background-color: var(--gfblue);
-                    color: white;
-                    padding: 4px 0px;
-                    width: 100%;
-                    display: inline-block;
-                    border: none;
-                    border-radius: 0px;
-                    font-weight: 600;
-                    font-size: rem-calc(14);
-                    transition: 0.25s;
 
-                    &:active {
-                        background-color: var(--gfgold);
+                    button {
+                        background-color: var(--gfblue);
+                        color: white;
+                        padding: 8px 8px;
+                        width: 100%;
+                        display: inline-block;
+                        border: none;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: rem-calc(14);
+                        transition: 0.25s;
+
+                        &:active {
+                            background-color: var(--gfgold);
+                        }
+
+                        &:hover {
+                            background-color: var(--gfbluelight);
+                        }
+
+                        #carat-rev {
+                            padding: 0px 8px;
+
+                        }
                     }
 
-                    &:hover {
-                        background-color: var(--gfbluelight);
-                    }
 
 
                 }
             }
 
             #review-keyword {
+                font-size: rem-calc(20);
             
-                #button-rev{
-                    background-color: var(--gfblue);
-                    color: white;
-                    padding: 4px 0px;
-                    width: 100%;
-                    display: inline-block;
-                    border: none;
-                    border-radius: 0px;
-                    font-weight: 600;
-                    font-size: rem-calc(14);
-                    transition: 0.25s;
+                #buttons-rev{
+                    button {
+                        background-color: var(--gfblue);
+                        color: white;
+                        padding: 8px 8px;
+                        width: 100%;
+                        display: inline-block;
+                        border: none;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: rem-calc(14);
+                        transition: 0.25s;
+                        margin: 4px 0px;
+    
+                        &:active {
+                            background-color: var(--gfgold);
+                        }
+    
+                        &:hover {
+                            background-color: var(--gfbluelight);
+                        }
 
-                    &:active {
-                        background-color: var(--gfgold);
-                    }
-
-                    &:hover {
-                        background-color: var(--gfbluelight);
+                        @include sm{
+                            width:auto;
+                            padding: 8px 24px;
+                        }
                     }
                 }
-            }
+            }  
 
-            #review-cards {
+                #review-cards {
 
-                @include md {
-                    display: grid;
-                    grid-template-columns: 72px auto 72px;
-                    grid-template-areas:
-                        ". card .";
+                    @include md {
+                        display: grid;
+                        grid-template-columns: 72px auto 72px;
+                        grid-template-areas:
+                            ". card .";
 
-                }
+                    }
 
-                #grid-area-cards {
-                    grid-area: card;
-                    color: var(--gfbluedark);
+                    #grid-area-cards {
+                        grid-area: card;
+                        color: var(--gfbluedark);
 
 
-                    #review-card-1 {
-                        margin-top: 24px;
-                        background-color: var(--white);
-                        padding: 16px;
-                        border-radius: 16px;
+                        #review-card-1 {
+                            margin-top: 24px;
+                            background-color: var(--white);
+                            padding: 16px;
+                            border-radius: 16px;
 
-                        @include md {
-                            padding: 24px;
-                        }
-
-                        #top-info-rev {
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-
-                            #default-user {
-                                font-size: rem-calc(24);
-                                border: 2px solid var(--gfbluedark);
-                                padding: 6px;
-                                border-radius: 8px;
-                                margin-right: 16px;
-
+                            @include md {
+                                padding: 24px;
                             }
 
-                            #cards-stars {
-                                font-size: rem-calc(32);
-                                color: var(--gfgold);
+                            #top-info-rev {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
 
+                                #default-user {
+                                    font-size: rem-calc(24);
+                                    border: 2px solid var(--gfbluedark);
+                                    padding: 6px;
+                                    border-radius: 8px;
+                                    margin-right: 16px;
 
-                            }
+                                }
 
-                        }
-
-                        #card-title {
-                            font-weight: 400;
-                            font-size: rem-calc(24);
-                            margin-top: 16px;
-
-                        }
-
-                        #username {
-                            margin-top: -16px;
-
-                            a:link,
-                            a:visited {
-                                transition: 0.25s;
-                                color: var(--gfblue);
-                                padding-bottom: 24px;
-                                font-size: rem-calc(16);
-
-                                &:hover,
-                                &:active {
+                                #cards-stars {
+                                    font-size: rem-calc(32);
                                     color: var(--gfgold);
-                                }
-                            }
 
 
-                        }
-
-                        #rev-card-content {
-                            font-size: rem-calc(14);
-                            line-height: 20px;
-                            padding: 16px 0px 0px;
-                            margin-top: -4px;
-                        }
-
-                        #rev-card-img {
-                            display: flex;
-                            justify-content: flex-start;
-                            gap: 16px;
-
-                            #rev-img-1 {
-                                height: 85px;
-                                background-color: slategray;
-
-                                @include md {
-                                    height: 145px;
                                 }
 
                             }
 
-                            #rev-img-2 {
-                                height: 85px;
-                                background-color: slategray;
-
-                                @include md {
-                                    height: 145px;
-                                }
-
-                            }
-
-                        }
-
-                    }
-
-                    #review-card-2 {
-                        margin-top: 24px;
-                        background-color: var(--white);
-                        padding: 16px;
-                        border-radius: 16px;
-
-                        @include md {
-                            padding: 24px;
-                        }
-
-                        #top-info-rev {
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-
-                            #default-user {
+                            #card-title {
+                                font-weight: 400;
                                 font-size: rem-calc(24);
-                                border: 2px solid var(--gfbluedark);
-                                padding: 6px;
-                                border-radius: 8px;
-                                margin-right: 16px;
+                                margin-top: 16px;
 
                             }
 
-                            #cards-stars {
-                                font-size: rem-calc(32);
-                                color: var(--gfgold);
+                            #username {
+                                margin-top: -16px;
 
+                                a:link,
+                                a:visited {
+                                    transition: 0.25s;
+                                    color: var(--gfblue);
+                                    padding-bottom: 24px;
+                                    font-size: rem-calc(16);
 
-                            }
-
-                        }
-
-                        #card-title {
-                            font-weight: 400;
-                            font-size: rem-calc(24);
-                            margin-top: 16px;
-
-                        }
-
-                        #username {
-                            margin-top: -16px;
-
-                            a:link,
-                            a:visited {
-                                transition: 0.25s;
-                                color: var(--gfblue);
-                                padding-bottom: 24px;
-                                font-size: rem-calc(16);
-
-                                &:hover,
-                                &:active {
-                                    color: var(--gfgold);
+                                    &:hover,
+                                    &:active {
+                                        color: var(--gfgold);
+                                    }
                                 }
+
+
                             }
 
+                            #rev-card-content {
+                                font-size: rem-calc(14);
+                                line-height: 20px;
+                                padding: 16px 0px 0px;
+                                margin-top: -4px;
+                            }
+
+                            #rev-card-img {
+                                display: flex;
+                                justify-content: flex-start;
+                                gap: 16px;
+
+                                #rev-img-1 {
+                                    height: 85px;
+                                    background-color: slategray;
+
+                                    @include md {
+                                        height: 145px;
+                                    }
+
+                                }
+
+                                #rev-img-2 {
+                                    height: 85px;
+                                    background-color: slategray;
+
+                                    @include md {
+                                        height: 145px;
+                                    }
+
+                                }
+
+                            }
 
                         }
 
-                        #rev-card-content {
-                            font-size: rem-calc(14);
-                            line-height: 20px;
-                            padding: 16px 0px 0px;
-                            margin-top: -4px;
-                            margin-bottom: 4px;
-                        }
-                    }
+                        #review-card-2 {
+                            margin-top: 24px;
+                            background-color: var(--white);
+                            padding: 16px;
+                            border-radius: 16px;
 
-                    #review-card-3 {
-                        margin-top: 24px;
-                        background-color: var(--white);
-                        padding: 16px;
-                        border-radius: 16px;
+                            @include md {
+                                padding: 24px;
+                            }
 
-                        @include md {
-                            padding: 24px;
-                        }
+                            #top-info-rev {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
 
-                        #top-info-rev {
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
+                                #default-user {
+                                    font-size: rem-calc(24);
+                                    border: 2px solid var(--gfbluedark);
+                                    padding: 6px;
+                                    border-radius: 8px;
+                                    margin-right: 16px;
 
-                            #default-user {
+                                }
+
+                                #cards-stars {
+                                    font-size: rem-calc(32);
+                                    color: var(--gfgold);
+
+
+                                }
+
+                            }
+
+                            #card-title {
+                                font-weight: 400;
                                 font-size: rem-calc(24);
-                                border: 2px solid var(--gfbluedark);
-                                padding: 6px;
-                                border-radius: 8px;
-                                margin-right: 16px;
+                                margin-top: 16px;
 
                             }
 
-                            #cards-stars {
-                                font-size: rem-calc(32);
-                                color: var(--gfgold);
+                            #username {
+                                margin-top: -16px;
 
+                                a:link,
+                                a:visited {
+                                    transition: 0.25s;
+                                    color: var(--gfblue);
+                                    padding-bottom: 24px;
+                                    font-size: rem-calc(16);
 
-                            }
-
-                        }
-
-                        #card-title {
-                            font-weight: 400;
-                            font-size: rem-calc(24);
-                            margin-top: 16px;
-
-                        }
-
-                        #username {
-                            margin-top: -16px;
-
-                            a:link,
-                            a:visited {
-                                transition: 0.25s;
-                                color: var(--gfblue);
-                                padding-bottom: 24px;
-                                font-size: rem-calc(16);
-
-                                &:hover,
-                                &:active {
-                                    color: var(--gfgold);
+                                    &:hover,
+                                    &:active {
+                                        color: var(--gfgold);
+                                    }
                                 }
+
+
                             }
 
-
+                            #rev-card-content {
+                                font-size: rem-calc(14);
+                                line-height: 20px;
+                                padding: 16px 0px 0px;
+                                margin-top: -4px;
+                                margin-bottom: 4px;
+                            }
                         }
 
-                        #rev-card-content {
-                            font-size: rem-calc(14);
-                            line-height: 20px;
-                            padding: 16px 0px 0px;
-                            margin-top: -4px;
-                            margin-bottom: 4px;
+                        #review-card-3 {
+                            margin-top: 24px;
+                            background-color: var(--white);
+                            padding: 16px;
+                            border-radius: 16px;
+
+                            @include md {
+                                padding: 24px;
+                            }
+
+                            #top-info-rev {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+
+                                #default-user {
+                                    font-size: rem-calc(24);
+                                    border: 2px solid var(--gfbluedark);
+                                    padding: 6px;
+                                    border-radius: 8px;
+                                    margin-right: 16px;
+
+                                }
+
+                                #cards-stars {
+                                    font-size: rem-calc(32);
+                                    color: var(--gfgold);
+
+
+                                }
+
+                            }
+
+                            #card-title {
+                                font-weight: 400;
+                                font-size: rem-calc(24);
+                                margin-top: 16px;
+
+                            }
+
+                            #username {
+                                margin-top: -16px;
+
+                                a:link,
+                                a:visited {
+                                    transition: 0.25s;
+                                    color: var(--gfblue);
+                                    padding-bottom: 24px;
+                                    font-size: rem-calc(16);
+
+                                    &:hover,
+                                    &:active {
+                                        color: var(--gfgold);
+                                    }
+                                }
+
+
+                            }
+
+                            #rev-card-content {
+                                font-size: rem-calc(14);
+                                line-height: 20px;
+                                padding: 16px 0px 0px;
+                                margin-top: -4px;
+                                margin-bottom: 4px;
+                            }
                         }
+
                     }
+
 
                 }
 
+                #seemore {
+                    padding: 24px 0px;
+                    margin-bottom: 48px;
+
+                    @include md {
+                        margin-bottom: 0px;
+                    }
+
+
+                    a:link,
+                    a:visited {
+                        transition: 0.25s;
+                        color: var(--white);
+                        padding-bottom: 24px;
+                        font-size: rem-calc(24);
+                        font-weight: 600;
+
+
+                        &:hover,
+                        &:active {
+                            color: var(--gfblue);
+                        }
+                    }
+
+                    i {
+                        padding: 0px 16px;
+
+                    }
+                }
 
             }
-
-            #seemore {
-                padding: 24px 0px;
-                margin-bottom: 48px;
-
-                @include md {
-                    margin-bottom: 0px;
-                }
-
-
-                a:link,
-                a:visited {
-                    transition: 0.25s;
-                    color: var(--white);
-                    padding-bottom: 24px;
-                    font-size: rem-calc(24);
-                    font-weight: 600;
-
-
-                    &:hover,
-                    &:active {
-                        color: var(--gfblue);
-                    }
-                }
-
-                i {
-                    padding: 0px 16px;
-
-                }
-            }
-
         }
     }
-
-}
