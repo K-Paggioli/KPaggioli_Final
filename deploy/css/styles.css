@@ -1553,15 +1553,29 @@ img {
   }
 }
 #gridaddon > div #margin-in-box {
-  padding: 0px 48px;
+  padding: 0px 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  #gridaddon > div #margin-in-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 16px 40px;
+  }
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 56px;
     flex-wrap: wrap;
-    padding: 16px 96px;
+    padding: 16px 108px;
   }
 }
 @media (min-width: 1024px) {
@@ -1581,11 +1595,17 @@ img {
 #gridaddon > div #margin-in-box #filter #img {
   background-image: url(../img/addons/filter.png);
   height: 224px;
+  width: 224px;
   background-size: cover;
   background-position: center;
   grid-area: f1;
-  width: 100%;
   background-color: navy;
+}
+@media (min-width: 576px) {
+  #gridaddon > div #margin-in-box #filter #img {
+    height: 188px;
+    width: 188px;
+  }
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #filter #img {
@@ -1612,7 +1632,7 @@ img {
   grid-area: f4;
   padding-top: 16px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #gridaddon > div #margin-in-box #filter #button {
     padding-top: 38px;
   }
@@ -1623,7 +1643,7 @@ img {
   grid-template-rows: 5, 1fr;
   grid-template-areas: "p1 p1 p2 p3 p4";
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #gridaddon > div #margin-in-box #proofgrade {
     padding: 0px;
   }
@@ -1632,8 +1652,15 @@ img {
   grid-area: p1;
   background-image: url(../img/addons/proofgrade.png);
   height: 224px;
+  width: 224px;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 576px) {
+  #gridaddon > div #margin-in-box #proofgrade #img {
+    height: 188px;
+    width: 188px;
+  }
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #proofgrade #img {
@@ -1663,7 +1690,7 @@ img {
   grid-template-rows: 5, 1fr;
   grid-template-areas: "a1 a1 a2 a3 a4";
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #gridaddon > div #margin-in-box #accessorykit {
     padding: 0px;
   }
@@ -1672,8 +1699,15 @@ img {
   grid-area: a1;
   background-image: url(../img/addons/accessory.png);
   height: 224px;
+  width: 224px;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 576px) {
+  #gridaddon > div #margin-in-box #accessorykit #img {
+    height: 188px;
+    width: 188px;
+  }
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #accessorykit #img {
@@ -1709,7 +1743,7 @@ img {
   grid-template-rows: 5, 1fr;
   grid-template-areas: "w1 w1 w2 w3 w4";
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #gridaddon > div #margin-in-box #warranty {
     padding: 0px;
   }
@@ -1718,8 +1752,15 @@ img {
   grid-area: w1;
   background-image: url(../img/addons/warranty.png);
   height: 224px;
+  width: 224px;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 576px) {
+  #gridaddon > div #margin-in-box #warranty #img {
+    height: 188px;
+    width: 188px;
+  }
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #warranty #img {

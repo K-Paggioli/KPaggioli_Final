@@ -27,16 +27,38 @@
         }
 
         #margin-in-box {
-            padding: 0px 48px;
+            padding: 0px 108px;
+            //---display: grid;
+            //---grid-template-columns: 5% 90% 5%;
+            //---grid-template-areas: 
+            //---". c1 ."
+            //---". c2 ."
+            //---". c3 ."
+           //--- ". c4 ."
 
+           display: flex; 
+           flex-direction: column;
+           align-items: center;
+
+            @include sm{
+                display: flex;
+                flex-direction:row;
+                justify-content: space-between;
+                gap: 32px;
+                flex-wrap: wrap;
+                padding: 16px 40px;
+
+            }
+ 
 
 
             @include md {
                 display: flex;
+                flex-direction:row;
                 justify-content: space-between;
                 gap: 56px;
                 flex-wrap: wrap;
-                padding: 16px 96px;
+                padding: 16px 108px;
 
             }
 
@@ -51,6 +73,7 @@
 
 
             #filter {
+                //--grid-area: c1;
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
@@ -59,12 +82,17 @@
                 #img {
                     background-image: url(../img/addons/filter.png);
                     height: 224px;
+                    width: 224px;
                     background-size: cover;
                     background-position: center;
 
                     grid-area: f1;
-                    width: 100%;
                     background-color: navy;
+
+                    @include sm{
+                        height: 188px;
+                        width: 188px;
+                    }
 
 
                     @include md {
@@ -100,7 +128,7 @@
                     grid-area: f4;
                     padding-top: 16px;
 
-                    @include md {
+                    @include sm {
                         padding-top: 38px;
                     }
 
@@ -109,13 +137,14 @@
             }
 
             #proofgrade {
+                //--grid-area: c2;
                 padding-top: 32px;
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
                     "p1 p1 p2 p3 p4";
 
-                @include md {
+                @include sm {
                     padding: 0px;
                 }
 
@@ -123,8 +152,15 @@
                     grid-area: p1;
                     background-image: url(../img/addons/proofgrade.png);
                     height: 224px;
+                    width: 224px;
                     background-size: cover;
                     background-position: center;
+
+                    @include sm{
+                        height: 188px;
+                        width: 188px;
+                    }
+                    
 
 
                     @include md {
@@ -163,6 +199,7 @@
             }
 
             #accessorykit {
+                //--grid-area: c3;
                 padding-top: 32px;
                 display: grid;
                 grid-template-rows: (5, 1fr);
@@ -170,7 +207,7 @@
                     "a1 a1 a2 a3 a4";
 
 
-                @include md {
+                @include sm {
                     padding: 0px;
                 }
 
@@ -178,8 +215,15 @@
                     grid-area: a1;
                     background-image: url(../img/addons/accessory.png);
                     height: 224px;
+                    width: 224px;
                     background-size: cover;
                     background-position: center;
+                
+
+                    @include sm{
+                        height: 188px;
+                        width: 188px;
+                    }
 
 
                     @include md {
@@ -218,6 +262,7 @@
             }
 
             #warranty {
+                //--grid-area: c4;
                 padding-top: 32px;
                 padding-bottom: 32px;
                 display: grid;
@@ -226,7 +271,7 @@
                     "w1 w1 w2 w3 w4";
 
 
-                @include md {
+                @include sm {
                     padding: 0px;
                 }
 
@@ -234,9 +279,15 @@
                     grid-area: w1;
                     background-image: url(../img/addons/warranty.png);
                     height: 224px;
+                    width: 224px;
                     background-size: cover;
                     background-position: center;
+                    
 
+                    @include sm{
+                        height: 188px;
+                        width: 188px;
+                    }
 
                     @include md {
                         height: 224px;
