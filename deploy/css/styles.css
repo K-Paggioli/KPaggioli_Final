@@ -1557,6 +1557,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 @media (min-width: 576px) {
   #gridaddon > div #margin-in-box {
@@ -1594,8 +1595,8 @@ img {
 }
 #gridaddon > div #margin-in-box #filter #img {
   background-image: url(../img/addons/filter.png);
-  height: 224px;
-  width: 224px;
+  height: 250px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   grid-area: f1;
@@ -1651,8 +1652,8 @@ img {
 #gridaddon > div #margin-in-box #proofgrade #img {
   grid-area: p1;
   background-image: url(../img/addons/proofgrade.png);
-  height: 224px;
-  width: 224px;
+  height: 250px;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -1698,8 +1699,8 @@ img {
 #gridaddon > div #margin-in-box #accessorykit #img {
   grid-area: a1;
   background-image: url(../img/addons/accessory.png);
-  height: 224px;
-  width: 224px;
+  height: 250px;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -1751,8 +1752,8 @@ img {
 #gridaddon > div #margin-in-box #warranty #img {
   grid-area: w1;
   background-image: url(../img/addons/warranty.png);
-  height: 224px;
-  width: 224px;
+  height: 250px;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }

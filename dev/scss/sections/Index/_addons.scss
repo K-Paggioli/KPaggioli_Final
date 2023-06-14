@@ -39,6 +39,7 @@
            display: flex; 
            flex-direction: column;
            align-items: center;
+           box-sizing: border-box;
 
             @include sm{
                 display: flex;
@@ -81,8 +82,8 @@
 
                 #img {
                     background-image: url(../img/addons/filter.png);
-                    height: 224px;
-                    width: 224px;
+                    height: 250px;
+                    width: 100%;
                     background-size: cover;
                     background-position: center;
 
@@ -151,8 +152,8 @@
                 #img {
                     grid-area: p1;
                     background-image: url(../img/addons/proofgrade.png);
-                    height: 224px;
-                    width: 224px;
+                    height: 250px;
+                    width: 100%;
                     background-size: cover;
                     background-position: center;
 
@@ -214,8 +215,8 @@
                 #img {
                     grid-area: a1;
                     background-image: url(../img/addons/accessory.png);
-                    height: 224px;
-                    width: 224px;
+                    height: 250px;
+                    width: 100%;
                     background-size: cover;
                     background-position: center;
                 
@@ -278,8 +279,8 @@
                 #img {
                     grid-area: w1;
                     background-image: url(../img/addons/warranty.png);
-                    height: 224px;
-                    width: 224px;
+                    height: 250px;
+                    width: 100%;
                     background-size: cover;
                     background-position: center;
                     
