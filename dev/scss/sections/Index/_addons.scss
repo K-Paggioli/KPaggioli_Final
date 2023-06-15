@@ -283,9 +283,6 @@
                     grid-area: a4;
                     padding-top: 16px;
 
-                    @include lg {
-                        padding-top: 38px;
-                    }
                 }
 
             }
@@ -365,7 +362,7 @@
                     grid-area: w4;
                     padding-top: 16px;
 
-                    @include lg {
+                    @include sm {
                         padding-top: 38px;
                     }
                 }

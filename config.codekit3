@@ -110,9 +110,22 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/GlowforgeTiledInvert_SMALL.png" : {
+      "ft" : 32768,
+      "iS" : 20610,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/GlowforgeTiledInvert_SMALL.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/GlowforgeTiledInvert.png" : {
       "ft" : 32768,
-      "iS" : 214295,
+      "iS" : 131966,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/GlowforgeTiledInvert.png",
       "oF" : 0,
@@ -141,6 +154,19 @@
       "iS" : 2833,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/header\/gfPin.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/header\/tracetype.png" : {
+      "ft" : 32768,
+      "iS" : 2935,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/tracetype.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

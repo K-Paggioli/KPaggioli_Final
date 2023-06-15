@@ -1,15 +1,33 @@
 #bg-img-honest{
     background-image: url("../img/GlowforgeTiledInvert.png");
-    height: 80px;
-    background-color: var(--gfgold);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 110px;
+    background-color: var(--gfbluedark);
     width:100%;
     z-index: 10000;
     margin-top: -40px;
     position: relative;
 
+    @include sm{
+        height: 200px;
+        background-size: cover;
+    }
     @include md{
         margin-top: 0px;
-        height: 487.58px; 
+        background-position: bottom center;
+        background-color: var(--gfbluelight);
+        background-size: contain;
+        padding-top: 20px;
+        
+
+    }
+
+    @include lg{
+        background-size: cover;
+        height: 478.55px; 
+        background-position: top center;
     }
 }
 
@@ -17,11 +35,14 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
-    background-color: var(--gfblue);
+    background-color: var(--gfbluemed);
     color: var(--white);
+    z-index: 999999;
+    
 
     @include md{
-        background-color: var(--gfbluelight);
+        background-color: var(--gfbluemed);
+        margin-top: -24px;
     }
 
 
@@ -31,29 +52,63 @@
 
     >div{
         grid-area: main;
+        z-index: 999999;
+        margin-top: -18px;
+
+        @include sm{
+            margin-top: -24px;
+        }
+
+        @include md{
+            margin-top: -18px;
+        }
+
+        @include lg{
+            margin-top: -24px;
+        }
+
+
+        
+        
 
         
         #honesty-content{
             padding: 16px 0px;
+            
             h1{
                 font-family:'Arvo', sans-serif;
                 font-weight: 700;
                 font-size: rem-calc(20);
                 line-height: 24.7px;
+                margin-top: -8px;
+                z-index: 999999;
+               
 
                 @include md{
                     font-size: rem-calc(32);
                     line-height: 59.27px;
+                    
+                }
+
+                @include lg{
+                    font-size: rem-calc(48);
                 }
 
             }
             p{
                 font-size: rem-calc(14);
                 line-height: 16px;
+                padding-bottom: 24px;
 
                 @include md{
                     font-size: rem-calc(18);
                     line-height: 22px;
+                    margin-top: -16px;
+                }
+
+                @include lg{
+                    font-size: rem-calc(22);
+                    
                 }
                 a:link,
                     a:visited {

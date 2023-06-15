@@ -576,7 +576,7 @@ header {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
   position: fixed;
-  z-index: 10000000000;
+  z-index: 100000000000;
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
@@ -1827,11 +1827,6 @@ img {
   grid-area: a4;
   padding-top: 16px;
 }
-@media (min-width: 1024px) {
-  #gridaddon > div #margin-in-box #accessorykit #button {
-    padding-top: 38px;
-  }
-}
 #gridaddon > div #margin-in-box #warranty {
   grid-area: c4;
   padding-top: 32px;
@@ -1896,7 +1891,7 @@ img {
   grid-area: w4;
   padding-top: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 576px) {
   #gridaddon > div #margin-in-box #warranty #button {
     padding-top: 38px;
   }
@@ -2456,17 +2451,36 @@ img {
 
 #bg-img-honest {
   background-image: url("../img/GlowforgeTiledInvert.png");
-  height: 80px;
-  background-color: var(--gfgold);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 110px;
+  background-color: var(--gfbluedark);
   width: 100%;
   z-index: 10000;
   margin-top: -40px;
   position: relative;
 }
+@media (min-width: 576px) {
+  #bg-img-honest {
+    height: 200px;
+    background-size: cover;
+  }
+}
 @media (min-width: 768px) {
   #bg-img-honest {
     margin-top: 0px;
-    height: 487.58px;
+    background-position: bottom center;
+    background-color: var(--gfbluelight);
+    background-size: contain;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #bg-img-honest {
+    background-size: cover;
+    height: 478.55px;
+    background-position: top center;
   }
 }
 
@@ -2474,12 +2488,14 @@ img {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
-  background-color: var(--gfblue);
+  background-color: var(--gfbluemed);
   color: var(--white);
+  z-index: 999999;
 }
 @media (min-width: 768px) {
   #gridhonesty {
-    background-color: var(--gfbluelight);
+    background-color: var(--gfbluemed);
+    margin-top: -24px;
   }
 }
 @media (min-width: 1200px) {
@@ -2489,6 +2505,23 @@ img {
 }
 #gridhonesty > div {
   grid-area: main;
+  z-index: 999999;
+  margin-top: -18px;
+}
+@media (min-width: 576px) {
+  #gridhonesty > div {
+    margin-top: -24px;
+  }
+}
+@media (min-width: 768px) {
+  #gridhonesty > div {
+    margin-top: -18px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridhonesty > div {
+    margin-top: -24px;
+  }
 }
 #gridhonesty > div #honesty-content {
   padding: 16px 0px;
@@ -2498,6 +2531,8 @@ img {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 24.7px;
+  margin-top: -8px;
+  z-index: 999999;
 }
 @media (min-width: 768px) {
   #gridhonesty > div #honesty-content h1 {
@@ -2505,14 +2540,26 @@ img {
     line-height: 59.27px;
   }
 }
+@media (min-width: 1024px) {
+  #gridhonesty > div #honesty-content h1 {
+    font-size: 3rem;
+  }
+}
 #gridhonesty > div #honesty-content p {
   font-size: 0.875rem;
   line-height: 16px;
+  padding-bottom: 24px;
 }
 @media (min-width: 768px) {
   #gridhonesty > div #honesty-content p {
     font-size: 1.125rem;
     line-height: 22px;
+    margin-top: -16px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridhonesty > div #honesty-content p {
+    font-size: 1.375rem;
   }
 }
 #gridhonesty > div #honesty-content p a:link,
