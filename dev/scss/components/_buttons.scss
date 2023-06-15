@@ -32,7 +32,12 @@
                 font-size: rem-calc(14);
                 transition: 0.25s;
 
-                &:hover,&:active {
-                    background-color: var(--gfgold) !important;
+                &:hover{
+                    background-color: var(--gfgold);
                 }
+
+                &:active{
+                    background-color: var(--gfgold);
+                }
+
 }

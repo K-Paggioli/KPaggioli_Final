@@ -461,8 +461,11 @@ h1 h2 h3 {
   font-size: 0.875rem;
   transition: 0.25s;
 }
-.thx-button:hover, .thx-button:active {
-  background-color: var(--gfgold) !important;
+.thx-button:hover {
+  background-color: var(--gfgold);
+}
+.thx-button:active {
+  background-color: var(--gfgold);
 }
 
 /* =============
