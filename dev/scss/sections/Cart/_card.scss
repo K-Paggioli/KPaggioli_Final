@@ -45,7 +45,7 @@
                     gap: 0px 16px;
                 }
 
-                @include lg{
+                @include lg {
                     grid-template-columns: 35% auto;
                     grid-template-areas:
                         "g1 g2"
@@ -85,8 +85,8 @@
                     border: none;
                     border-radius: 16px;
 
-                   
-                   
+
+
 
 
                 }
@@ -97,12 +97,12 @@
                     font-size: rem-calc(24);
                     margin-bottom: 24px;
 
-                    @include md{
+                    @include md {
                         margin-bottom: 88px;
 
                     }
 
-                    
+
                 }
             }
 
@@ -125,25 +125,39 @@
                 background-color: var(--gfgrey);
                 border-radius: 16px;
                 margin-bottom: 40px;
-                display: grid;
-                grid-template-columns: 80px auto 60px;
-                grid-template-areas: ". sub .";
-
-                @include md {
-                    grid-template-columns: 16px auto 16px;
-                }
+                
 
                 #grid-inside-card {
-                    grid-area: sub;
+
 
                     #cart-flex {
+                        grid-area: sub;
+                        display: grid;
+                        grid-template-columns: 20% auto 20%;
+                        grid-template-areas:
+                            ". c1 ."
+                            ". c2 ."
+                            ". c3 ."
+                            ". c4 .";
+
+                        @include sm {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            gap: 32px;
+                            flex-wrap: wrap;
+                            padding: 16px 32px;
+
+                        }
+
 
                         @include md {
                             display: flex;
+                            flex-direction: row;
                             justify-content: space-between;
                             gap: 56px;
                             flex-wrap: wrap;
-                            padding: 16px 96px;
+                            padding: 16px 108px;
 
                         }
 
@@ -157,6 +171,7 @@
 
 
                         #add-ons-filter {
+                            grid-area: c1;
                             padding: 0px;
                             margin: 0px;
                             padding-top: 16px;
@@ -172,13 +187,17 @@
                             #img-filter {
                                 grid-area: f1;
                                 background-image: url(../img/addons/filter.png);
-                                height: 224px;
+                                height: 248px;
+                                width: 100%;
                                 background-size: cover;
                                 background-position: center;
+                                background-repeat: no-repeat;
+                                box-sizing: border-box;
 
-                                grid-area: f1;
-                                width: 100%;
-                                background-color: navy;
+                                @include sm {
+                                    height: 188px;
+                                    width: 188px;
+                                }
 
 
                                 @include md {
@@ -196,10 +215,21 @@
 
 
 
+
+
                             }
 
                             #title-filter {
                                 grid-area: f2;
+                                grid-area: f2;
+                    font-size: rem-calc(24);
+                    font-weight: 700;
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
+
                             }
 
                             #price-filter {
@@ -220,6 +250,7 @@
                         }
 
                         #add-ons-proofgrade {
+                            grid-area: c2;
                             padding: 0px;
                             margin: 0px;
                             padding-top: 32px;
@@ -235,30 +266,46 @@
                             #img-proof {
                                 grid-area: p1;
                                 background-image: url(../img/addons/proofgrade.png);
-                                height: 224px;
-                                background-size: cover;
-                                background-position: center;
+                                height: 248px;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    box-sizing: border-box;
+
+                    @include sm{
+                        height: 188px;
+                        width: 188px;
+                    }
+                    
 
 
-                                @include md {
-                                    height: 224px;
-                                    width: 224px;
+                    @include md {
+                        height: 224px;
+                        width: 224px;
 
-                                }
+                    }
 
 
-                                @include lg {
-                                    height: 180px;
-                                    width: 180px;
+                    @include lg {
+                        height: 180px;
+                        width: 180px;
 
-                                }
-
+                    }
 
 
                             }
 
                             #title-proof {
                                 grid-area: p2;
+                                font-size: rem-calc(24);
+                    font-weight: 700;
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
+
                             }
 
                             #price-proof {
@@ -287,6 +334,7 @@
                         }
 
                         #add-ons-accessory {
+                            grid-area: c3;
                             padding: 0px;
                             margin: 0px;
                             padding-top: 32px;
@@ -302,30 +350,46 @@
                             #img-acc {
                                 grid-area: a1;
                                 background-image: url(../img/addons/accessory.png);
-                                height: 224px;
-                                background-size: cover;
-                                background-position: center;
+                                height: 248px;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center bottom;
+                    background-repeat: no-repeat;
+                    box-sizing: border-box;
+                
+
+                    @include sm{
+                        height: 188px;
+                        width: 188px;
+                        background-position: center;
+                    }
 
 
+                    @include md {
+                        height: 224px;
+                        width: 224px;
 
-                                @include md {
-                                    height: 224px;
-                                    width: 224px;
-
-                                }
+                    }
 
 
-                                @include lg {
-                                    height: 180px;
-                                    width: 180px;
+                    @include lg {
+                        height: 180px;
+                        width: 180px;
 
-                                }
+                    }
 
 
                             }
 
                             #title-acc {
                                 grid-area: a2;
+                                font-size: rem-calc(24);
+                    font-weight: 700;
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
                             }
 
                             #price-acc {
@@ -337,13 +401,12 @@
                                 padding-top: 16px;
                                 text-align: right;
 
-                                @include lg {
-                                    padding-top: 38px;
-                                }
+                               
                             }
                         }
 
                         #add-ons-warranty {
+                            grid-area: c4;
                             padding: 0px;
                             margin: 0px;
                             padding-top: 32px;
@@ -359,32 +422,45 @@
 
                             #img-warranty {
                                 grid-area: w1;
-                                width: 100%;
+                               
                                 background-image: url(../img/addons/warranty.png);
-                                height: 224px;
-                                background-size: cover;
-                                background-position: center;
+                                height: 248px;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    box-sizing: border-box;
+                    
+
+                    @include sm{
+                        height: 188px;
+                        width: 188px;
+                    }
+
+                    @include md {
+                        height: 224px;
+                        width: 224px;
+
+                    }
 
 
+                    @include lg {
+                        height: 180px;
+                        width: 180px;
 
-                                @include md {
-                                    height: 224px;
-                                    width: 224px;
-
-                                }
-
-
-                                @include lg {
-                                    height: 180px;
-                                    width: 180px;
-
-                                }
-
+                    }
 
                             }
 
                             #title-warranty {
                                 grid-area: w2;
+                                font-size: rem-calc(24);
+                    font-weight: 700;
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
                             }
 
                             #price-warranty {
@@ -395,6 +471,10 @@
                                 grid-area: w4;
                                 padding-top: 16px;
                                 text-align: right;
+
+                                @include sm{
+                                    padding-top: 38px;
+                                }
 
                                 @include lg {
                                     padding-top: 38px;
@@ -415,13 +495,13 @@
 
 #directional-links {
 
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     #left-side {
-        
+
 
         a:link,
         a:visited {

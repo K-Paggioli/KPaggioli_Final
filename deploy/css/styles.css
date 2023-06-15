@@ -1646,12 +1646,6 @@ img {
 #gridaddon > div #margin-in-box #filter #price {
   grid-area: f3;
   font-size: 1rem;
-  margin-right: 0px;
-}
-@media (min-width: 576px) {
-  #gridaddon > div #margin-in-box #filter #price {
-    margin-right: 0px;
-  }
 }
 #gridaddon > div #margin-in-box #filter #button {
   grid-area: f4;
@@ -2575,25 +2569,31 @@ img {
   background-color: var(--gfgrey);
   border-radius: 16px;
   margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: 80px auto 60px;
-  grid-template-areas: ". sub .";
 }
-@media (min-width: 768px) {
-  #gridcard > div #cart-sub #card-color {
-    grid-template-columns: 16px auto 16px;
-  }
-}
-#gridcard > div #cart-sub #card-color #grid-inside-card {
+#gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex {
   grid-area: sub;
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  grid-template-areas: ". c1 ." ". c2 ." ". c3 ." ". c4 .";
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 16px 32px;
+  }
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 56px;
     flex-wrap: wrap;
-    padding: 16px 96px;
+    padding: 16px 108px;
   }
 }
 @media (min-width: 1024px) {
@@ -2606,6 +2606,7 @@ img {
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter {
+  grid-area: c1;
   padding: 0px;
   margin: 0px;
   padding-top: 16px;
@@ -2621,12 +2622,18 @@ img {
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
   grid-area: f1;
   background-image: url(../img/addons/filter.png);
-  height: 224px;
+  height: 248px;
+  width: 100%;
   background-size: cover;
   background-position: center;
-  grid-area: f1;
-  width: 100%;
-  background-color: navy;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
+    height: 188px;
+    width: 188px;
+  }
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
@@ -2642,6 +2649,14 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #title-filter {
   grid-area: f2;
+  grid-area: f2;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #title-filter {
+    font-size: 1.125rem;
+  }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #price-filter {
   grid-area: f3;
@@ -2657,6 +2672,7 @@ img {
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade {
+  grid-area: c2;
   padding: 0px;
   margin: 0px;
   padding-top: 32px;
@@ -2672,9 +2688,18 @@ img {
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
   grid-area: p1;
   background-image: url(../img/addons/proofgrade.png);
-  height: 224px;
+  height: 248px;
+  width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
+    height: 188px;
+    width: 188px;
+  }
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
@@ -2690,6 +2715,13 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #title-proof {
   grid-area: p2;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #title-proof {
+    font-size: 1.125rem;
+  }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #price-proof {
   grid-area: p3;
@@ -2707,6 +2739,7 @@ img {
   border-radius: 16px;
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory {
+  grid-area: c3;
   padding: 0px;
   margin: 0px;
   padding-top: 32px;
@@ -2722,9 +2755,19 @@ img {
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
   grid-area: a1;
   background-image: url(../img/addons/accessory.png);
-  height: 224px;
+  height: 248px;
+  width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
+    height: 188px;
+    width: 188px;
+    background-position: center;
+  }
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
@@ -2740,6 +2783,13 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #title-acc {
   grid-area: a2;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #title-acc {
+    font-size: 1.125rem;
+  }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #price-acc {
   grid-area: a3;
@@ -2749,12 +2799,8 @@ img {
   padding-top: 16px;
   text-align: right;
 }
-@media (min-width: 1024px) {
-  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #button-acc {
-    padding-top: 38px;
-  }
-}
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty {
+  grid-area: c4;
   padding: 0px;
   margin: 0px;
   padding-top: 32px;
@@ -2770,11 +2816,19 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
   grid-area: w1;
-  width: 100%;
   background-image: url(../img/addons/warranty.png);
-  height: 224px;
+  height: 248px;
+  width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
+    height: 188px;
+    width: 188px;
+  }
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
@@ -2790,6 +2844,13 @@ img {
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #title-warranty {
   grid-area: w2;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #title-warranty {
+    font-size: 1.125rem;
+  }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #price-warranty {
   grid-area: w3;
@@ -2798,6 +2859,11 @@ img {
   grid-area: w4;
   padding-top: 16px;
   text-align: right;
+}
+@media (min-width: 576px) {
+  #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #button-warranty {
+    padding-top: 38px;
+  }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #button-warranty {
