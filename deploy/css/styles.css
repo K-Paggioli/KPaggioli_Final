@@ -1839,6 +1839,7 @@ img {
 @media (min-width: 576px) {
   #gridaddon > div #margin-in-box #warranty {
     padding: 0px;
+    margin: 0px;
   }
 }
 #gridaddon > div #margin-in-box #warranty #img {
@@ -1855,12 +1856,14 @@ img {
   #gridaddon > div #margin-in-box #warranty #img {
     height: 188px;
     width: 188px;
+    margin-right: 32px;
   }
 }
 @media (min-width: 768px) {
   #gridaddon > div #margin-in-box #warranty #img {
     height: 224px;
     width: 224px;
+    margin-right: 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -1881,12 +1884,6 @@ img {
 }
 #gridaddon > div #margin-in-box #warranty #price {
   grid-area: w3;
-  margin-right: 0px;
-}
-@media (min-width: 576px) {
-  #gridaddon > div #margin-in-box #warranty #price {
-    margin-left: 0px;
-  }
 }
 #gridaddon > div #margin-in-box #warranty #button {
   grid-area: w4;
@@ -2752,12 +2749,14 @@ img {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
     height: 224px;
     width: 224px;
+    margin-top: 16px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #img-filter {
     height: 180px;
     width: 180px;
+    margin-top: 8px;
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-filter #title-filter {
@@ -2812,18 +2811,21 @@ img {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
     height: 188px;
     width: 188px;
+    margin-top: -16px;
   }
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
     height: 224px;
     width: 224px;
+    margin-top: 16px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #img-proof {
     height: 180px;
     width: 180px;
+    margin-top: 8px;
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-proofgrade #title-proof {
@@ -2892,6 +2894,7 @@ img {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #img-acc {
     height: 180px;
     width: 180px;
+    margin-top: 8px;
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-accessory #title-acc {
@@ -2941,18 +2944,21 @@ img {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
     height: 188px;
     width: 188px;
+    margin-right: 32px;
   }
 }
 @media (min-width: 768px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
     height: 224px;
     width: 224px;
+    margin-right: 0px;
   }
 }
 @media (min-width: 1024px) {
   #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #img-warranty {
     height: 180px;
     width: 180px;
+    margin-top: 8px;
   }
 }
 #gridcard > div #cart-sub #card-color #grid-inside-card #cart-flex #add-ons-warranty #title-warranty {

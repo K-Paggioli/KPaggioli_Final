@@ -302,6 +302,8 @@
 
                 @include sm {
                     padding: 0px;
+                    margin: 0px;
+                    
                 }
 
                 #img {
@@ -318,12 +320,15 @@
                     @include sm{
                         height: 188px;
                         width: 188px;
+                        margin-right: 32px;
+                       
+                       
                     }
 
                     @include md {
                         height: 224px;
                         width: 224px;
-
+                        margin-right: 0px;
                     }
 
 
@@ -344,18 +349,16 @@
                     
 
                     @include sm{
-
+                        
                         font-size: rem-calc(18);
                     }
                 }
 
                 #price {
                     grid-area: w3;
-                    margin-right: 0px;
+                   
 
-                    @include sm{
-                        margin-left: 0px;
-                    }
+                    
                 }
 
                 #button {

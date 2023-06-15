@@ -203,6 +203,7 @@
                                 @include md {
                                     height: 224px;
                                     width: 224px;
+                                    margin-top: 16px;
 
                                 }
 
@@ -210,6 +211,7 @@
                                 @include lg {
                                     height: 180px;
                                     width: 180px;
+                                    margin-top: 8px;
 
                                 }
 
@@ -276,6 +278,7 @@
                     @include sm{
                         height: 188px;
                         width: 188px;
+                        margin-top: -16px;
                     }
                     
 
@@ -283,6 +286,7 @@
                     @include md {
                         height: 224px;
                         width: 224px;
+                        margin-top: 16px;
 
                     }
 
@@ -290,6 +294,8 @@
                     @include lg {
                         height: 180px;
                         width: 180px;
+                        margin-top: 8px;
+                        
 
                     }
 
@@ -375,6 +381,7 @@
                     @include lg {
                         height: 180px;
                         width: 180px;
+                        margin-top: 8px;
 
                     }
 
@@ -435,11 +442,13 @@
                     @include sm{
                         height: 188px;
                         width: 188px;
+                        margin-right: 32px;
                     }
 
                     @include md {
                         height: 224px;
-                        width: 224px;
+                        width: 224px; 
+                        margin-right: 0px;
 
                     }
 
@@ -447,7 +456,7 @@
                     @include lg {
                         height: 180px;
                         width: 180px;
-
+                        margin-top: 8px;
                     }
 
                             }
