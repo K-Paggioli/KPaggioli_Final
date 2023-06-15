@@ -803,6 +803,7 @@ footer > div {
   footer > div {
     grid-template-columns: 25% 20% 20% 35%;
     grid-template-areas: "sales product company social";
+    margin-top: 12px;
   }
 }
 footer > div #column1 {
@@ -813,7 +814,7 @@ footer > div #column1 h4 {
   padding-bottom: 8px;
   border-bottom: 3px solid var(--gfblue);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 footer > div #column1 #hidephone4 {
   margin-top: -12px;
@@ -3622,6 +3623,7 @@ img {
 #needidig > div #titlethanks {
   display: flex;
   align-items: center;
+  font-family: "Arvo", serif;
   font-size: 1.5rem;
   padding-left: 24px;
   padding-right: 24px;

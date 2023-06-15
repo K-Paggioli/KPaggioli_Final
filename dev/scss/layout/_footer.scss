@@ -25,6 +25,7 @@ footer{
             grid-template-columns: 25% 20% 20% 35%;
             grid-template-areas: 
             "sales product company social";
+            margin-top: 12px;
         }
         
 
@@ -36,7 +37,7 @@ footer{
                 padding-bottom: 8px;
                 border-bottom: 3px solid var(--gfblue); 
                 font-size: rem-calc(20);
-                font-weight: 600;
+                font-weight: 700;
                 
             }
             #hidephone4{
