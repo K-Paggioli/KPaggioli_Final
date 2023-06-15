@@ -241,7 +241,7 @@ footer{
                 flex-direction: row;
                 flex-wrap: wrap;
                 width: 100%;
-                gap: 60px;
+                gap: 24px;
 
                 @include sm{
                     gap: 80px;
@@ -339,7 +339,7 @@ footer{
                     /*grid-area: s4;*/
                     list-style: none;
                     font-size: rem-calc(40);
-                    margin-top: -48px;
+                    margin-top: -10px;
                     @include sm{
                         margin-top: -80px;
                     }
@@ -363,7 +363,7 @@ footer{
                     /*grid-area: s5;*/
                     list-style: none;
                     font-size: rem-calc(40);
-                    margin-top: -48px;
+                    margin-top: -10px;
                     @include sm{
                         margin-top: -80px;
                     }
@@ -387,7 +387,7 @@ footer{
                     /*grid-area: s6;*/
                     list-style: none;
                     font-size: rem-calc(40);
-                    margin-top: -48px;
+                    margin-top: -10px;
                     @include sm{
                         margin-top: -80px;
                     }

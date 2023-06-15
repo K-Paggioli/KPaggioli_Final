@@ -82,11 +82,11 @@
 
                 #img {
                     background-image: url(../img/addons/filter.png);
-                    height: 250px;
+                    height: 156px;
                     width: 100%;
                     background-size: cover;
                     background-position: center;
-
+                    box-sizing: border-box;
                     grid-area: f1;
                     background-color: navy;
 
@@ -152,10 +152,11 @@
                 #img {
                     grid-area: p1;
                     background-image: url(../img/addons/proofgrade.png);
-                    height: 250px;
+                    height: 156px;
                     width: 100%;
                     background-size: cover;
                     background-position: center;
+                    box-sizing: border-box;
 
                     @include sm{
                         height: 188px;
@@ -215,10 +216,11 @@
                 #img {
                     grid-area: a1;
                     background-image: url(../img/addons/accessory.png);
-                    height: 250px;
+                    height: 156px;
                     width: 100%;
                     background-size: cover;
                     background-position: center;
+                    box-sizing: border-box;
                 
 
                     @include sm{
@@ -279,10 +281,11 @@
                 #img {
                     grid-area: w1;
                     background-image: url(../img/addons/warranty.png);
-                    height: 250px;
+                    height: 156px;
                     width: 100%;
                     background-size: cover;
                     background-position: center;
+                    box-sizing: border-box;
                     
 
                     @include sm{

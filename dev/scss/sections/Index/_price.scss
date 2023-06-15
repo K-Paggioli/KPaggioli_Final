@@ -54,6 +54,13 @@
 
         #money{
             margin-right: auto;
+            font-size: rem-calc(30);
+            padding-top: 2px;
+
+            @include sm{
+                font-size: rem-calc(36);
+                padding-top: 0px;
+            }
             @include md{
                 margin-right: 16px;
             }
@@ -70,7 +77,13 @@
             }
         }
         #cart{
-            padding-top: 4px;
+            padding-top: 12px;
+
+            @include sm{
+                padding-top: 14px;
+            }
+
+           
         }
 }
 }

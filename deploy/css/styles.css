@@ -1011,7 +1011,7 @@ footer > div #community ul {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  gap: 60px;
+  gap: 24px;
   /* display: grid;
   grid-template-columns: (6,1fr);
   grid-template-areas:
@@ -1119,7 +1119,7 @@ footer > div #community ul #s4 {
   /*grid-area: s4;*/
   list-style: none;
   font-size: 2.5rem;
-  margin-top: -48px;
+  margin-top: -10px;
 }
 @media (min-width: 576px) {
   footer > div #community ul #s4 {
@@ -1146,7 +1146,7 @@ footer > div #community ul #s5 {
   /*grid-area: s5;*/
   list-style: none;
   font-size: 2.5rem;
-  margin-top: -48px;
+  margin-top: -10px;
 }
 @media (min-width: 576px) {
   footer > div #community ul #s5 {
@@ -1173,7 +1173,7 @@ footer > div #community ul #s6 {
   /*grid-area: s6;*/
   list-style: none;
   font-size: 2.5rem;
-  margin-top: -48px;
+  margin-top: -10px;
 }
 @media (min-width: 576px) {
   footer > div #community ul #s6 {
@@ -1319,6 +1319,14 @@ img {
 }
 #margins > div #money {
   margin-right: auto;
+  font-size: 1.875rem;
+  padding-top: 2px;
+}
+@media (min-width: 576px) {
+  #margins > div #money {
+    font-size: 2.25rem;
+    padding-top: 0px;
+  }
 }
 @media (min-width: 768px) {
   #margins > div #money {
@@ -1338,7 +1346,12 @@ img {
   }
 }
 #margins > div #cart {
-  padding-top: 4px;
+  padding-top: 12px;
+}
+@media (min-width: 576px) {
+  #margins > div #cart {
+    padding-top: 14px;
+  }
 }
 
 #gridproduct {
@@ -1595,10 +1608,11 @@ img {
 }
 #gridaddon > div #margin-in-box #filter #img {
   background-image: url(../img/addons/filter.png);
-  height: 250px;
+  height: 156px;
   width: 100%;
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
   grid-area: f1;
   background-color: navy;
 }
@@ -1652,10 +1666,11 @@ img {
 #gridaddon > div #margin-in-box #proofgrade #img {
   grid-area: p1;
   background-image: url(../img/addons/proofgrade.png);
-  height: 250px;
+  height: 156px;
   width: 100%;
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
 }
 @media (min-width: 576px) {
   #gridaddon > div #margin-in-box #proofgrade #img {
@@ -1699,10 +1714,11 @@ img {
 #gridaddon > div #margin-in-box #accessorykit #img {
   grid-area: a1;
   background-image: url(../img/addons/accessory.png);
-  height: 250px;
+  height: 156px;
   width: 100%;
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
 }
 @media (min-width: 576px) {
   #gridaddon > div #margin-in-box #accessorykit #img {
@@ -1752,10 +1768,11 @@ img {
 #gridaddon > div #margin-in-box #warranty #img {
   grid-area: w1;
   background-image: url(../img/addons/warranty.png);
-  height: 250px;
+  height: 156px;
   width: 100%;
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
 }
 @media (min-width: 576px) {
   #gridaddon > div #margin-in-box #warranty #img {
@@ -1861,10 +1878,15 @@ img {
   color: var(--white);
   z-index: 10000;
   font-family: "Arvo", serif;
-  font-size: 1.5625rem;
+  font-size: 1.125rem;
   margin-top: -2px;
   padding-top: 12px;
   padding-bottom: 22px;
+}
+@media (min-width: 576px) {
+  #grid > div #family-position #family-info #family-title {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 768px) {
   #grid > div #family-position #family-info #family-title {
@@ -1940,6 +1962,7 @@ img {
 }
 #background-color #gridreview > div #reviews-header {
   display: flex;
+  flex-direction: row;
   text-align: center;
   justify-content: space-between;
   align-content: right;
@@ -1947,18 +1970,60 @@ img {
 }
 #background-color #gridreview > div #reviews-header #header-review {
   font-family: "Arvo", serif;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 700;
   margin-top: -14px;
   margin-bottom: -6px;
 }
-#background-color #gridreview > div #reviews-header #writing {
-  margin-top: 8px;
+@media (min-width: 576px) {
+  #background-color #gridreview > div #reviews-header #header-review {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #reviews-header #header-review {
+    margin-top: 4px;
+  }
+}
+#background-color #gridreview > div #reviews-header #buttons-rev {
+  display: flex;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #background-color #gridreview > div #reviews-header #buttons-rev {
+    margin-top: 17px;
+  }
+}
+#background-color #gridreview > div #reviews-header #buttons-rev #writing {
+  margin-top: 16px;
+  display: none;
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div #reviews-header #buttons-rev #writing {
+    display: block;
+  }
 }
 @media (min-width: 1024px) {
-  #background-color #gridreview > div #reviews-header #writing {
+  #background-color #gridreview > div #reviews-header #buttons-rev #writing {
     margin-top: 26px;
     margin-left: 8px;
+  }
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div #reviews-header #buttons-rev #question {
+    margin-top: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #background-color #gridreview > div #reviews-header #buttons-rev #question {
+    margin-top: 26px;
+  }
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div #reviews-header #buttons-rev #writing-icon {
+    display: none;
   }
 }
 #background-color #gridreview > div #reviews-star {
@@ -2031,6 +2096,9 @@ img {
 #background-color #gridreview > div #review-keyword {
   font-size: 1.25rem;
 }
+#background-color #gridreview > div #review-keyword #buttons-rev {
+  margin-top: -12px;
+}
 #background-color #gridreview > div #review-keyword #buttons-rev button {
   background-color: var(--gfblue);
   color: white;
@@ -2091,8 +2159,13 @@ img {
   margin-right: 16px;
 }
 #background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #top-info-rev #cards-stars {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--gfgold);
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #top-info-rev #cards-stars {
+    font-size: 2rem;
+  }
 }
 #background-color #gridreview > div #review-cards #grid-area-cards #review-card-1 #card-title {
   font-weight: 400;
@@ -2167,8 +2240,13 @@ img {
   margin-right: 16px;
 }
 #background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #top-info-rev #cards-stars {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--gfgold);
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #top-info-rev #cards-stars {
+    font-size: 2rem;
+  }
 }
 #background-color #gridreview > div #review-cards #grid-area-cards #review-card-2 #card-title {
   font-weight: 400;
@@ -2221,8 +2299,13 @@ img {
   margin-right: 16px;
 }
 #background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #top-info-rev #cards-stars {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--gfgold);
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #top-info-rev #cards-stars {
+    font-size: 2rem;
+  }
 }
 #background-color #gridreview > div #review-cards #grid-area-cards #review-card-3 #card-title {
   font-weight: 400;
