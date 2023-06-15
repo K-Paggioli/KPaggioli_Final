@@ -55,18 +55,21 @@
                     grid-area: h1;
                     width:100%;
                     height: 238.57px;
-                    background-image: url(../img/producthero/hero1.png);
+                    background-image: url(../img/producthero/hero1.jpg);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
                     box-sizing: border-box;
-
+                    
                     @include sm{
                         height: 401.33px;
+                        border-radius: 16px;
                     }
                     
                     @include md{
                         height: 500px;
+                        
+
 
                     }
 
@@ -83,7 +86,7 @@
                 #hero2 {
                     grid-area: h2;
                     height: 124px;
-                    background-image: url(../img/producthero/hero2.png);
+                    background-image: url(../img/producthero/hero2.jpg);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -91,10 +94,13 @@
 
                     @include sm{
                         height: 207.33px;
+                        border-radius: 16px;
                     }
                     
                     @include md{
                         height: 250px;
+                        
+
 
                     }
 
@@ -110,7 +116,7 @@
                     grid-area: h3;
                     height: 124px;
                     width: 100%;
-                    background-image: url(../img/producthero/hero3.png);
+                    background-image: url(../img/producthero/hero3.jpg);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -118,10 +124,13 @@
 
                     @include sm{
                         height: 207.33px;
+                        border-radius: 16px;
                     }
                     
                     @include md{
                         height: 250px;
+                        
+
 
                     }
 
@@ -138,7 +147,7 @@
                 #hero4 {
                     grid-area: h4;
                     display: none;
-                    background-image: url(../img/producthero/hero4.png);
+                    background-image: url(../img/producthero/hero4.jpg);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -148,6 +157,8 @@
                     @include lg {
                         display: block;
                         height: 178px;
+                        border-radius: 16px;
+
 
                     }
 
