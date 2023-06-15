@@ -1483,6 +1483,7 @@ img {
 @media (min-width: 1024px) {
   #gridproduct > div #productimg ul #hero3 {
     height: 178px;
+    width: 110%;
   }
 }
 #gridproduct > div #productimg ul #hero4 {
@@ -1490,22 +1491,29 @@ img {
   display: none;
   background-image: url(../img/producthero/hero4.jpg);
   background-size: cover;
+  width: 90%;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  margin-left: auto;
 }
 @media (min-width: 1024px) {
   #gridproduct > div #productimg ul #hero4 {
     display: block;
     height: 178px;
     border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 #gridproduct > div #productimg ul #hero4 i {
-  background-color: rgba(21, 47, 53, 0.6);
+  background-color: rgba(21, 47, 53, 0.8);
   color: var(--white);
   font-size: 3rem;
   font-weight: 700;
+  padding: 8px;
+  border-radius: 16px;
 }
 #gridproduct > div #speculation {
   display: grid;
