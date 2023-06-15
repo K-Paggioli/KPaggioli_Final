@@ -4,9 +4,10 @@
     grid-template-areas: ". main .";
     padding-top: 90px;
 
-    @include md{
+    @include md {
         padding-top: 32px;
     }
+
     padding-bottom: 150px;
 
 
@@ -46,11 +47,51 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: baseline;
+                gap: 24px;
+                padding-bottom: 8px;
 
-                label {
+                .container {
+                    display: block;
+                    position: relative;
+
                     input {
                         margin-right: 8px;
+                        height: 20px;
+                        width: 20px;
+                        background-color: var(--white);
+                        cursor: pointer;
+
+
                     }
+
+                    //.checkmark{
+                    // display: block;
+                    // height: 20px;
+                    // width: 20px; 
+                    // background-color: var(--white);
+                    // border-radius: 4px;
+                    // position: absolute;
+                    // bottom: 0;
+                    // left: 0;
+
+
+
+
+
+
+                    //  &:hover {
+                    // background-color: var(--hoverwhite);
+                    // }
+
+                    // &:checked{
+                    //  background-color: var(--white);
+                    //  color: var(--gfblue);
+                    // }
+
+
+                    // }
+
+
                 }
 
             }
@@ -59,13 +100,25 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                gap: 24px;
+                padding-bottom: 8px;
 
-                label {
+                .container {
+                    display: block;
+                    position: relative;
+
                     input {
                         margin-right: 8px;
-                    }
-                }
+                        height: 20px;
+                        width: 20px;
+                        background-color: var(--white);
+                        cursor: pointer;
 
+
+                    }
+
+
+                }
 
             }
 
@@ -73,127 +126,136 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: baseline;
+                gap: 24px;
 
-                label {
+                .container {
+                    display: block;
+                    position: relative;
+
                     input {
                         margin-right: 8px;
-                    }
-                }
+                        height: 20px;
+                        width: 20px;
+                        background-color: var(--white);
+                        cursor: pointer;
 
-            }
-        }
-
-        #cardformatwarr {
-            margin-top: 32px;
-            background-color: var(--gfbluedark);
-            color: var(--white);
-            padding: 24px;
-            border-radius: 16px;
-
-            #warrcontent {
-                h4 {
-                    font-family: 'Arvo', serif;
-                    font-size: rem-calc(20);
-                    margin-top: -0px;
-                }
-
-                p {
-                    margin-top: -8px;
-                    font-size: rem-calc(18);
-                    line-height: rem-calc(30);
-
-                    a:link,
-                    a:visited {
-                        display: inline-block;
-                        transition: 0.25s;
-                        color: var(--white);
-                        font-size: rem-calc(15);
-                        text-decoration: underline;
-                        font-size: rem-calc(15);
-
-
-                        &:hover,
-                        &:active {
-                            color: var(--gfgold);
-                        }
 
                     }
 
                 }
-
-                #buttonprot {
-                    text-align: right;
-                }
             }
-        }
-
-        #totals {
-            margin-top: 32px;
-
-            #subtotal {
-                display: flex;
-                justify-content: space-between;
-                font-size: rem-calc(18);
-                font-weight: 600;
             }
 
-            #taxes {
-                display: flex;
-                justify-content: space-between;
-
-            }
-
-            #shiptotal {
-                display: flex;
-                justify-content: space-between;
-
-            }
-
-            #grandtotal {
-                display: flex;
-                justify-content: space-between;
-                font-weight: 600;
-                font-size: rem-calc(22);
-            }
-
-            #directional-mobile {
-                display: flex;
-                justify-content: space-between;
+            #cardformatwarr {
                 margin-top: 32px;
-                align-items: baseline;
+                background-color: var(--gfbluedark);
+                color: var(--white);
+                padding: 24px;
+                border-radius: 16px;
 
-                #backchk {
+                #warrcontent {
+                    h4 {
+                        font-family: 'Arvo', serif;
+                        font-size: rem-calc(20);
+                        margin-top: -0px;
+                    }
 
-                    a:link,
-                    a:visited {
-                        display: inline-block;
-                        transition: 0.25s;
-                        color: var(--gfbluedark);
-                        font-size: rem-calc(15);
+                    p {
+                        margin-top: -8px;
+                        font-size: rem-calc(18);
+                        line-height: rem-calc(30);
+
+                        a:link,
+                        a:visited {
+                            display: inline-block;
+                            transition: 0.25s;
+                            color: var(--white);
+                            font-size: rem-calc(15);
+                            text-decoration: underline;
+                            font-size: rem-calc(15);
 
 
-                        &:hover {
-                            color: var(--gfblue);
+                            &:hover,
+                            &:active {
+                                color: var(--gfgold);
+                            }
+
                         }
-
-                        &:active {
-                            color: var(--gfgold);
-                        }
-
 
                     }
 
-                    i{padding-right: 8px;
-
+                    #buttonprot {
+                        text-align: right;
                     }
                 }
+            }
 
-                #buythx{
+            #totals {
+                margin-top: 32px;
+
+                #subtotal {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: rem-calc(18);
+                    font-weight: 600;
+                }
+
+                #taxes {
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+
+                #shiptotal {
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+
+                #grandtotal {
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: 600;
+                    font-size: rem-calc(22);
+                }
+
+                #directional-mobile {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 32px;
+                    align-items: baseline;
+
+                    #backchk {
+
+                        a:link,
+                        a:visited {
+                            display: inline-block;
+                            transition: 0.25s;
+                            color: var(--gfbluedark);
+                            font-size: rem-calc(15);
+
+
+                            &:hover {
+                                color: var(--gfblue);
+                            }
+
+                            &:active {
+                                color: var(--gfgold);
+                            }
+
+
+                        }
+
+                        i {
+                            padding-right: 8px;
+
+                        }
+                    }
+
+                    #buythx {}
 
                 }
 
             }
-
         }
     }
-}

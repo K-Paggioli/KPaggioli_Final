@@ -3527,25 +3527,54 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 24px;
+  padding-bottom: 8px;
 }
-#column2 #ctwogrid #cardformatinv #airfilterflex label input {
+#column2 #ctwogrid #cardformatinv #airfilterflex .container {
+  display: block;
+  position: relative;
+}
+#column2 #ctwogrid #cardformatinv #airfilterflex .container input {
   margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  cursor: pointer;
 }
 #column2 #ctwogrid #cardformatinv #proofgrdflex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
+  padding-bottom: 8px;
 }
-#column2 #ctwogrid #cardformatinv #proofgrdflex label input {
+#column2 #ctwogrid #cardformatinv #proofgrdflex .container {
+  display: block;
+  position: relative;
+}
+#column2 #ctwogrid #cardformatinv #proofgrdflex .container input {
   margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  cursor: pointer;
 }
 #column2 #ctwogrid #cardformatinv #accflex {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 24px;
 }
-#column2 #ctwogrid #cardformatinv #accflex label input {
+#column2 #ctwogrid #cardformatinv #accflex .container {
+  display: block;
+  position: relative;
+}
+#column2 #ctwogrid #cardformatinv #accflex .container input {
   margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  cursor: pointer;
 }
 #column2 #ctwogrid #cardformatwarr {
   margin-top: 32px;
