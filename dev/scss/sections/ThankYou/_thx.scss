@@ -64,11 +64,17 @@
             a:visited {
                 color: var(--gfgold);
                 font-weight: 600;
+                background-color: var(--gfbluedark);
+                padding: 4px 8px;
+                border-radius: 8px;
 
                 &:hover,
                 &:active {
-                    color: var(--gfbluedark);
+                    color: var(--white);
                     transition: 0.25s;
+                    background-color: var(--gfgold);
+                    padding: 4px 8px;;
+                    border-radius: 8px;
                 }
             }
         }
