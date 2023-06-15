@@ -13,9 +13,14 @@
 
     #gridreview {
         display: grid;
-        grid-template-columns: 16px auto 16px;
+        grid-template-columns: 24px auto 24px;
         grid-template-areas: ". main .";
         margin-top: 150px;
+
+        @include sm{
+            grid-template-columns: 16px auto 16px;
+
+        }
 
         @include md {
             grid-template-columns: 32px auto 32px;
@@ -33,10 +38,16 @@
             grid-area: main;
             margin-top: 16px;
             background-color: var(--gfbluedark);
-            border-radius: 16px;
+           
             color: var(--white);
-            padding-left: 24px;
-            padding-right: 24px;
+
+            @include sm{
+                border-radius: 16px;
+                padding-left: 24px;
+                padding-right: 24px;
+
+            }
+            
 
 
             #reviews-header {

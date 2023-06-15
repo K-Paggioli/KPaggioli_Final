@@ -2022,9 +2022,14 @@ img {
 }
 #background-color #gridreview {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 24px auto 24px;
   grid-template-areas: ". main .";
   margin-top: 150px;
+}
+@media (min-width: 576px) {
+  #background-color #gridreview {
+    grid-template-columns: 16px auto 16px;
+  }
 }
 @media (min-width: 768px) {
   #background-color #gridreview {
@@ -2045,10 +2050,14 @@ img {
   grid-area: main;
   margin-top: 16px;
   background-color: var(--gfbluedark);
-  border-radius: 16px;
   color: var(--white);
-  padding-left: 24px;
-  padding-right: 24px;
+}
+@media (min-width: 576px) {
+  #background-color #gridreview > div {
+    border-radius: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 #background-color #gridreview > div #reviews-header {
   display: flex;
