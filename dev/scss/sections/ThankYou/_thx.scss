@@ -1,12 +1,18 @@
 #needidig {
+    background-image: url("../img/GlowforgeTiledInvert.png");
+    background-size: cover;
+    background-position: bottom center;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". main .";
-    background-color: var(--gfblue);
+    background-color: var(--gfbluemed);
 
 
     >div {
         grid-area: main;
+        background-color: rgba(29, 113, 128, .75);
+        margin-left: -16px;
+        margin-right: -16px;
 
         #titlethanks {
             display: flex;

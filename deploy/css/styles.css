@@ -3605,13 +3605,19 @@ img {
   padding-right: 8px;
 }
 #needidig {
+  background-image: url("../img/GlowforgeTiledInvert.png");
+  background-size: cover;
+  background-position: bottom center;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
-  background-color: var(--gfblue);
+  background-color: var(--gfbluemed);
 }
 #needidig > div {
   grid-area: main;
+  background-color: rgba(29, 113, 128, 0.75);
+  margin-left: -16px;
+  margin-right: -16px;
 }
 #needidig > div #titlethanks {
   display: flex;
