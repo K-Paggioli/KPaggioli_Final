@@ -27,19 +27,18 @@
         }
 
         #margin-in-box {
-            padding: 0px 108px;
-            //---display: grid;
-            //---grid-template-columns: 5% 90% 5%;
-            //---grid-template-areas: 
-            //---". c1 ."
-            //---". c2 ."
-            //---". c3 ."
-           //--- ". c4 ."
+            display: grid;
+            grid-template-columns: 20% auto 20%;
+            grid-template-areas: 
+            ". c1 ."
+            ". c2 ."
+            ". c3 ."
+            ". c4 .";
 
-           display: flex; 
-           flex-direction: column;
-           align-items: center;
-           box-sizing: border-box;
+           //display: flex; 
+           //flex-direction: column;
+           //align-items: left;
+           //box-sizing: border-box;
 
             @include sm{
                 display: flex;
@@ -47,7 +46,7 @@
                 justify-content: space-between;
                 gap: 32px;
                 flex-wrap: wrap;
-                padding: 16px 40px;
+                padding: 16px 32px;
 
             }
  
@@ -74,21 +73,21 @@
 
 
             #filter {
-                //--grid-area: c1;
+                grid-area: c1;
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
                     "f1 f1 f2 f3 f4";
 
                 #img {
+                    grid-area: f1;
                     background-image: url(../img/addons/filter.png);
-                    height: 156px;
+                    height: 248px;
                     width: 100%;
                     background-size: cover;
                     background-position: center;
+                    background-repeat: no-repeat;
                     box-sizing: border-box;
-                    grid-area: f1;
-                    background-color: navy;
 
                     @include sm{
                         height: 188px;
@@ -115,19 +114,31 @@
 
                 #title {
                     grid-area: f2;
-                    font-size: rem-calc(16);
+                    font-size: rem-calc(24);
                     font-weight: 700;
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
 
                 }
 
                 #price {
                     grid-area: f3;
-                    font-size: rem-calc(16)
+                    font-size: rem-calc(16);
+
+                    margin-right: 0px;
+
+                    @include sm{
+                        margin-right: 0px;
+                    }
                 }
 
                 #button {
                     grid-area: f4;
                     padding-top: 16px;
+                    
 
                     @include sm {
                         padding-top: 38px;
@@ -138,13 +149,14 @@
             }
 
             #proofgrade {
-                //--grid-area: c2;
+                grid-area: c2;
                 padding-top: 32px;
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
                     "p1 p1 p2 p3 p4";
 
+                   
                 @include sm {
                     padding: 0px;
                 }
@@ -152,10 +164,11 @@
                 #img {
                     grid-area: p1;
                     background-image: url(../img/addons/proofgrade.png);
-                    height: 156px;
+                    height: 248px;
                     width: 100%;
                     background-size: cover;
                     background-position: center;
+                    background-repeat: no-repeat;
                     box-sizing: border-box;
 
                     @include sm{
@@ -184,6 +197,13 @@
 
                 #title {
                     grid-area: p2;
+                    font-size: rem-calc(24);
+                    font-weight: 700;
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
 
                 }
 
@@ -201,12 +221,14 @@
             }
 
             #accessorykit {
-                //--grid-area: c3;
+                grid-area: c3;
                 padding-top: 32px;
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
                     "a1 a1 a2 a3 a4";
+
+                    
 
 
                 @include sm {
@@ -216,16 +238,18 @@
                 #img {
                     grid-area: a1;
                     background-image: url(../img/addons/accessory.png);
-                    height: 156px;
+                    height: 248px;
                     width: 100%;
                     background-size: cover;
-                    background-position: center;
+                    background-position: center bottom;
+                    background-repeat: no-repeat;
                     box-sizing: border-box;
                 
 
                     @include sm{
                         height: 188px;
                         width: 188px;
+                        background-position: center;
                     }
 
 
@@ -247,6 +271,13 @@
 
                 #title {
                     grid-area: a2;
+                    font-size: rem-calc(24);
+                    font-weight: 700;
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
                 }
 
                 #price {
@@ -265,13 +296,16 @@
             }
 
             #warranty {
-                //--grid-area: c4;
+                grid-area: c4;
                 padding-top: 32px;
                 padding-bottom: 32px;
                 display: grid;
                 grid-template-rows: (5, 1fr);
                 grid-template-areas:
                     "w1 w1 w2 w3 w4";
+
+                    
+
 
 
                 @include sm {
@@ -281,10 +315,11 @@
                 #img {
                     grid-area: w1;
                     background-image: url(../img/addons/warranty.png);
-                    height: 156px;
+                    height: 248px;
                     width: 100%;
                     background-size: cover;
                     background-position: center;
+                    background-repeat: no-repeat;
                     box-sizing: border-box;
                     
 
@@ -312,10 +347,23 @@
 
                 #title {
                     grid-area: w2;
+                    font-size: rem-calc(24);
+                    font-weight: 700;
+                    
+
+                    @include sm{
+
+                        font-size: rem-calc(18);
+                    }
                 }
 
                 #price {
                     grid-area: w3;
+                    margin-right: 0px;
+
+                    @include sm{
+                        margin-left: 0px;
+                    }
                 }
 
                 #button {
