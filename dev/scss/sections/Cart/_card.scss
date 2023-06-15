@@ -37,6 +37,15 @@
 
                 @include md {
                     display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas:
+                        "g1 g2"
+                        "g1 g3"
+                        "g1 g4";
+                    gap: 0px 16px;
+                }
+
+                @include lg{
                     grid-template-columns: 35% auto;
                     grid-template-areas:
                         "g1 g2"
@@ -76,6 +85,9 @@
                     border: none;
                     border-radius: 16px;
 
+                   
+                   
+
 
                 }
 
@@ -83,7 +95,14 @@
                     grid-area: g4;
                     font-weight: 600;
                     font-size: rem-calc(24);
-                    margin-bottom: 88px;
+                    margin-bottom: 24px;
+
+                    @include md{
+                        margin-bottom: 88px;
+
+                    }
+
+                    
                 }
             }
 
@@ -395,11 +414,14 @@
 }
 
 #directional-links {
+
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     #left-side {
+        
 
         a:link,
         a:visited {

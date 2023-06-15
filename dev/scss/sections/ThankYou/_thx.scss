@@ -72,6 +72,11 @@
             text-align: center;
             justify-content: space-evenly;
             margin: 16px 10% 100px;
+            gap: 16px;
+
+            @include sm{
+                gap: 0px;
+            }
 
             @include md {
 

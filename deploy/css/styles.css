@@ -2470,6 +2470,13 @@ img {
 @media (min-width: 768px) {
   #gridcard > div #cart-main #main-product-cart {
     display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "g1 g2" "g1 g3" "g1 g4";
+    gap: 0px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #gridcard > div #cart-main #main-product-cart {
     grid-template-columns: 35% auto;
     grid-template-areas: "g1 g2" "g1 g3" "g1 g4";
     gap: 0px 16px;
@@ -2503,7 +2510,12 @@ img {
   grid-area: g4;
   font-weight: 600;
   font-size: 1.5rem;
-  margin-bottom: 88px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #gridcard > div #cart-main #main-product-cart #cart-price {
+    margin-bottom: 88px;
+  }
 }
 #gridcard > div #cart-sub {
   padding-top: 32px;
@@ -3423,6 +3435,12 @@ img {
   text-align: center;
   justify-content: space-evenly;
   margin: 16px 10% 100px;
+  gap: 16px;
+}
+@media (min-width: 576px) {
+  #needidig > div #buttons-thx {
+    gap: 0px;
+  }
 }
 @media (min-width: 768px) {
   #needidig > div #buttons-thx {
