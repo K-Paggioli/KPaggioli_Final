@@ -3270,7 +3270,7 @@ img {
 }
 #gridcontact > div #column1 #pick-shipping #pick-grid #pick-content {
   background-color: var(--gfgrey);
-  padding: 24px;
+  padding: 16px 24px 20px;
   border-radius: 16px;
 }
 #gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday {
@@ -3278,10 +3278,18 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday label input {
-  margin-right: 8px;
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday .container {
+  display: block;
+  position: relative;
 }
-#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday label #bday {
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday .container input {
+  margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #fiveday .container #bday {
   font-style: italic;
   color: var(--gfblue);
   padding-left: 4px;
@@ -3294,10 +3302,18 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday label input {
-  margin-right: 12px;
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday .container {
+  display: block;
+  position: relative;
 }
-#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday label #bday {
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday .container input {
+  margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #twoday .container #bday {
   font-style: italic;
   color: var(--gfblue);
   padding-left: 4px;
@@ -3310,8 +3326,16 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same label input {
-  margin-right: 12px;
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same .container {
+  display: block;
+  position: relative;
+}
+#gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same .container input {
+  margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  cursor: pointer;
 }
 #gridcontact > div #column1 #pick-shipping #pick-grid #pick-content #same p {
   font-weight: 600;

@@ -294,6 +294,7 @@
 
             #pick-shipping {
                 margin-top: 16px;
+                
 
                 @include md {
                     display: grid;
@@ -306,18 +307,27 @@
 
                     #pick-content {
                         background-color: var(--gfgrey);
-                        padding: 24px;
+                        padding: 16px 24px 20px;
                         border-radius: 16px;
+                        
 
                         #fiveday {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
 
-                            label {
-
+                            .container {
+                                display: block;
+                                position: relative;
+            
                                 input {
                                     margin-right: 8px;
+                                    height: 20px;
+                                    width: 20px;
+                                    background-color: var(--white);
+                                    cursor: pointer;
+                                    
+
                                 }
 
                                 #bday{
@@ -341,11 +351,19 @@
                             display: flex;
                         justify-content: space-between;
                         align-items:center;
-                            label {
+                        .container {
+                            display: block;
+                            position: relative;
+        
+                            input {
+                                margin-right: 8px;
+                                height: 20px;
+                                width: 20px;
+                                background-color: var(--white);
+                                cursor: pointer;
+                                
 
-                                input {
-                                    margin-right: 12px;
-                                }
+                            }
 
                                 #bday{
                                     font-style:italic;
@@ -366,12 +384,20 @@
                                 display: flex;
                          justify-content: space-between;
                         align-items:center;
-                                label {
+                        .container {
+                            display: block;
+                            position: relative;
+        
+                            input {
+                                margin-right: 8px;
+                                height: 20px;
+                                width: 20px;
+                                background-color: var(--white);
+                                cursor: pointer;
+                                
+                                
 
-                                    input {
-                                        margin-right: 12px;
-                                    }
-
+                            }
                                     
                             }
                                 
